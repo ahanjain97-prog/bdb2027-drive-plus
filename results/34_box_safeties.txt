@@ -1,0 +1,40 @@
+box run snaps 4058 players 103
+players with >= 30 box run snaps: 40 ({'SS': 19, 'CB': 10, 'FS': 9, 'MLB': 1, 'ILB': 1})
+  split-half reliability trigger_time    0.32 (n 29)
+  split-half reliability downhill_speed  0.72 (n 29)
+  split-half reliability fit_depth       0.55 (n 29)
+  split-half reliability tk_oe           0.90 (n 24)
+  split-half reliability tfl_oe          0.14 (n 24)
+
+mechanics -> outcomes (player level):
+  trigger_time    -> tackles_oe         r +0.13 (p 0.469, n 33)
+  trigger_time    -> tfl_oe             r -0.07 (p 0.687, n 33)
+  trigger_time    -> yds_on_his_tackles r +0.27 (p 0.224, n 22)
+  downhill_speed  -> tackles_oe         r +0.23 (p 0.192, n 33)
+  downhill_speed  -> tfl_oe             r +0.52 (p 0.002, n 33)
+  downhill_speed  -> yds_on_his_tackles r -0.51 (p 0.016, n 22)
+  fit_depth       -> tackles_oe         r -0.08 (p 0.664, n 33)
+  fit_depth       -> tfl_oe             r -0.30 (p 0.094, n 33)
+  fit_depth       -> yds_on_his_tackles r +0.36 (p 0.103, n 22)
+  pursuit_bend    -> tackles_oe         r +0.03 (p 0.865, n 33)
+  pursuit_bend    -> tfl_oe             r +0.29 (p 0.107, n 33)
+  pursuit_bend    -> yds_on_his_tackles r -0.33 (p 0.137, n 22)
+
+combine DB drill coverage among box players: turn 40, burst 40, 3-cone 9, shuttle 11
+
+combine -> box run defense (players with >= 30 box run snaps):
+       combine               game  n      r     p  r_partial_weight
+ db_turn_speed       trigger_time 40 -0.144 0.374            -0.096
+ db_turn_speed     downhill_speed 40  0.114 0.484             0.050
+ db_turn_speed          fit_depth 40 -0.181 0.264            -0.126
+ db_turn_speed       pursuit_bend 40  0.115 0.481             0.123
+ db_turn_speed         tackles_oe 33  0.194 0.280             0.175
+ db_turn_speed             tfl_oe 33  0.193 0.281             0.144
+ db_turn_speed yds_on_his_tackles 22 -0.235 0.292            -0.210
+db_break_burst       trigger_time 40 -0.089 0.584            -0.053
+db_break_burst     downhill_speed 40 -0.108 0.508            -0.167
+db_break_burst          fit_depth 40  0.152 0.350             0.209
+db_break_burst       pursuit_bend 40 -0.276 0.084            -0.277
+db_break_burst         tackles_oe 33 -0.141 0.433            -0.163
+db_break_burst             tfl_oe 33 -0.373 0.033            -0.428
+db_break_burst yds_on_his_tackles 22  0.147 0.513             0.203

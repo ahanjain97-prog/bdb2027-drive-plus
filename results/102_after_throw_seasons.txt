@@ -1,0 +1,27 @@
+=== (1) catches vs expectation (expected = league xComp given separation + throw context) ===
+  -- 2024
+        targets  DBs  caught  expected  hands  above_exp  per_100
+third                                                            
+bottom       40   12    29.0      24.8    0.6        4.2     10.6
+middle       47    8    22.0      23.8    0.6       -1.8     -3.7
+top          68   12    36.0      29.7    0.6        6.3      9.3
+  -- 2025
+        targets  DBs  caught  expected  hands  above_exp  per_100
+third                                                            
+bottom      126   18    83.0      69.5    0.6       13.5     10.7
+middle       65   18    35.0      36.6    0.6       -1.6     -2.5
+top         109   18    46.0      51.1    0.6       -5.1     -4.7
+
+=== (2) receiver hands ===
+  2024: receivers' catch rate on their other targets vs Drive+: -0.51 pts per 10 (SE 0.61); mean 0.612
+        after-throw (completion - xComp_sep):             +2.56 [ -0.21,  +5.33] p1 0.735 n 155
+        after-throw, holding receiver hands fixed:        +2.67 [ -0.15,  +5.50] p1 0.752 n 155
+  2025: receivers' catch rate on their other targets vs Drive+: -2.32 pts per 10 (SE 0.74); mean 0.622
+        after-throw (completion - xComp_sep):             -8.22 [-11.44,  -5.00] p1 0.014 n 300
+        after-throw, holding receiver hands fixed:        -7.18 [-10.36,  -3.99] p1 0.012 n 300
+
+=== (3) after-throw effect by throw depth (air yards) within season ===
+  2024 < 15 air yds  share 0.59:  +5.26 [ +0.74,  +9.78] p1 0.862 n 91
+  2024 15+ air yds   share 0.41:  +1.00 [ -5.21,  +7.22] p1 0.585 n 64
+  2025 < 15 air yds  share 0.62:  -4.93 [ -8.43,  -1.43] p1 0.064 n 185
+  2025 15+ air yds   share 0.38: -10.22 [-15.67,  -4.78] p1 0.012 n 115

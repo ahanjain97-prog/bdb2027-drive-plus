@@ -1,0 +1,252 @@
+
+################ REC  (players 106, plays/player >= 80)
+split-half (h0 vs h1) PC reliability: PC1 rel 0.87 novel 0.04; PC2 rel 0.84 novel 0.05; PC3 rel 0.74 novel 0.16; PC4 rel 0.76 novel 0.34; PC5 rel 0.68 novel 0.35; PC6 rel 0.63 novel 0.43; PC7 rel 0.75 novel 0.43; PC8 rel 0.60 novel 0.69
+
+-- REC PC1: 37.4% var; unexplained by physics+measurables 0.05
+   physics r: s_max +0.91, s_mean_0_3s +0.84, dist_2s +0.74, pre_snap_speed +0.63, dist_1s +0.62
+   measurables r: combine_weight -0.67, forty -0.59, combine_height -0.59, three_cone -0.53
+   high: Jimmy Horn (WR), Quentin Johnston (WR), Derius Davis (WR), Arian Smith (WR)
+   low:  Darnell Washington (TE), Cade Stover (TE), Harold Fannin (TE), Oronde Gadsden (TE)
+   s       @0..4s  top10% [2.01 5.14 7.26 7.39 6.94]  bottom10% [0.12 3.21 4.68 4.4  3.08]
+   a_long  @0..4s  top10% [ 0.85  3.6   0.87 -0.37 -0.52]  bottom10% [ 0.66  3.35  0.16 -0.77 -1.36]
+   |a_lat| @0..4s  top10% [0.39 1.78 2.15 2.67 2.17]  bottom10% [0.02 1.13 2.29 1.95 1.45]
+   cos_od  @0..4s  top10% [0.64 0.8  0.73 0.59 0.53]  bottom10% [0.48 0.82 0.71 0.6  0.54]
+
+-- REC PC2: 26.2% var; unexplained by physics+measurables 0.04
+   physics r: backpedal_share +0.87, sideways_share +0.64, o_rate_p90 +0.41, dx_2s -0.24, s_max -0.20
+   measurables r: short_shuttle +0.23, forty +0.13, vertical -0.13, log_pick -0.12
+   high: Quentin Johnston (WR), Jha'Quan Jackson (WR), Travis Vokolek (TE), Josh Whyle (TE)
+   low:  Kyle Williams (WR), Ben Sinnott (TE), Zack Kuntz (TE), Bub Means (WR)
+   s       @0..4s  top10% [0.58 3.82 5.25 4.74 3.32]  bottom10% [0.38 4.25 6.74 7.04 6.38]
+   a_long  @0..4s  top10% [ 0.74  3.49 -0.03 -0.97 -1.47]  bottom10% [ 0.98  4.28  1.12 -0.39 -0.68]
+   |a_lat| @0..4s  top10% [0.11 1.26 2.41 1.9  1.48]  bottom10% [0.09 0.99 1.86 2.61 2.03]
+   cos_od  @0..4s  top10% [ 0.29  0.59  0.35  0.05 -0.1 ]  bottom10% [0.69 0.91 0.92 0.86 0.8 ]
+
+-- REC PC3: 10.1% var; unexplained by physics+measurables 0.18
+   physics r: x_rel_snap +0.60, abs_dy_2s -0.59, pre_snap_speed -0.58, dist_1s -0.51, t_to_90pct +0.40
+   measurables r: arm_length +0.31, combine_height +0.23, short_shuttle -0.19, three_cone +0.19
+   high: Quentin Johnston (WR), Kyle Williams (WR), Devontez Walker (WR), Jaheim Bell (TE)
+   low:  Derius Davis (WR), Jimmy Horn (WR), Demario Douglas (WR), Malik Washington (WR)
+   s       @0..4s  top10% [0.14 4.25 6.96 7.49 6.95]  bottom10% [2.46 4.8  5.99 5.45 4.18]
+   a_long  @0..4s  top10% [ 1.    4.56  1.33 -0.16 -0.9 ]  bottom10% [ 0.71  2.64 -0.01 -0.92 -1.21]
+   |a_lat| @0..4s  top10% [0.03 0.83 1.64 2.37 1.89]  bottom10% [0.53 2.04 2.79 2.44 1.89]
+   cos_od  @0..4s  top10% [0.55 0.82 0.83 0.72 0.54]  bottom10% [0.65 0.87 0.72 0.54 0.57]
+
+-- REC PC4: 6.4% var; unexplained by physics+measurables 0.27
+   physics r: decel_max +0.57, accel_max +0.35, amag_p90 +0.33, t_to_90pct -0.33, x_rel_snap +0.30
+   measurables r: combine_weight -0.33, forty -0.30, ten_yd_split -0.28, broad_jump +0.27
+   high: A.T. Perry (WR), Antoine Green (WR), Brenden Rice (WR), Jermaine Burton (WR)
+   low:  Jha'Quan Jackson (WR), Jaylin Noel (WR), Terrance Ferguson (TE), Chimere Dike (WR)
+   s       @0..4s  top10% [0.31 3.99 5.72 4.76 2.86]  bottom10% [0.82 3.93 5.73 6.03 5.86]
+   a_long  @0..4s  top10% [ 0.77  3.99 -0.04 -1.58 -1.79]  bottom10% [ 0.76  3.46  0.58  0.13 -0.17]
+   |a_lat| @0..4s  top10% [0.06 1.17 2.61 2.42 1.67]  bottom10% [0.2  1.3  2.14 2.24 1.74]
+   cos_od  @0..4s  top10% [0.58 0.88 0.75 0.54 0.46]  bottom10% [0.48 0.78 0.67 0.55 0.59]
+
+-- REC PC5: 5.1% var; unexplained by physics+measurables 0.38
+   physics r: dx_2s -0.49, dist_1s -0.28, dist_2s -0.28, alat_max -0.25, s_mean_0_3s -0.24
+   measurables r: short_shuttle +0.51, three_cone +0.29, vertical -0.24, log_pick +0.17
+   high: Javon Baker (WR), Marvin Mims (WR), Kyle Williams (WR), Jason Brownlee (WR)
+   low:  Ricky Pearsall (WR), Jalen McMillan (WR), Rome Odunze (WR), Jacob Cowing (WR)
+   s       @0..4s  top10% [0.36 3.42 4.96 4.82 3.68]  bottom10% [1.18 4.56 6.33 5.55 4.24]
+   a_long  @0..4s  top10% [ 0.62  3.43  0.24 -0.53 -1.18]  bottom10% [ 1.06  3.55  0.23 -1.38 -1.12]
+   |a_lat| @0..4s  top10% [0.07 1.09 2.38 1.95 1.46]  bottom10% [0.27 1.51 2.32 2.96 2.18]
+   cos_od  @0..4s  top10% [0.26 0.68 0.56 0.33 0.3 ]  bottom10% [0.69 0.88 0.77 0.55 0.57]
+
+-- REC PC6: 3.2% var; unexplained by physics+measurables 0.43
+   physics r: x_rel_snap +0.27, t_to_90pct +0.24, dist_1s -0.23, accel_max +0.23, o_rate_p90 +0.22
+   measurables r: vertical -0.17, three_cone +0.12, combine_height +0.11, arm_length +0.09
+   high: Jared Wiley (TE), Tyler Scott (WR), Travis Vokolek (TE), Dont'e Thornton (WR)
+   low:  Puka Nacua (WR), Cade Stover (TE), Davis Allen (TE), Jacob Cowing (WR)
+   s       @0..4s  top10% [0.35 3.87 5.86 5.66 4.91]  bottom10% [0.78 4.23 6.02 5.48 3.75]
+   a_long  @0..4s  top10% [ 0.9   3.87  0.52 -0.71 -0.57]  bottom10% [ 0.77  3.79  0.18 -1.04 -1.79]
+   |a_lat| @0..4s  top10% [0.06 1.13 2.41 2.66 2.28]  bottom10% [0.23 1.33 2.29 2.45 1.36]
+   cos_od  @0..4s  top10% [0.48 0.85 0.78 0.58 0.59]  bottom10% [0.62 0.86 0.73 0.54 0.47]
+
+################ OL  (players 105, plays/player >= 80)
+split-half (h0 vs h1) PC reliability: PC1 rel 0.79 novel 0.19; PC2 rel 0.74 novel 0.09; PC3 rel 0.76 novel 0.21; PC4 rel 0.45 novel 0.51; PC5 rel 0.51 novel 0.20; PC6 rel 0.33 novel 0.28; PC7 rel 0.58 novel 0.59; PC8 rel 0.44 novel 0.49
+
+-- OL PC1: 58.0% var; unexplained by physics+measurables 0.15
+   physics r: backpedal_share +0.66, o_rate_p90 +0.38, s_max +0.27, alat_max +0.26, sideways_share +0.25
+   measurables r: three_cone -0.15, vertical +0.15, combine_weight -0.13, arm_length -0.13
+   high: Grey Zabel (IOL), Roger Rosengarten (T), Cody Mauch (IOL), Carson Vinson (T)
+   low:  Jalen Rivers (IOL), Dylan Fairchild (IOL), Jordan McFadden (IOL), Kingsley Suamataia (IOL)
+   s       @0..4s  top10% [0.34 2.16 2.46 2.14 1.69]  bottom10% [0.24 1.51 1.46 1.28 1.2 ]
+   a_long  @0..4s  top10% [ 1.73  0.89 -0.06 -0.5  -0.28]  bottom10% [ 1.28  0.37 -0.21 -0.09 -0.04]
+   |a_lat| @0..4s  top10% [0.08 1.13 1.33 1.18 0.95]  bottom10% [0.04 0.88 0.91 0.8  0.58]
+   cos_od  @0..4s  top10% [-0.01  0.1   0.19  0.18  0.13]  bottom10% [ 0.11  0.03 -0.01  0.28  0.53]
+
+-- OL PC2: 16.8% var; unexplained by physics+measurables 0.12
+   physics r: backpedal_share +0.67, s_max -0.64, alat_max -0.60, t_to_90pct -0.53, abs_dy_2s -0.51
+   measurables r: three_cone -0.27, short_shuttle -0.24, log_pick -0.15, vertical +0.14
+   high: Dylan Fairchild (IOL), Logan Brown (T), Tyler Steen (IOL), Jalen Rivers (IOL)
+   low:  Patrick Paul (T), McClendon Curtis (IOL), Matthew Jones (IOL), Braeden Daniels (IOL)
+   s       @0..4s  top10% [0.25 1.64 1.71 1.15 0.81]  bottom10% [0.34 2.45 3.03 3.18 3.13]
+   a_long  @0..4s  top10% [ 1.31  0.6  -0.36 -0.51 -0.11]  bottom10% [ 1.81  1.16  0.29  0.05 -0.02]
+   |a_lat| @0..4s  top10% [0.05 0.98 0.92 0.78 0.51]  bottom10% [0.08 1.11 1.45 1.5  1.34]
+   cos_od  @0..4s  top10% [-0.4  -0.46 -0.51 -0.28  0.09]  bottom10% [0.18 0.48 0.69 0.74 0.8 ]
+
+-- OL PC3: 10.6% var; unexplained by physics+measurables 0.20
+   physics r: s_max +0.63, s_mean_0_3s +0.54, dist_2s +0.52, amag_p90 +0.51, decel_max +0.47
+   measurables r: combine_weight -0.15, short_shuttle -0.08, three_cone -0.08, combine_height -0.05
+   high: Matthew Bergeron (IOL), John Ojukwu (T), Myles Hinton (T), Marcus Mbow (T)
+   low:  Eli Cox (IOL), Tyler Guyton (T), T.J. Bass (IOL), Cody Mauch (IOL)
+   s       @0..4s  top10% [0.38 2.7  3.35 3.2  2.74]  bottom10% [0.24 1.39 1.28 1.12 1.  ]
+   a_long  @0..4s  top10% [ 1.99  1.38  0.14 -0.36 -0.39]  bottom10% [ 1.24  0.19 -0.13 -0.13 -0.03]
+   |a_lat| @0..4s  top10% [0.1  1.16 1.45 1.4  1.23]  bottom10% [0.04 0.78 0.81 0.71 0.51]
+   cos_od  @0..4s  top10% [-0.27 -0.18 -0.04  0.22  0.39]  bottom10% [0.36 0.46 0.4  0.38 0.41]
+
+-- OL PC4: 4.4% var; unexplained by physics+measurables 0.42
+   physics r: t_to_90pct +0.32, s_mean_0_3s -0.30, dist_1s -0.28, dist_2s -0.27, dx_2s +0.26
+   measurables r: combine_weight -0.18, ten_yd_split -0.16, three_cone -0.12, forty -0.08
+   high: Tyler Booker (IOL), Dylan McMahon (IOL), Kingsley Suamataia (IOL), Joe Huber (IOL)
+   low:  Wyatt Milum (IOL), Matthew Jones (IOL), Steve Avila (IOL), Beaux Limmer (IOL)
+   s       @0..4s  top10% [0.25 1.76 1.95 2.03 2.19]  bottom10% [0.34 2.31 2.96 2.77 2.08]
+   a_long  @0..4s  top10% [ 1.37  0.65 -0.04  0.3   0.1 ]  bottom10% [ 1.75  1.14  0.24 -0.55 -0.6 ]
+   |a_lat| @0..4s  top10% [0.04 0.97 1.11 1.11 0.85]  bottom10% [0.07 1.35 1.49 1.41 1.22]
+   cos_od  @0..4s  top10% [-0.05 -0.01 -0.02  0.31  0.51]  bottom10% [-0.26 -0.1   0.35  0.6   0.52]
+
+-- OL PC5: 2.8% var; unexplained by physics+measurables 0.07
+   physics r: amag_p90 +0.64, decel_max +0.47, dist_2s +0.44, s_mean_0_3s +0.42, dist_1s +0.38
+   measurables r: broad_jump +0.20, log_pick -0.20, vertical +0.19, combine_weight -0.13
+   high: Connor Galvin (T), Caedan Wallace (IOL), Blake Fisher (T), Connor Colby (IOL)
+   low:  Javion Cohen (IOL), Logan Brown (T), Jack Nelson (T), Christian Jones (T)
+   s       @0..4s  top10% [0.33 2.63 2.97 2.39 1.66]  bottom10% [0.25 1.52 1.72 1.59 1.64]
+   a_long  @0..4s  top10% [ 1.85  1.22 -0.25 -0.62 -0.61]  bottom10% [ 1.27  0.55 -0.01 -0.12  0.29]
+   |a_lat| @0..4s  top10% [0.08 1.46 1.75 1.48 0.9 ]  bottom10% [0.04 0.82 0.85 0.92 0.88]
+   cos_od  @0..4s  top10% [-0.16  0.06  0.18  0.31  0.4 ]  bottom10% [-0.1  -0.14 -0.03  0.25  0.56]
+
+-- OL PC6: 2.1% var; unexplained by physics+measurables 0.49
+   physics r: x_rel_snap +0.31, abs_dy_2s +0.22, dx_2s +0.14, pre_snap_speed -0.09, s_max -0.08
+   measurables r: log_pick +0.40, broad_jump -0.20, combine_weight -0.17, three_cone +0.15
+   high: Logan Brown (T), Matthew Jones (IOL), Myles Hinton (T), Dalton Wagner (T)
+   low:  Luke Wypler (IOL), Will Campbell (T), Tyler Steen (IOL), Anthony Bradford (IOL)
+   s       @0..4s  top10% [0.26 1.76 2.01 1.58 1.03]  bottom10% [0.3  2.1  2.31 1.75 1.83]
+   a_long  @0..4s  top10% [ 1.34  0.8  -0.18 -0.42 -0.2 ]  bottom10% [ 1.63  0.87 -0.31 -0.43  0.46]
+   |a_lat| @0..4s  top10% [0.05 1.01 1.06 0.96 0.55]  bottom10% [0.06 1.27 1.35 1.34 1.06]
+   cos_od  @0..4s  top10% [-0.23 -0.15 -0.01  0.26  0.35]  bottom10% [-0.3  -0.25 -0.08  0.21  0.62]
+
+################ DL  (players 107, plays/player >= 80)
+split-half (h0 vs h1) PC reliability: PC1 rel 0.92 novel 0.02; PC2 rel 0.72 novel 0.16; PC3 rel 0.72 novel 0.10; PC4 rel 0.61 novel 0.19; PC5 rel 0.63 novel 0.41; PC6 rel 0.26 novel 0.72; PC7 rel 0.52 novel 0.29; PC8 rel 0.54 novel 0.39
+
+-- DL PC1: 28.7% var; unexplained by physics+measurables 0.03
+   physics r: amag_p90 +0.95, decel_max +0.75, alat_max +0.73, s_mean_0_3s +0.64, dist_2s +0.60
+   measurables r: ten_yd_split -0.24, combine_weight -0.24, broad_jump +0.20, forty -0.20
+   high: Cameron Young (IDL), Keondre Coburn (IDL), YaYa Diaby (EDGE), Yasir Abdullah (EDGE)
+   low:  Tyrion Ingram-Dawkins (EDGE), Jalen Redmond (EDGE), Tyrus Wheat (EDGE), Junior Tafuna (IDL)
+   s       @0..4s  top10% [0.37 3.47 3.78 3.9  3.93]  bottom10% [0.25 1.76 1.56 1.36 1.36]
+   a_long  @0..4s  top10% [ 1.91  1.72 -0.13  0.25 -0.2 ]  bottom10% [ 1.06  0.37 -0.24 -0.03  0.14]
+   |a_lat| @0..4s  top10% [0.14 1.45 2.65 2.69 2.08]  bottom10% [0.06 0.84 0.89 0.92 0.71]
+   cos_od  @0..4s  top10% [0.59 0.67 0.52 0.59 0.66]  bottom10% [0.6  0.65 0.31 0.24 0.28]
+
+-- DL PC2: 23.7% var; unexplained by physics+measurables 0.19
+   physics r: dx_2s -0.56, backpedal_share +0.40, o_rate_p90 +0.38, t_to_90pct -0.37, dist_1s +0.36
+   measurables r: forty -0.24, three_cone -0.24, combine_weight -0.23, ten_yd_split -0.22
+   high: Jordan Burch (EDGE), Isaiah Land (EDGE), Will Anderson (EDGE), YaYa Diaby (EDGE)
+   low:  Ty Hamilton (IDL), Cam Jackson (IDL), Cameron Young (IDL), Jordan Phillips (IDL)
+   s       @0..4s  top10% [0.37 2.95 2.94 2.55 2.18]  bottom10% [0.24 2.1  2.02 2.12 2.11]
+   a_long  @0..4s  top10% [ 1.84  1.15 -0.42 -0.4  -0.25]  bottom10% [ 1.16  0.61 -0.02  0.23 -0.07]
+   |a_lat| @0..4s  top10% [0.13 1.08 1.72 1.74 1.38]  bottom10% [0.06 1.16 1.4  1.31 1.01]
+   cos_od  @0..4s  top10% [0.47 0.52 0.23 0.14 0.26]  bottom10% [0.62 0.63 0.26 0.26 0.36]
+
+-- DL PC3: 17.5% var; unexplained by physics+measurables 0.05
+   physics r: sideways_share +0.69, backpedal_share +0.68, dx_2s +0.59, dist_1s -0.41, s_max -0.36
+   measurables r: broad_jump -0.19, vertical -0.16, combine_weight +0.15, three_cone -0.12
+   high: Jordan Burch (EDGE), Cam Jackson (IDL), YaYa Diaby (EDGE), Isaiah Foskey (EDGE)
+   low:  Brenton Cox (EDGE), Tyler Batty (EDGE), Lonnie Phelps (EDGE), Leonard Taylor (IDL)
+   s       @0..4s  top10% [0.24 1.84 1.77 1.64 1.35]  bottom10% [0.37 2.88 3.44 4.03 4.36]
+   a_long  @0..4s  top10% [ 1.13  0.49 -0.15 -0.07 -0.3 ]  bottom10% [1.76 1.34 0.43 0.61 0.01]
+   |a_lat| @0..4s  top10% [0.06 1.11 1.21 1.14 0.78]  bottom10% [0.12 1.35 2.09 2.23 1.8 ]
+   cos_od  @0..4s  top10% [ 0.37  0.23 -0.23 -0.22 -0.06]  bottom10% [0.71 0.79 0.73 0.82 0.89]
+
+-- DL PC4: 11.1% var; unexplained by physics+measurables 0.12
+   physics r: s_max -0.65, t_to_90pct -0.62, alat_max -0.44, sideways_share -0.34, pre_snap_speed +0.31
+   measurables r: short_shuttle +0.16, combine_weight +0.15, log_pick -0.14, three_cone +0.13
+   high: Jared Verse (EDGE), Bradyn Swinson (EDGE), Gabe Hall (IDL), Darius Alexander (IDL)
+   low:  Keith Randolph (IDL), Javontae Jean-Baptiste (EDGE), Nazir Stackhouse (IDL), Landon Jackson (EDGE)
+   s       @0..4s  top10% [0.31 2.31 1.99 1.58 1.09]  bottom10% [0.29 2.68 3.   3.76 4.86]
+   a_long  @0..4s  top10% [ 1.39  0.63 -0.46 -0.35 -0.32]  bottom10% [1.56 1.13 0.32 1.16 0.71]
+   |a_lat| @0..4s  top10% [0.1  0.95 1.17 1.04 0.7 ]  bottom10% [0.09 1.36 1.97 2.04 1.65]
+   cos_od  @0..4s  top10% [0.69 0.77 0.57 0.49 0.39]  bottom10% [0.52 0.51 0.29 0.47 0.72]
+
+-- DL PC5: 8.4% var; unexplained by physics+measurables 0.45
+   physics r: s_mean_0_3s -0.37, o_rate_p90 +0.31, dist_2s -0.29, sideways_share -0.28, backpedal_share -0.25
+   measurables r: ten_yd_split +0.37, forty +0.35, combine_weight +0.30, short_shuttle +0.28
+   high: Siaki Ika (IDL), Princely Umanmielen (EDGE), Keith Randolph (IDL), Nazir Stackhouse (IDL)
+   low:  Logan Lee (IDL), Will Anderson (EDGE), Marshawn Kneeland (EDGE), Braden Fiske (EDGE)
+   s       @0..4s  top10% [0.3  2.4  2.05 2.27 3.15]  bottom10% [0.34 3.06 3.42 3.41 2.97]
+   a_long  @0..4s  top10% [ 1.51  0.62 -0.48  0.93  0.53]  bottom10% [ 1.73  1.44  0.03 -0.15 -0.42]
+   |a_lat| @0..4s  top10% [0.1  1.16 1.67 1.66 1.2 ]  bottom10% [0.12 1.22 1.8  1.78 1.55]
+   cos_od  @0..4s  top10% [0.62 0.63 0.41 0.58 0.82]  bottom10% [0.64 0.7  0.54 0.43 0.33]
+
+-- DL PC6: 2.5% var; unexplained by physics+measurables 0.58
+   physics r: x_rel_snap -0.35, o_rate_p90 +0.27, t_to_90pct +0.18, dist_2s -0.11, sideways_share +0.09
+   measurables r: short_shuttle -0.31, three_cone -0.26, combine_height -0.25, arm_length -0.18
+   high: Eric Gregory (IDL), Tim Smith (IDL), Isaiah Land (EDGE), Cam Horsley (IDL)
+   low:  Jordan Burch (EDGE), Tyler Baron (EDGE), Cam Jackson (IDL), Thomas Incoom (EDGE)
+   s       @0..4s  top10% [0.31 2.63 2.66 2.61 2.65]  bottom10% [0.33 2.51 2.25 1.94 1.51]
+   a_long  @0..4s  top10% [ 1.53  1.   -0.17  0.03  0.05]  bottom10% [ 1.52  0.79 -0.55  0.09 -0.24]
+   |a_lat| @0..4s  top10% [0.11 1.17 1.61 1.68 1.67]  bottom10% [0.11 1.01 1.47 1.31 0.64]
+   cos_od  @0..4s  top10% [0.61 0.63 0.36 0.37 0.42]  bottom10% [0.61 0.69 0.43 0.36 0.39]
+
+################ DB  (players 104, plays/player >= 80)
+split-half (h0 vs h1) PC reliability: PC1 rel 0.42 novel 0.33; PC2 rel 0.86 novel 0.02; PC3 rel 0.40 novel 0.18; PC4 rel 0.61 novel 0.19; PC5 rel 0.44 novel 0.28; PC6 rel 0.62 novel 0.32; PC7 rel 0.55 novel 0.30; PC8 rel 0.39 novel 0.34
+
+-- DB PC1: 26.9% var; unexplained by physics+measurables 0.27
+   physics r: backpedal_share +0.60, s_mean_0_3s +0.47, dist_2s +0.43, s_max +0.37, accel_max +0.37
+   measurables r: three_cone +0.29, combine_weight -0.21, short_shuttle +0.15, ten_yd_split -0.14
+   high: Gervarrius Owens (S), M.J. Devonshire (CB), Alex Austin (CB), Cameron Mitchell (CB)
+   low:  Jaylin Smith (CB), Jaylen Reed (S), Kamren Kinchens (S), Mac McWilliams (CB)
+   s       @0..4s  top10% [0.96 2.63 4.41 5.47 5.83]  bottom10% [0.4  1.41 2.41 2.52 1.99]
+   a_long  @0..4s  top10% [ 0.51  2.45  1.26  0.82 -0.07]  bottom10% [ 0.1   1.75  0.42 -0.14 -0.52]
+   |a_lat| @0..4s  top10% [0.31 1.07 2.04 2.31 2.1 ]  bottom10% [0.14 0.71 1.61 1.61 1.08]
+   cos_od  @0..4s  top10% [-0.17 -0.16  0.21  0.47  0.57]  bottom10% [0.2  0.01 0.17 0.39 0.45]
+
+-- DB PC2: 21.8% var; unexplained by physics+measurables 0.01
+   physics r: x_rel_snap +0.84, s_mean_0_3s -0.60, dist_2s -0.52, s_max -0.51, abs_dy_2s -0.48
+   measurables r: three_cone +0.32, combine_height -0.25, short_shuttle +0.14, log_pick +0.10
+   high: M.J. Devonshire (CB), Quincy Riley (CB), Mac McWilliams (CB), Calen Bullock (S)
+   low:  Nohl Williams (CB), Dorian Strong (CB), Azareye'h Thomas (CB), Jarvis Brownlee (CB)
+   s       @0..4s  top10% [0.46 1.53 2.52 2.91 2.52]  bottom10% [0.98 2.72 4.41 5.42 5.62]
+   a_long  @0..4s  top10% [ 0.18  1.7   0.59  0.1  -0.54]  bottom10% [ 0.6   2.43  1.16  0.71 -0.24]
+   |a_lat| @0..4s  top10% [0.16 0.56 1.42 1.7  1.32]  bottom10% [0.33 1.28 2.44 2.43 2.12]
+   cos_od  @0..4s  top10% [-0.32 -0.51 -0.25  0.13  0.32]  bottom10% [0.23 0.23 0.52 0.68 0.75]
+
+-- DB PC3: 16.0% var; unexplained by physics+measurables 0.21
+   physics r: dx_2s -0.67, backpedal_share -0.47, sideways_share -0.46, x_rel_snap +0.42, t_to_90pct +0.23
+   measurables r: forty +0.35, ten_yd_split +0.21, short_shuttle +0.19, combine_weight +0.18
+   high: Gervarrius Owens (S), Jaylin Smith (CB), DeMarcco Hellams (S), Patrick McMorris (S)
+   low:  Dorian Strong (CB), Kitan Crawford (S), M.J. Devonshire (CB), Maxwell Hairston (CB)
+   s       @0..4s  top10% [0.93 2.4  3.87 4.47 4.22]  bottom10% [0.57 1.95 3.36 3.63 3.18]
+   a_long  @0..4s  top10% [ 0.51  2.09  0.98  0.17 -0.54]  bottom10% [ 0.28  2.19  0.63 -0.03 -0.58]
+   |a_lat| @0..4s  top10% [0.33 1.18 2.33 2.35 1.86]  bottom10% [0.19 0.69 1.44 1.81 1.57]
+   cos_od  @0..4s  top10% [0.41 0.37 0.6  0.72 0.73]  bottom10% [-0.44 -0.59 -0.41 -0.17  0.05]
+
+-- DB PC4: 12.4% var; unexplained by physics+measurables 0.16
+   physics r: s_max -0.62, amag_p90 -0.52, alat_max -0.43, t_to_90pct -0.42, s_mean_0_3s -0.32
+   measurables r: three_cone -0.16, arm_length +0.14, combine_weight +0.11, forty +0.10
+   high: M.J. Devonshire (CB), Jason Taylor (S), Jaylen Reed (S), Cameron Mitchell (CB)
+   low:  Cole Bishop (S), Daijahn Anthony (S), Anthony Johnson (S), Quincy Riley (CB)
+   s       @0..4s  top10% [0.44 1.52 2.5  2.46 2.11]  bottom10% [0.97 2.73 4.58 5.89 6.32]
+   a_long  @0..4s  top10% [ 0.18  1.71  0.27 -0.18 -0.34]  bottom10% [ 0.53  2.49  1.42  1.04 -0.13]
+   |a_lat| @0..4s  top10% [0.15 0.76 1.6  1.63 1.21]  bottom10% [0.32 1.04 2.12 2.43 2.34]
+   cos_od  @0..4s  top10% [0.1  0.04 0.17 0.29 0.38]  bottom10% [-0.18 -0.29  0.1   0.51  0.65]
+
+-- DB PC5: 8.3% var; unexplained by physics+measurables 0.42
+   physics r: backpedal_share +0.40, amag_p90 +0.29, alat_max +0.26, decel_max +0.22, dx_2s -0.20
+   measurables r: short_shuttle +0.31, arm_length -0.15, log_pick +0.15, ten_yd_split +0.10
+   high: Gervarrius Owens (S), Jaylin Smith (CB), Andre' Sam (S), Upton Stout (CB)
+   low:  Trey Amos (CB), Jaylin Simpson (S), Dominique Hampton (S), Elijah Jones (CB)
+   s       @0..4s  top10% [0.69 2.2  3.67 4.01 3.34]  bottom10% [0.58 2.07 4.02 5.32 6.01]
+   a_long  @0..4s  top10% [ 0.37  2.25  0.78 -0.11 -0.82]  bottom10% [0.25 2.49 1.44 1.11 0.18]
+   |a_lat| @0..4s  top10% [0.25 1.01 2.22 2.33 1.75]  bottom10% [0.2  0.94 1.77 2.08 1.95]
+   cos_od  @0..4s  top10% [-0.19 -0.27  0.07  0.27  0.31]  bottom10% [ 0.01 -0.16  0.22  0.61  0.8 ]
+
+-- DB PC6: 4.4% var; unexplained by physics+measurables 0.19
+   physics r: pre_snap_speed +0.59, dist_1s +0.49, amag_p90 -0.47, accel_max -0.32, dist_2s +0.23
+   measurables r: three_cone +0.20, combine_weight -0.20, forty -0.18, short_shuttle +0.15
+   high: Dwight McGlothern (CB), Sebastian Castro (S), Jaylin Simpson (S), Jay Ward (S)
+   low:  Rashad Torrence (S), Kelee Ringo (CB), Deantre Prince (CB), Gervarrius Owens (S)
+   s       @0..4s  top10% [1.32 2.52 3.71 4.45 4.46]  bottom10% [0.26 1.76 3.48 4.27 3.95]
+   a_long  @0..4s  top10% [ 0.52  1.63  0.93  0.49 -0.26]  bottom10% [ 0.11  2.59  1.21  0.24 -0.63]
+   |a_lat| @0..4s  top10% [0.4  1.06 2.04 2.17 1.64]  bottom10% [0.09 0.76 1.93 2.2  1.99]
+   cos_od  @0..4s  top10% [-0.16 -0.18  0.14  0.51  0.68]  bottom10% [ 0.   -0.23  0.17  0.42  0.42]

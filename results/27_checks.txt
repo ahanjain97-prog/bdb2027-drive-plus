@@ -1,0 +1,8 @@
+snap-weighted, no weight ctrl            b/SD +0.180 yd  p 0.0011  players 90
+snap-weighted, players >=50 REG snaps    b/SD +0.181 yd  p 0.0014  players 69
+EQUAL player weight, players >=50        b/SD +0.201 yd  p 0.0000  players 69
+EQUAL player weight + body weight        b/SD +0.075 yd  p 0.0699  players 69
+player-level r(hoop, penetration_oe) by snap-volume tercile: {'low': 0.38, 'mid': 0.64, 'high': 0.48} | r(hoop, n snaps) = 0.03
+
+OL-DL pairs on the same play: 66085; aligned within 1.5 yd at the snap: 13296 (dropbacks 7316); unique OL 117, unique DL 107
+by alignment: {('G', 'INTERIOR_LINE'): 6737, ('T', 'INTERIOR_LINE'): 3576, ('C', 'INTERIOR_LINE'): 1493, ('T', 'EDGE'): 1242, ('TE', 'EDGE'): 78, ('G', 'EDGE'): 77}

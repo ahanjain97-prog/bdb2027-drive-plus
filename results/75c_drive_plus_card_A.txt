@@ -1,0 +1,44 @@
+Drive+ version A: graded CBs 59, tier sizes {'110+': 9, '100-110': 18, '90-100': 23, '<90': 9}
+         CBs graded  CBs with NFL reps  zone-match closing (yd/s, adj)  zone-match reps  sep gained at break (yd, adj)  completion % allowed  CPOE (pp)  EPA per target  targets
+tier                                                                                                                                                                            
+110+              9                  8                          -0.460              209                         -0.026                34.118    -13.684          -0.136       85
+100-110          18                 15                          -0.759              171                          0.106                49.383     -1.225           0.102       81
+90-100           23                 17                          -0.835              176                          0.089                48.810     -6.003           0.036       84
+<90               9                  6                          -1.057               66                          0.293                76.471     19.248           0.842       34
+
+110+ minus <90 (CB bootstrap 95% CI):
+  zone-match closing (yd/s)    +0.596 [-0.135, +1.863]
+  sep gained at break (yd)     -0.319 [-0.717, -0.045]
+  completion % allowed         -42.353 [-57.925, -28.748]
+  CPOE (pp)                    -32.931 [-45.526, -22.245]
+  EPA per target               -0.978 [-1.668, -0.383]
+
+r(Drive+, official 40 time) over graded CBs: -0.33
+
+top 10:
+        Drive+     tier  class              name  forty  NFL reps  zone-match closing (adj)  targets  completion % allowed
+nfl_id                                                                                                                    
+57143    136.0     110+   2024  Quinyon Mitchell   4.33      89.0                     -0.29      8.0                 25.00
+58273    122.0     110+   2025     Darien Porter   4.30      25.0                     -0.57      5.0                 40.00
+55948    114.0     110+   2023        Riley Moss   4.45     139.0                     -0.36     20.0                 35.00
+58290    114.0     110+   2025     Nohl Williams   4.50      73.0                     -0.41      8.0                 37.50
+57347    113.0     110+   2024      Myles Harden   4.50      36.0                     -1.81      5.0                 20.00
+55978    113.0     110+   2023    Clark Phillips   4.51      34.0                      0.23      8.0                 50.00
+58383    112.0     110+   2025       Bilhal Kone   4.43       NaN                       NaN      NaN                   NaN
+58336    111.0     110+   2025      Quincy Riley   4.48       7.0                     -0.27      2.0                 50.00
+57163    111.0     110+   2024   Kamari Lassiter    NaN     119.0                     -0.60     29.0                 31.03
+56045    110.0  100-110   2023    Kei'Trel Clark   4.42      25.0                     -0.90      5.0                 60.00
+
+bottom 10:
+        Drive+    tier  class             name  forty  NFL reps  zone-match closing (adj)  targets  completion % allowed
+nfl_id                                                                                                                  
+57349     90.0  90-100   2024  M.J. Devonshire   4.45       NaN                       NaN      NaN                   NaN
+56629     90.0     <90   2023  Anthony Johnson   4.63       NaN                       NaN      NaN                   NaN
+57911     88.0     <90   2024     Josh Wallace    NaN      15.0                     -2.34      3.0                 66.67
+57389     88.0     <90   2024      Ryan Cooper    NaN       NaN                       NaN      NaN                   NaN
+58266     88.0     <90   2025        Trey Amos   4.43      26.0                      0.29      4.0                100.00
+58379     86.0     <90   2025     Denzel Burke   4.48      34.0                     -0.68      6.0                 83.33
+58305     86.0     <90   2025      Upton Stout   4.44      40.0                     -3.20      8.0                 87.50
+58992     86.0     <90   2025     Cobee Bryant   4.53       6.0                     -1.17      1.0                100.00
+57185     84.0     <90   2024    Renardo Green   4.49      69.0                     -0.53     12.0                 58.33
+58374     82.0     <90   2025      Zah Frazier   4.36       NaN                       NaN      NaN                   NaN

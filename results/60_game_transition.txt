@@ -1,0 +1,25 @@
+CB dropback snaps 27557 CBs 58
+transition events 16052 on 15106 snaps (55% of CB dropbacks); downhill share 0.19, after the throw 0.54; break-on-throw snaps 23825
+                 mean   50%   std
+g_bp_speed       3.02  2.92  1.03
+g_trans_min      2.73  2.78  1.25
+g_trans_time     0.54  0.50  0.24
+g_drive_top      5.43  5.54  1.67
+g_drive_gain_07  1.16  1.28  1.23
+
+per-CB in-game metrics (>= 20 events): reliability across game halves and correlation with combine drive speed
+                            metric  CBs  events_median  split_half_rel  r_with_combine_drive  n_both
+     g_drive_top (all transitions)   56            217            0.79                  0.20      55
+ g_drive_gain_07 (all transitions)   56            217            0.56                 -0.11      55
+     g_trans_min (all transitions)   56            217            0.43                  0.27      55
+    g_trans_time (all transitions)   56            217            0.51                  0.05      55
+      g_bp_speed (all transitions)   56            217            0.36                  0.27      55
+            g_drive_top | downhill   35             73            0.16                 -0.15      35
+                g_drive_top | zone   54            151            0.70                  0.16      53
+                 g_drive_top | man   42             76            0.25                  0.12      42
+     g_drive_top | after the throw   55            119            0.71                 -0.02      54
+    g_drive_top | before the throw   52             98            0.68                  0.23      51
+throw break: max_speed_after_throw   56            309            0.62                  0.12      55
+              throw break: gain_05   56            309            0.37                  0.01      55
+    throw break: heading_change_05   56            309            0.71                 -0.13      55
+     throw break: max speed | zone   56            207            0.67                  0.13      55

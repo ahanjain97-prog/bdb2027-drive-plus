@@ -1,0 +1,34 @@
+=== (1) completion when targeted: is it just deeper throws? ===
+  r(drive speed, air yards of targets against him) = +0.12
+  drive only                           drive -0.102 per SD (p 0.000), targets 283
+  + air yards                          drive -0.085 per SD (p 0.004), targets 283
+  + air yards + route family           drive -0.084 per SD (p 0.002), targets 283
+  + air yards + route + sep at throw   drive -0.071 per SD (p 0.012), targets 283
+
+=== (2) looser coverage-rep definition (mean distance <= 4 yd) ===
+  CBs, 4-yd reps                               reps 2454, DBs 47 | sep_gain_break -0.1257 (p 0.002) | sep_at_throw -0.2196 (p 0.000)
+  CBs, 4-yd reps + CB alignment                reps 2454, DBs 47 | sep_gain_break -0.0569 (p 0.018) | sep_at_throw -0.1324 (p 0.001)
+
+=== (3) out-of-position replication: safeties (same drill metric) ===
+  S, 3-yd reps                                 reps 302, DBs 23 | sep_gain_break +0.0124 (p 0.939) | sep_at_throw -0.2378 (p 0.224)
+     S, 3-yd reps, ZONE_COVERAGE               reps 116, DBs 13 | sep_gain_break -0.4964 (p 0.010) | sep_at_throw -0.5066 (p 0.245)
+     S, 3-yd reps, MAN_COVERAGE                reps 186, DBs 23 | sep_gain_break +0.2295 (p 0.096) | sep_at_throw -0.1825 (p 0.442)
+  S, 4-yd reps                                 reps 599, DBs 30 | sep_gain_break -0.0086 (p 0.940) | sep_at_throw +0.1213 (p 0.490)
+     S, 4-yd reps, ZONE_COVERAGE               reps 298, DBs 24 | sep_gain_break -0.1179 (p 0.431) | sep_at_throw +0.3757 (p 0.006)
+     S, 4-yd reps, MAN_COVERAGE                reps 301, DBs 27 | sep_gain_break +0.0394 (p 0.859) | sep_at_throw -0.1921 (p 0.445)
+
+=== (4) man-coverage screen: every reliable DB feature vs CB man-coverage reps ===
+  tests 120; perm p < .05: 3 (expected 6.0); BH q < .10: 0
+                                                      feature        outcome  reps  CBs  b_per_SD  p_clustered  p_perm   q_bh
+                                       stopwatch:ten_yd_split   sep_at_throw   732   38    0.1119       0.0068  0.0149 0.8808
+                                       stopwatch:ten_yd_split sep_gain_break   843   38    0.0895       0.0181  0.0249 0.8808
+                                   transition:trans_retention sep_gain_break   973   43   -0.0964       0.0037  0.0299 0.8808
+                                           stopwatch:vertical sep_gain_break   826   36   -0.0649       0.0679  0.0697 0.8808
+                               drill:DB:LINE_DRILL:mean_speed sep_gain_break   966   42    0.0728       0.0268  0.0746 0.8808
+                             drill:FORTY_YARD_DASH:mean_speed   sep_at_throw   689   37   -0.0928       0.0221  0.0746 0.8808
+                                             fam:cod:path_len sep_gain_break   973   43   -0.0608       0.0937  0.0796 0.8808
+                              drill:FORTY_YARD_DASH:top_speed   sep_at_throw   689   37   -0.0839       0.0497  0.0796 0.8808
+drill:DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION:t_to_90 sep_gain_break   973   43   -0.0542       0.0875  0.0846 0.8808
+                                              stopwatch:forty   sep_at_throw   732   38    0.0766       0.0349  0.0896 0.8808
+                                     fam:backpedal:accel_0_1s sep_gain_break   973   43    0.0501       0.1136  0.1144 0.8808
+                                        fam:cod:speed_at_0.5s       sep_mean   974   43   -0.0395       0.0633  0.1144 0.8808

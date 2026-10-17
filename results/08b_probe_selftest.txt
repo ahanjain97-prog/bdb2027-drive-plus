@@ -1,0 +1,16 @@
+POSITIVE REC sep: n 86 base R2 0.145  delta +0.018  p 0.030
+POSITIVE OL ppa: n 64 base R2 0.093  delta +0.201  p 0.010
+POSITIVE DL get_off: n 68 base R2 0.477  delta +0.270  p 0.010
+NOISE seed 0: delta -0.042 p 0.88
+NOISE seed 1: delta -0.000 p 0.12
+NOISE seed 2: delta +0.053 p 0.04
+NOISE seed 3: delta -0.011 p 0.41
+NOISE seed 4: delta +0.000 p 0.29
+NOISE seed 5: delta -0.021 p 0.63
+NOISE seed 6: delta -0.044 p 0.90
+NOISE seed 7: delta -0.019 p 0.65
+NOISE seed 8: delta -0.050 p 0.98
+NOISE seed 9: delta -0.037 p 0.84
+NOISE seed 10: delta -0.014 p 0.43
+NOISE seed 11: delta -0.009 p 0.33
+noise p-values: mean 0.54, share<.05 0.08

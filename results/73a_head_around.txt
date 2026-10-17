@@ -1,0 +1,34 @@
+targeted reps with arrival 277, all reps with a throw 1486
+medians (targeted): {'face_release': -0.28, 'face_arrive': -0.32, 't_open': 0.6, 'open_by_arr': 0.0} | share open by arrival 0.4
+face at release by coverage: {'MAN_COVERAGE': -0.07999999821186066, 'ZONE_COVERAGE': 0.17000000178813934} | by cell: {'man-matching': -0.12999999523162842, 'other': 0.27000001072883606, 'zone-matching': 0.10999999940395355}
+  split-half reliability of face_release (context-adjusted, CBs 29): r +0.34
+  split-half reliability of face_05 (context-adjusted, CBs 29): r +0.05
+  split-half reliability of face_10 (context-adjusted, CBs 29): r +0.17
+
+=== combine drive (per SD) -> facing the ball ===
+  all reps w/ throw  face_release  c_top   -0.032 (perm p 0.045, reps 1468, CBs 46)
+  all reps w/ throw  face_release  c_v_10  -0.031 (perm p 0.075, reps 1406, CBs 43)
+  all reps w/ throw  face_05       c_top   -0.010 (perm p 0.424, reps 1460, CBs 46)
+  all reps w/ throw  face_05       c_v_10  -0.003 (perm p 0.813, reps 1398, CBs 43)
+  all reps w/ throw  face_10       c_top   +0.008 (perm p 0.613, reps 1446, CBs 46)
+  all reps w/ throw  face_10       c_v_10  +0.013 (perm p 0.372, reps 1386, CBs 43)
+  zone-matching      face_05       c_top   -0.042 (perm p 0.120, reps 524, CBs 42)
+  zone-matching      face_05       c_v_10  -0.033 (perm p 0.322, reps 505, CBs 40)
+  zone-matching      face_10       c_top   -0.032 (perm p 0.195, reps 518, CBs 42)
+  zone-matching      face_10       c_v_10  -0.015 (perm p 0.584, reps 500, CBs 40)
+  man-matching       face_05       c_top   -0.001 (perm p 0.980, reps 687, CBs 43)
+  man-matching       face_05       c_v_10  +0.004 (perm p 0.880, reps 653, CBs 40)
+  targeted           face_release  c_top   -0.006 (perm p 0.860, reps 276, CBs 38)
+  targeted           face_release  c_v_10  -0.041 (perm p 0.287, reps 267, CBs 36)
+  targeted           face_arrive   c_top   -0.003 (perm p 0.925, reps 270, CBs 38)
+  targeted           face_arrive   c_v_10  -0.016 (perm p 0.636, reps 261, CBs 36)
+  targeted           t_open        c_top   +0.009 (perm p 0.783, reps 276, CBs 38)
+  targeted           t_open        c_v_10  +0.033 (perm p 0.287, reps 267, CBs 36)
+  targeted           open_by_arr   c_top   -0.017 (perm p 0.499, reps 276, CBs 38)
+  targeted           open_by_arr   c_v_10  -0.032 (perm p 0.209, reps 267, CBs 36)
+
+=== completion (logit, targeted): does facing the ball matter beyond separation? ===
+  c_top                                                   c_top -0.327 (p 0.002)  n 277
+  z_face_arrive + z_d_arrive                              z_face_arrive +0.025 (p 0.844) | z_d_arrive +0.400 (p 0.002)  n 277
+  c_top + z_face_arrive + z_d_arrive                      c_top -0.328 (p 0.003) | z_face_arrive +0.043 (p 0.746) | z_d_arrive +0.405 (p 0.001)  n 277
+  c_top + z_face_release + z_t_open + z_d_release + z_d_arrive c_top -0.304 (p 0.028) | z_face_release -0.391 (p 0.124) | z_t_open +0.238 (p 0.532) | z_d_release +0.923 (p 0.004) | z_d_arrive -0.102 (p 0.668)  n 277

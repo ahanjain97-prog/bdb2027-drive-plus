@@ -1,0 +1,65 @@
+=== (1) each drill phase alone (b per SD | player-permutation p) ===
+task        zone-matching:db_closing  zone-matching:sep_gain_break  zone-matching:sep_at_throw  all:sep_gain_break  targeted:cpoe
+component                                                                                                                        
+entry                          0.048                        -0.049                       0.045              -0.029         -0.016
+turn_min                       0.051                        -0.034                       0.044              -0.030         -0.025
+v_out                          0.040                        -0.008                       0.088              -0.020         -0.024
+v_02                           0.064                        -0.021                       0.057              -0.027         -0.037
+v_04                           0.104                        -0.044                       0.009              -0.037         -0.057
+v_06                           0.132                        -0.064                      -0.050              -0.036         -0.065
+v_08                           0.161                        -0.081                      -0.106              -0.046         -0.077
+v_10                           0.181                        -0.099                      -0.151              -0.055         -0.071
+step2_gain                     0.131                        -0.083                      -0.201              -0.039         -0.037
+late_gain                      0.105                        -0.068                      -0.217              -0.038         -0.009
+top                            0.168                        -0.085                      -0.137              -0.067         -0.062
+t_top                          0.057                        -0.020                      -0.197              -0.011         -0.019
+d_05                           0.073                        -0.025                       0.059              -0.030         -0.046
+d_10                           0.123                        -0.050                      -0.024              -0.037         -0.079
+d0_15                          0.049                        -0.007                       0.050              -0.035         -0.055
+straight                       0.038                        -0.044                       0.078              -0.020          0.059
+perm p:
+task        zone-matching:db_closing  zone-matching:sep_gain_break  zone-matching:sep_at_throw  all:sep_gain_break  targeted:cpoe
+component                                                                                                                        
+entry                          0.632                         0.473                       0.687               0.473          0.647
+turn_min                       0.498                         0.642                       0.761               0.527          0.453
+v_out                          0.701                         0.886                       0.507               0.567          0.463
+v_02                           0.502                         0.746                       0.627               0.537          0.323
+v_04                           0.264                         0.468                       0.955               0.428          0.134
+v_06                           0.154                         0.274                       0.711               0.328          0.035
+v_08                           0.020                         0.164                       0.269               0.294          0.010
+v_10                           0.040                         0.055                       0.109               0.144          0.015
+step2_gain                     0.090                         0.149                       0.065               0.328          0.224
+late_gain                      0.279                         0.279                       0.129               0.413          0.826
+top                            0.020                         0.035                       0.100               0.040          0.005
+t_top                          0.512                         0.706                       0.090               0.786          0.522
+d_05                           0.468                         0.716                       0.677               0.532          0.229
+d_10                           0.134                         0.413                       0.851               0.348          0.030
+d0_15                          0.632                         0.925                       0.677               0.453          0.095
+straight                       0.607                         0.478                       0.507               0.577          0.050
+
+=== (2) horse race: out-of-turn speed vs first two steps vs after (sum = top) ===
+  zone-matching db_closing     v_out +0.245 (p 0.035) | step2_gain +0.147 (p 0.095) | late_gain +0.239 (p 0.055)  [reps 622, CBs 43]
+                               speed after ~2 steps vs at 1 s: v_04 -0.114 (p 0.378) | v_10 +0.248 (p 0.035)
+  zone-matching sep_gain_break v_out -0.122 (p 0.179) | step2_gain -0.089 (p 0.179) | late_gain -0.128 (p 0.174)  [reps 622, CBs 43]
+                               speed after ~2 steps vs at 1 s: v_04 +0.098 (p 0.269) | v_10 -0.156 (p 0.050)
+  zone-matching sep_at_throw   v_out -0.138 (p 0.393) | step2_gain -0.181 (p 0.075) | late_gain -0.251 (p 0.194)  [reps 532, CBs 42]
+                               speed after ~2 steps vs at 1 s: v_04 +0.296 (p 0.090) | v_10 -0.318 (p 0.020)
+  all           sep_gain_break v_out -0.106 (p 0.095) | step2_gain -0.046 (p 0.259) | late_gain -0.098 (p 0.070)  [reps 1707, CBs 46]
+                               speed after ~2 steps vs at 1 s: v_04 +0.025 (p 0.687) | v_10 -0.070 (p 0.234)
+  targeted      cpoe           v_out -0.093 (p 0.065) | step2_gain -0.057 (p 0.075) | late_gain -0.053 (p 0.284)  [reps 284, CBs 38]
+                               speed after ~2 steps vs at 1 s: v_04 -0.009 (p 0.891) | v_10 -0.067 (p 0.100)
+
+=== (3) time-matched translation: drill speed after HIS turn (rows) vs NFL after the receiver's break (cols); r over 36 CBs ===
+       g_v00  g_v02  g_v04  g_v06  g_v08  g_v10  g_close_0_3  g_close_3_6  g_close_6_10
+v_out   0.32   0.28   0.26   0.28   0.31   0.34         0.07         0.16          0.25
+v_02    0.32   0.29   0.27   0.29   0.31   0.34         0.08         0.18          0.25
+v_04    0.33   0.30   0.28   0.29   0.31   0.33         0.09         0.19          0.26
+v_06    0.35   0.33   0.31   0.32   0.31   0.31         0.08         0.18          0.24
+v_08    0.33   0.33   0.33   0.34   0.31   0.29         0.11         0.22          0.26
+v_10    0.32   0.32   0.32   0.31   0.26   0.22         0.12         0.22          0.24
+top     0.25   0.27   0.29   0.32   0.34   0.37         0.23         0.32          0.34
+d_10    0.33   0.31   0.31   0.33   0.34   0.36         0.08         0.21          0.28
+
+=== (4) which NFL window matters for the outcome (rep level, per SD of the window's closing rate) ===
+  sep_at_throw  g_close_0_3 -0.635 (p 0.000) | g_close_3_6 +0.372 (p 0.147) | g_close_6_10 -0.724 (p 0.000)  n 1478
+  completion    g_close_0_3 -0.020 (p 0.970) | g_close_3_6 -0.577 (p 0.501) | g_close_6_10 -0.005 (p 0.992)  n 284  [logit coef]

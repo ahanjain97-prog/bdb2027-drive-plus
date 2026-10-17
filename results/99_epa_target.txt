@@ -1,0 +1,26 @@
+wide targets 502, DBs 60 | mean EPA/target +0.193, success 0.478, yds/target 7.86, INT 18
+
+=== per 10 Drive+ (one-sided p in the direction good for the defense) ===
+  EPA per target                      -0.269 [ -0.378,  -0.159]  110 vs 90   -0.54  p1 0.006  supported  n 502, DBs 60
+  EPA per target, winsorized 1/99%    -0.274 [ -0.382,  -0.165]  110 vs 90   -0.55  p1 0.002  supported  n 502, DBs 60
+  success rate (EPA > 0), pts         -8.162 [-10.952,  -5.372]  110 vs 90  -16.32  p1 0.002  supported  n 502, DBs 60
+  yards per target                    -1.516 [ -2.186,  -0.847]  110 vs 90   -3.03  p1 0.006  supported  n 502, DBs 60
+  interception rate, pts              +1.533 [ +0.644,  +2.422]  110 vs 90   +3.07  p1 0.036  supported  n 502, DBs 60
+
+=== EPA per target by coverage (per 10 Drive+) ===
+  zone-matching     -0.296 [ -0.440,  -0.152]  110 vs 90   -0.59  p1 0.004  supported  n 143, DBs 40
+  man-matching      -0.270 [ -0.443,  -0.096]  110 vs 90   -0.54  p1 0.032  supported  n 231, DBs 50
+  other             -0.141 [ -0.403,  +0.120]  110 vs 90   -0.28  p1 0.285  right sign n 128, DBs 45
+  all zone          -0.303 [ -0.432,  -0.174]  110 vs 90   -0.61  p1 0.016  supported  n 213, DBs 48
+
+=== EPA per target by season (per 10 Drive+) ===
+  2023   +0.124 [ -0.493,  +0.741]  110 vs 90   +0.25  p1 0.553  wrong sign n 47, DBs 12
+  2024   +0.048 [ -0.125,  +0.222]  110 vs 90   +0.10  p1 0.593  wrong sign n 155, DBs 32
+  2025   -0.407 [ -0.538,  -0.276]  110 vs 90   -0.81  p1 0.002  supported  n 300, DBs 54
+
+=== raw means by Drive+ third (DB thirds among targeted DBs) ===
+        targets  DBs    epa  success   comp    yds
+third                                             
+bottom      181   20  0.524    0.580  0.674  9.901
+middle      134   20 -0.077    0.440  0.493  6.418
+top         187   20  0.067    0.406  0.476  6.914

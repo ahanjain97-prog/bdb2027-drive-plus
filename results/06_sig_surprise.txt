@@ -1,0 +1,2 @@
+[surprise] context level used: cell1=0.997, cell2=0.003, cell3=0.000, cell4=0.000
+surprise (4752, 9) {('2023', 'raw'): 156, ('2023', 'resid'): 156, ('2024', 'raw'): 318, ('2024', 'resid'): 318, ('2025', 'raw'): 448, ('2025', 'resid'): 448, ('h0', 'raw'): 481, ('h0', 'resid'): 481, ('h1', 'raw'): 481, ('h1', 'resid'): 481, ('rookie', 'raw'): 492, ('rookie', 'resid'): 492} 1s

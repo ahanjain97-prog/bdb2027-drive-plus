@@ -1,0 +1,54 @@
+=== (1) does drive speed matter only when the ball comes out late enough after the break? ===
+  reps with a throw by gap: {'<0.5 s': 625, '0.5-1.0 s': 321, '>1.0 s': 538}
+  sep_at_throw                 <0.5 s: -0.085 (perm p 0.152, n 623, CBs 42) | 0.5-1.0 s: -0.167 (perm p 0.086, n 317, CBs 39) | >1.0 s: -0.083 (perm p 0.364, n 537, CBs 42) || drive x gap -0.014 per s (perm p 0.870)
+  sep_at_throw (zone-matching) <0.5 s: -0.089 (perm p 0.258, n 243, CBs 36) | 0.5-1.0 s: -0.241 (perm p 0.079, n 108, CBs 32) | >1.0 s: -0.190 (perm p 0.291, n 181, CBs 35) || drive x gap -0.093 per s (perm p 0.671)
+  cpoe                         <0.5 s: -0.136 (perm p 0.013, n 124, CBs 36) | 0.5-1.0 s: +0.048 (perm p 0.311, n 74, CBs 29) | >1.0 s: -0.025 (perm p 0.669, n 85, CBs 27) || drive x gap +0.031 per s (perm p 0.346)
+  completion when targeted (logit): c_top -0.518 (p 0.003) | gap -0.121 (p 0.466) | c_top:gap +0.145 (p 0.318)  n 283
+    ball out 0.3 s after the break: completion p10 drive 65% -> p90 drive 36%
+    ball out 0.8 s after the break: completion p10 drive 62% -> p90 drive 37%
+    ball out 1.5 s after the break: completion p10 drive 56% -> p90 drive 38%
+
+=== (2) controls ladder for the frozen drive metric (b per SD | clustered p | player-permutation p | reps, CBs) ===
+  db_closing     L0 receiver skill + route        +0.1678 | p 0.008 | perm 0.010 | 622, 43
+  db_closing     L1 + situation                   +0.1271 | p 0.004 | perm 0.015 | 614, 43
+  db_closing     L2 + receiver athleticism        +0.1235 | p 0.006 | perm 0.020 | 614, 43
+  db_closing     L3 + CB stopwatch/size battery   +0.2248 | p 0.001 | perm 0.015 | 614, 43
+  db_closing     L4 + CB pre-break behaviour      +0.1342 | p 0.021 | perm 0.080 | 614, 43
+  db_closing     L5 + defense team + season FE    +0.4562 | p nan | perm 0.030 | 614, 43
+  db_closing     L6 + draft capital (sanity)      +1.0312 | p 0.000 | perm 0.010 | 614, 43
+  sep_gain_break L0 receiver skill + route        -0.0665 | p 0.015 | perm 0.045 | 1707, 46
+  sep_gain_break L1 + situation                   -0.0400 | p 0.023 | perm 0.080 | 1687, 46
+  sep_gain_break L2 + receiver athleticism        -0.0342 | p 0.052 | perm 0.114 | 1687, 46
+  sep_gain_break L3 + CB stopwatch/size battery   -0.0529 | p 0.041 | perm 0.114 | 1687, 46
+  sep_gain_break L4 + CB pre-break behaviour      -0.0814 | p 0.000 | perm 0.005 | 1502, 46
+  sep_gain_break L5 + defense team + season FE    -0.0837 | p 0.098 | perm 0.458 | 1502, 46
+  sep_gain_break L6 + draft capital (sanity)      -0.0879 | p nan | perm 0.687 | 1502, 46
+  cpoe           L0 receiver skill + route        -0.0615 | p 0.002 | perm 0.010 | 284, 38
+  cpoe           L1 + situation                   -0.0586 | p 0.013 | perm 0.035 | 277, 38
+  cpoe           L2 + receiver athleticism        -0.0646 | p 0.008 | perm 0.010 | 277, 38
+  cpoe           L3 + CB stopwatch/size battery   -0.0932 | p 0.000 | perm 0.035 | 277, 38
+  cpoe           L4 + CB pre-break behaviour      -0.0863 | p 0.007 | perm 0.045 | 248, 37
+  cpoe           L5 + defense team + season FE    -0.1028 | p 0.002 | perm 0.040 | 248, 37
+  cpoe           L6 + draft capital (sanity)      -0.1078 | p 0.012 | perm 0.040 | 248, 37
+
+=== (3) out-of-sample: rep-level MSE reduction (%) vs the context-only model ===
+   {'outcome': 'db_closing (zone-matching)', 'block': 'top', 'class-out': np.float64(0.89), 'season-fwd': np.float64(1.174), 'class-out perm p': np.float64(0.016)}
+   {'outcome': 'db_closing (zone-matching)', 'block': 'v_10', 'class-out': np.float64(1.32), 'season-fwd': np.float64(1.146), 'class-out perm p': np.float64(0.016)}
+   {'outcome': 'db_closing (zone-matching)', 'block': 'late', 'class-out': np.float64(0.884), 'season-fwd': np.float64(0.665), 'class-out perm p': np.float64(0.033)}
+   {'outcome': 'db_closing (zone-matching)', 'block': 'curve ridge', 'class-out': np.float64(0.853), 'season-fwd': np.float64(0.809), 'class-out perm p': np.float64(0.016)}
+   {'outcome': 'db_closing (zone-matching)', 'block': 'top + stopwatch/size', 'class-out': np.float64(-1.47), 'season-fwd': np.float64(-7.397), 'class-out perm p': np.float64(0.23)}
+   {'outcome': 'sep_gain_break', 'block': 'top', 'class-out': np.float64(0.322), 'season-fwd': np.float64(0.314), 'class-out perm p': np.float64(0.082)}
+   {'outcome': 'sep_gain_break', 'block': 'v_10', 'class-out': np.float64(0.106), 'season-fwd': np.float64(-0.035), 'class-out perm p': np.float64(0.18)}
+   {'outcome': 'sep_gain_break', 'block': 'late', 'class-out': np.float64(0.012), 'season-fwd': np.float64(-0.103), 'class-out perm p': np.float64(0.361)}
+   {'outcome': 'sep_gain_break', 'block': 'curve ridge', 'class-out': np.float64(-1.058), 'season-fwd': np.float64(0.169), 'class-out perm p': np.float64(0.705)}
+   {'outcome': 'sep_gain_break', 'block': 'top + stopwatch/size', 'class-out': np.float64(-0.912), 'season-fwd': np.float64(-2.595), 'class-out perm p': np.float64(0.361)}
+   {'outcome': 'sep_at_throw', 'block': 'top', 'class-out': np.float64(0.295), 'season-fwd': np.float64(0.868), 'class-out perm p': np.float64(0.115)}
+   {'outcome': 'sep_at_throw', 'block': 'v_10', 'class-out': np.float64(0.208), 'season-fwd': np.float64(0.431), 'class-out perm p': np.float64(0.082)}
+   {'outcome': 'sep_at_throw', 'block': 'late', 'class-out': np.float64(0.055), 'season-fwd': np.float64(0.156), 'class-out perm p': np.float64(0.23)}
+   {'outcome': 'sep_at_throw', 'block': 'curve ridge', 'class-out': np.float64(0.441), 'season-fwd': np.float64(0.771), 'class-out perm p': np.float64(0.049)}
+   {'outcome': 'sep_at_throw', 'block': 'top + stopwatch/size', 'class-out': np.float64(-2.655), 'season-fwd': np.float64(-4.284), 'class-out perm p': np.float64(0.77)}
+   {'outcome': 'cpoe', 'block': 'top', 'class-out': np.float64(2.029), 'season-fwd': np.float64(1.494), 'class-out perm p': np.float64(0.049)}
+   {'outcome': 'cpoe', 'block': 'v_10', 'class-out': np.float64(2.442), 'season-fwd': np.float64(3.672), 'class-out perm p': np.float64(0.033)}
+   {'outcome': 'cpoe', 'block': 'late', 'class-out': np.float64(2.508), 'season-fwd': np.float64(2.784), 'class-out perm p': np.float64(0.033)}
+   {'outcome': 'cpoe', 'block': 'curve ridge', 'class-out': np.float64(2.266), 'season-fwd': np.float64(-0.354), 'class-out perm p': np.float64(0.049)}
+   {'outcome': 'cpoe', 'block': 'top + stopwatch/size', 'class-out': np.float64(-0.218), 'season-fwd': np.float64(-1.577), 'class-out perm p': np.float64(0.262)}

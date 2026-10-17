@@ -1,0 +1,29 @@
+
+=== all-feature ridge: where the weight sits, and how stable it is ===
+
+sep_gain_break: coefficient stability across leave-one-class-out fits (Spearman, mean of pairs) +0.40
+  share of |coefficient| mass by drill: {'W_DRILL': 0.131, 'SHORT_SHUTTLE': 0.116, 'BOX_DRILL': 0.103, 'TERYL_AUSTIN_DRILL_1': 0.1, 'GAUNTLET_DRILL': 0.096, 'TERYL_AUSTIN_DRILL_2': 0.093, 'BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION': 0.09, 'LINE_DRILL': 0.088, 'BACK_PEDAL_AND_90_DEGREE_BREAK_TO_BALL': 0.082, 'THREE_CONE_DRILL': 0.055, 'FORTY_YARD_DASH': 0.046}
+  by family: {'curve': 0.67, 'mechanic': 0.323, 'transition phase': 0.008}
+  top features: BOX_DRILL|curve_turnrate_01 -0.0054, SHORT_SHUTTLE|curve_turnrate_08 +0.0054, W_DRILL|brk_mean_reaccel_time +0.0048, BOX_DRILL|curve_lateral_01 -0.0043, W_DRILL|brk1_reaccel_time +0.0041, SHORT_SHUTTLE|brk_mean_reaccel_time +0.0040, SHORT_SHUTTLE|curve_turnrate_03 +0.0039, SHORT_SHUTTLE|curve_lateral_15 +0.0037, TERYL_AUSTIN_DRILL_1|brk_mean_exit_burst +0.0035, GAUNTLET_DRILL|curve_along_10 +0.0035, W_DRILL|curve_turnrate_18 -0.0034, BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION|top_speed -0.0034
+  transition-drill speed    curve coefficients (x1000) over normalized time 0 -> 1: [0.4, 1.0, 0.7, 0.4, 0.2, 0.0, 0.0, 0.3, 0.4, 0.3, 0.0, -0.7, -1.5, -1.2, -0.6, 0.2, 0.3, 0.2, 0.1, -0.9]
+  transition-drill turnrate curve coefficients (x1000) over normalized time 0 -> 1: [-0.6, -0.4, -1.1, -0.6, 1.9, 1.7, 0.5, -0.7, -0.2, 0.9, 0.7, -0.9, -0.2, -1.3, 0.3, 0.0, 0.5, 1.3, 0.5, 0.2]
+  transition-drill along    curve coefficients (x1000) over normalized time 0 -> 1: [0.6, 1.5, -1.9, -0.7, -1.4, -1.0, 0.8, 1.9, -0.3, -0.3, -1.2, -0.8, -0.1, 0.0, 0.5, 1.0, -1.3, -0.4, -1.0, -2.3]
+  transition-drill lateral  curve coefficients (x1000) over normalized time 0 -> 1: [-1.0, -0.2, -0.9, -0.6, 1.3, 1.3, 0.5, -0.8, -0.3, 1.1, 0.7, -1.1, -2.7, -2.0, 0.1, 0.5, 1.5, 1.7, 1.0, 0.4]
+
+sep_at_throw: coefficient stability across leave-one-class-out fits (Spearman, mean of pairs) +0.38
+  share of |coefficient| mass by drill: {'W_DRILL': 0.187, 'TERYL_AUSTIN_DRILL_2': 0.114, 'GAUNTLET_DRILL': 0.101, 'TERYL_AUSTIN_DRILL_1': 0.093, 'LINE_DRILL': 0.085, 'BOX_DRILL': 0.083, 'THREE_CONE_DRILL': 0.076, 'BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION': 0.073, 'BACK_PEDAL_AND_90_DEGREE_BREAK_TO_BALL': 0.073, 'FORTY_YARD_DASH': 0.068, 'SHORT_SHUTTLE': 0.047}
+  by family: {'curve': 0.702, 'mechanic': 0.293, 'transition phase': 0.005}
+  top features: W_DRILL|curve_turnrate_13 +0.0125, W_DRILL|curve_speed_13 -0.0114, W_DRILL|curve_lateral_13 +0.0114, W_DRILL|curve_along_14 +0.0113, W_DRILL|t_to_90 +0.0097, W_DRILL|curve_along_15 +0.0096, TERYL_AUSTIN_DRILL_2|curve_lateral_03 -0.0091, W_DRILL|curve_turnrate_16 -0.0082, GAUNTLET_DRILL|curve_along_09 +0.0080, W_DRILL|curve_along_12 -0.0078, TERYL_AUSTIN_DRILL_2|curve_turnrate_03 -0.0077, W_DRILL|speed_at_0.5s -0.0076
+  transition-drill speed    curve coefficients (x1000) over normalized time 0 -> 1: [3.9, 2.0, 1.1, 0.3, -0.2, -0.5, 0.4, 1.5, 1.6, 1.4, 1.0, -0.0, -0.5, 0.3, 0.5, 0.5, -0.3, -1.0, -1.3, -1.9]
+  transition-drill turnrate curve coefficients (x1000) over normalized time 0 -> 1: [-0.3, 0.4, -1.2, -0.3, 2.0, 0.8, -1.9, -1.7, 0.9, 0.7, -1.1, -1.5, -0.3, -0.3, -0.6, 0.1, 1.2, 2.5, 2.3, 0.6]
+  transition-drill along    curve coefficients (x1000) over normalized time 0 -> 1: [1.4, -0.4, -4.3, -0.7, -2.7, 0.1, 3.4, 4.2, -0.3, 0.4, -2.0, -1.9, 0.6, -0.1, -0.2, -0.7, -3.4, -0.7, -0.5, -2.1]
+  transition-drill lateral  curve coefficients (x1000) over normalized time 0 -> 1: [-0.5, -0.6, -0.1, -0.2, 0.7, 0.5, -1.2, -1.3, 1.3, 1.2, -0.7, -1.1, -0.4, -0.2, -0.0, 0.6, 2.2, 3.5, 2.5, 0.5]
+
+cpoe: coefficient stability across leave-one-class-out fits (Spearman, mean of pairs) +0.47
+  share of |coefficient| mass by drill: {'TERYL_AUSTIN_DRILL_1': 0.127, 'BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION': 0.125, 'GAUNTLET_DRILL': 0.121, 'BOX_DRILL': 0.119, 'W_DRILL': 0.1, 'TERYL_AUSTIN_DRILL_2': 0.078, 'THREE_CONE_DRILL': 0.074, 'BACK_PEDAL_AND_90_DEGREE_BREAK_TO_BALL': 0.072, 'SHORT_SHUTTLE': 0.07, 'FORTY_YARD_DASH': 0.061, 'LINE_DRILL': 0.053}
+  by family: {'curve': 0.699, 'mechanic': 0.292, 'transition phase': 0.01}
+  top features: BOX_DRILL|brk1_reaccel_time -0.0010, GAUNTLET_DRILL|curve_lateral_10 -0.0009, GAUNTLET_DRILL|curve_turnrate_10 -0.0009, GAUNTLET_DRILL|n_breaks +0.0008, GAUNTLET_DRILL|curve_lateral_08 -0.0008, BOX_DRILL|n_breaks +0.0008, W_DRILL|curve_along_17 +0.0008, TERYL_AUSTIN_DRILL_1|curve_along_15 +0.0008, TERYL_AUSTIN_DRILL_1|curve_along_16 +0.0008, BOX_DRILL|brk_mean_exit_burst +0.0008, BOX_DRILL|brk1_exit_burst +0.0008, BOX_DRILL|curve_lateral_12 -0.0008
+  transition-drill speed    curve coefficients (x1000) over normalized time 0 -> 1: [0.1, 0.4, 0.4, 0.4, 0.3, 0.2, 0.2, 0.2, 0.3, 0.3, 0.3, 0.2, -0.0, -0.4, -0.4, -0.5, -0.6, -0.6, -0.6, -0.4]
+  transition-drill turnrate curve coefficients (x1000) over normalized time 0 -> 1: [0.2, 0.1, -0.2, -0.1, -0.2, 0.2, 0.4, 0.2, 0.4, -0.1, -0.4, -0.5, -0.3, -0.3, 0.2, 0.4, 0.5, 0.6, 0.5, 0.5]
+  transition-drill along    curve coefficients (x1000) over normalized time 0 -> 1: [0.3, 0.6, -0.4, -0.3, -0.5, -0.4, 0.1, 0.3, 0.2, -0.2, -0.3, -0.4, -0.5, -0.4, -0.3, -0.2, 0.0, 0.5, 0.5, 0.5]
+  transition-drill lateral  curve coefficients (x1000) over normalized time 0 -> 1: [0.1, 0.2, -0.3, -0.1, -0.1, 0.1, 0.4, 0.2, 0.4, 0.1, -0.3, -0.5, -0.4, -0.4, 0.2, 0.3, 0.5, 0.5, 0.5, 0.5]

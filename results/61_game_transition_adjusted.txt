@@ -1,0 +1,15 @@
+context R^2 for g_drive_top: 0.331
+context R^2 for g_drive_gain_07: 0.200
+                                 metric  CBs  split_half  r_combine_drive  r_cov_closing  r_cov_sep_at_throw_adj  n_cov
+             g_drive_top_res mean [all]   56        0.72             0.07          -0.05                    0.36     36
+            g_drive_top_res mean [zone]   54        0.74             0.11           0.00                    0.27     36
+    g_drive_top_res mean [before throw]   52        0.77             0.16           0.20                    0.01     36
+              g_drive_top_res p90 [all]   56        0.74             0.14           0.04                    0.25     36
+             g_drive_top_res p90 [zone]   54        0.76             0.21          -0.00                    0.36     36
+     g_drive_top_res p90 [before throw]   52        0.56             0.24           0.22                    0.11     36
+         g_drive_gain_07_res mean [all]   56        0.59             0.03          -0.24                    0.52     36
+        g_drive_gain_07_res mean [zone]   54        0.54            -0.05          -0.16                    0.40     36
+g_drive_gain_07_res mean [before throw]   52        0.53             0.03          -0.03                    0.24     36
+          g_drive_gain_07_res p90 [all]   56        0.58             0.06          -0.26                    0.45     36
+         g_drive_gain_07_res p90 [zone]   54        0.45             0.10          -0.20                    0.36     36
+ g_drive_gain_07_res p90 [before throw]   52        0.69             0.24          -0.35                    0.31     36

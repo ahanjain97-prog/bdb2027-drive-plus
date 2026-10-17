@@ -1,0 +1,42 @@
+CB reference (within-year z of frozen drive): mean +0.0794, sd 1.0405
+graded DBs by position: {'CB': 59, 'SS': 28, 'FS': 25, 'DB': 5} | mean Drive+ by position: {'CB': 100.0, 'DB': 97.7, 'FS': 99.0, 'SS': 98.0}
+
+reps at CB/slot with a graded DB: 1956 (CBs 45, safeties/DBs 22, safety reps 274) | safety reps by cell: {'man-matching': 133, 'zone-matching': 72, 'other': 69}
+
+=== Drive+ (per 10 points) when lined up at CB / slot ===
+  safeties/DBs only      zone-matching closing  +0.786 (perm p 0.501, reps 72, DBs 11)
+  safeties/DBs only      sep gained (all)       -0.030 (perm p 0.915, reps 274, DBs 22)
+  safeties/DBs only      completion (targeted)  -0.136 (perm p 0.531, reps 39, DBs 13)
+  CBs only               zone-matching closing  +0.152 (perm p 0.015, reps 610, DBs 42)
+  CBs only               sep gained (all)       -0.055 (perm p 0.055, reps 1680, DBs 45)
+  CBs only               completion (targeted)  -0.092 (perm p 0.002, reps 276, DBs 38)
+  pooled CB + safeties   zone-matching closing  +0.157 (perm p 0.015, reps 682, DBs 53)
+  pooled CB + safeties   sep gained (all)       -0.058 (perm p 0.047, reps 1954, DBs 67)
+  pooled CB + safeties   completion (targeted)  -0.093 (perm p 0.005, reps 315, DBs 51)
+
+grades by position and tier:
+ tier  <90  90-100  100-110  110+
+pos                             
+CB      9      23       18     9
+DB      1       2        2     0
+FS      3      11       10     1
+SS      6      12        5     5
+
+top 15 DBs:
+         Drive+ pos                     name  class  tier  NFL reps at CB/slot
+nfl_id                                                                       
+57143    136.0  CB         Quinyon Mitchell   2024  110+                 88.0
+58273    122.0  CB            Darien Porter   2025  110+                 25.0
+55931    121.0  SS             Sydney Brown   2023  110+                  3.0
+57225    116.0  FS  Dadrion Taylor-Demerson   2024  110+                  1.0
+56023    114.0  SS             Daniel Scott   2023  110+                  NaN
+58290    114.0  CB            Nohl Williams   2025  110+                 73.0
+55948    114.0  CB               Riley Moss   2023  110+                138.0
+57347    113.0  CB             Myles Harden   2024  110+                 36.0
+55978    113.0  CB           Clark Phillips   2023  110+                 34.0
+58365    112.0  SS            Marques Sigle   2025  110+                  3.0
+56250    112.0  SS                Trey Dean   2023  110+                  NaN
+58383    112.0  CB              Bilhal Kone   2025  110+                  NaN
+58327    111.0  SS            Lathan Ransom   2025  110+                  NaN
+57163    111.0  CB          Kamari Lassiter   2024  110+                119.0
+58336    111.0  CB             Quincy Riley   2025  110+                  7.0

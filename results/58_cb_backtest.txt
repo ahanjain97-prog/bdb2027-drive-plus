@@ -1,0 +1,31 @@
+=== (a) ball flight (targeted reps with events: 270 of 284) ===
+  combine drive -> flight_closing   +0.098 per SD (p 0.206, targets 270)
+  combine drive -> db_flight_speed  -0.160 per SD (p 0.096, targets 270)
+  combine drive -> sep_at_arrival   -0.067 per SD (p 0.680, targets 270)
+  completion ~ drive + sep at throw: drive -0.078 (p 0.006) -> + flight closing: drive -0.059 (p 0.039), flight closing +0.014/(yd/s) (p 0.407)
+
+=== (b) out-of-sample backtests (separation gained at the break) ===
+  rookies-forward: leave-one-draft-class-out over CBs        OOS MSE improvement +0.47%  (player-permutation p 0.027; null 95th pct +0.30%)
+  season-forward: train 2023-24 seasons, test 2025           OOS MSE improvement +0.51%  (player-permutation p 0.020; null 95th pct +0.25%)
+  new-prospect: train 2023-24 class CBs, test 2025-class CBs OOS MSE improvement +0.47%  (player-permutation p 0.063; null 95th pct +0.52%)
+  rookies-forward, ZONE_COVERAGE reps only                   OOS MSE improvement +0.87%  (player-permutation p 0.027; null 95th pct +0.74%)
+  rookies-forward, MAN_COVERAGE reps only                    OOS MSE improvement +0.10%  (player-permutation p 0.143; null 95th pct +0.20%)
+
+=== (c) robustness: separation gained at the break, b per SD of drive speed ===
+  baseline (rep mean distance <= 3 yd)                 -0.0788 (p 0.007) reps 1707 CBs 46
+  + CB alignment                                       -0.0405 (p 0.017) reps 1707 CBs 46
+  + 40, 10-yd, vertical, broad (complete cases)        -0.0748 (p 0.006) reps 1266 CBs 33
+  + 3-cone + shuttle (complete cases)                  +0.0537 (p 0.552) reps 511 CBs 11
+  + draft round                                        -0.0818 (p 0.001) reps 1707 CBs 46
+  (looser 4-yd reps require rebuilding 41 with a 4.0 threshold; see 58b below)
+
+=== (d) completion model on targets ===
+  logit: odds ratio per SD of drive speed 0.64 (p 0.0000), targets 284, CBs 38
+  expected completion % allowed by CB drive-speed percentile (yd/s), player-clustered bootstrap 90% CI:
+    p10  (8.77 yd/s):  65.5%  [57.2, 73.1]
+    p25  (9.08 yd/s):  56.1%  [50.3, 62.1]
+    p50  (9.27 yd/s):  50.0%  [45.2, 55.2]
+    p75  (9.45 yd/s):  44.0%  [39.9, 49.0]
+    p90  (9.65 yd/s):  37.7%  [32.5, 43.3]
+  yards per target (incompletions = 0): -1.25 per SD (p 0.024); EPA per target -0.197 per SD (p 0.077)
+  per 100 targets, +1 SD of drive speed: -12.1 fewer completions between p25 and p75 CBs; 125 yards; 19.7 EPA

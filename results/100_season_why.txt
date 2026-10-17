@@ -1,0 +1,85 @@
+=== A. movement vs catches by season (per 10 Drive+; open/completion/xComp in pts) ===
+  -- season 2023: reps 269, targets 47, DBs w/ targets 12
+     sep gained at key move (yd), all reps                -0.04 [  -0.29,   +0.21] p1 0.382  n 269, DBs 19
+     open at throw, all reps                              +0.21 [  -6.31,   +6.73] p1 0.551  n 240, DBs 19
+     sep at throw (yd), all reps                          -0.27 [  -0.73,   +0.20] p1 0.256  n 240, DBs 19
+     sep at throw (yd), TARGETS only                      +1.31 [  +0.61,   +2.01] p1 0.950  n 47, DBs 12
+     expected completion from sep+context (targets)       +5.96 [  +3.18,   +8.75] p1 0.897  n 47, DBs 12
+     ACTUAL completion (targets)                          +5.21 [  -4.61,  +15.03] p1 0.791  n 47, DBs 12
+     after the throw: completion - xc_sep (targets)       -0.76 [  -9.31,   +7.80] p1 0.488  n 47, DBs 12
+     EPA per target                                       +0.12 [  -0.49,   +0.74] p1 0.611  n 47, DBs 12
+  -- season 2024: reps 973, targets 159, DBs w/ targets 32
+     sep gained at key move (yd), all reps                -0.16 [  -0.23,   -0.09] p1 0.013  n 973, DBs 46
+     open at throw, all reps                              -4.56 [  -6.40,   -2.72] p1 0.027  n 834, DBs 44
+     sep at throw (yd), all reps                          -0.39 [  -0.57,   -0.21] p1 0.027  n 834, DBs 44
+     sep at throw (yd), TARGETS only                      -0.83 [  -1.35,   -0.32] p1 0.023  n 157, DBs 32
+     expected completion from sep+context (targets)       -5.51 [  -7.90,   -3.11] p1 0.003  n 159, DBs 32
+     ACTUAL completion (targets)                          -2.93 [  -7.07,   +1.20] p1 0.223  n 159, DBs 32
+     after the throw: completion - xc_sep (targets)       +2.57 [  -0.27,   +5.42] p1 0.731  n 159, DBs 32
+     EPA per target                                       +0.04 [  -0.13,   +0.21] p1 0.571  n 159, DBs 32
+  -- season 2025: reps 1710, targets 308, DBs w/ targets 54
+     sep gained at key move (yd), all reps                -0.17 [  -0.27,   -0.06] p1 0.023  n 1709, DBs 65
+     open at throw, all reps                              -4.78 [  -6.67,   -2.89] p1 0.007  n 1492, DBs 64
+     sep at throw (yd), all reps                          -0.36 [  -0.54,   -0.17] p1 0.013  n 1492, DBs 64
+     sep at throw (yd), TARGETS only                      -0.82 [  -1.14,   -0.50] p1 0.003  n 307, DBs 54
+     expected completion from sep+context (targets)       -3.90 [  -5.55,   -2.25] p1 0.007  n 308, DBs 54
+     ACTUAL completion (targets)                         -11.54 [ -14.68,   -8.40] p1 0.003  n 308, DBs 54
+     after the throw: completion - xc_sep (targets)       -7.64 [ -10.84,   -4.44] p1 0.020  n 308, DBs 54
+     EPA per target                                       -0.37 [  -0.51,   -0.23] p1 0.003  n 308, DBs 54
+
+=== B. is 2025 different from 2024? dp x 2025 interaction (2024+2025 targets; grades shuffled across players) ===
+  completion 2025 minus 2024 slope   -6.26 [ -10.46,   -2.05]  clustered p 0.056  permutation p (two-sided) 0.176
+  epa        2025 minus 2024 slope   -0.24 [  -0.42,   -0.05]  clustered p 0.110  permutation p (two-sided) 0.238
+  cpoe_sep   2025 minus 2024 slope   -7.03 [ -11.31,   -2.74]  clustered p 0.036  permutation p (two-sided) 0.056
+  xc_sep     2025 minus 2024 slope   +0.77 [  -2.10,   +3.63]  clustered p 0.731  permutation p (two-sided) 0.737
+
+=== C. by combine class (targets, all seasons pooled; within-class grade spread) ===
+  class 2023: targets 188, DBs 20, Drive+ SD 8.9 | completion   -3.50 [ -10.30,   +3.30] p1 0.276  n 188, DBs 20
+                EPA   -0.25 [  -0.47,   -0.02] p1 0.120  n 188, DBs 20
+  class 2024: targets 256, DBs 25, Drive+ SD 10.3 | completion   -7.86 [ -10.78,   -4.93] p1 0.010  n 256, DBs 25
+                EPA   -0.14 [  -0.23,   -0.05] p1 0.103  n 256, DBs 25
+  class 2025: targets 70, DBs 15, Drive+ SD 11.8 | completion  -12.09 [ -16.94,   -7.24] p1 0.013  n 70, DBs 15
+                EPA   -0.47 [  -0.71,   -0.22] p1 0.043  n 70, DBs 15
+  targets by class x season:
+season  2023  2024  2025
+cls                     
+2023      47    59    82
+2024       0   100   156
+2025       0     0    70
+  CBs: completion slope by class within each season:
+    season 2024, class 2023:   -2.11 [ -11.86,   +7.63] p1 0.392  n 59, DBs 15
+    season 2024, class 2024:   -4.24 [  -9.08,   +0.60] p1 0.233  n 100, DBs 17
+    season 2025, class 2023:   -3.34 [ -15.91,   +9.24] p1 0.415  n 82, DBs 14
+    season 2025, class 2024:  -12.23 [ -15.91,   -8.55] p1 0.003  n 156, DBs 25
+    season 2025, class 2025:  -12.09 [ -16.94,   -7.24] p1 0.007  n 70, DBs 15
+
+=== D. same DBs in both seasons (>= 3 targets in each) ===
+  season 2024, 18 DBs: completion   -4.59 [  -8.66,   -0.52] p1 0.176  n 127, DBs 18
+                    EPA   -0.05 [  -0.25,   +0.15] p1 0.409  n 127, DBs 18
+  season 2025, 18 DBs: completion   -8.98 [ -12.79,   -5.16] p1 0.010  n 149, DBs 18
+                    EPA   -0.32 [  -0.44,   -0.20] p1 0.013  n 149, DBs 18
+  season 2025, DBs NOT in the panel: completion  -11.63 [ -15.20,   -8.06] p1 0.003  n 159, DBs 36
+
+=== E. NFL experience (season - class + 1), targets ===
+  year 1: completion   -8.42 [ -11.81,   -5.04] p1 0.013  n 217, DBs 44
+          EPA   -0.25 [  -0.43,   -0.06] p1 0.113  n 217, DBs 44
+  year 2: completion  -10.49 [ -13.70,   -7.28] p1 0.007  n 215, DBs 40
+          EPA   -0.22 [  -0.35,   -0.08] p1 0.030  n 215, DBs 40
+  year 3: completion   -3.34 [ -15.91,   +9.24] p1 0.339  n 82, DBs 14
+          EPA   -0.43 [  -0.78,   -0.08] p1 0.136  n 82, DBs 14
+
+=== F. target mix by season ===
+        targets  DBs   comp    epa     air   zone  zone_match     go  safeties   dp_sd  wr_skill
+season                                                                                          
+2023         47   12  0.553  0.176  11.851  0.362       0.234  0.170     0.447   6.371     0.301
+2024        159   32  0.572  0.296  14.277  0.384       0.270  0.239     0.164  10.097     0.273
+2025        308   54  0.545  0.169  12.721  0.438       0.289  0.214     0.192  10.212     0.227
+
+=== G. 2025 completion slope, leave one DB out ===
+  full -11.54; leave-one-out range -12.48 to -10.12
+    without Upton Stout              (Drive+  85.7, 15 targets, comp 0.87): -10.12
+    without Mike Sainristil          (Drive+  90.9, 16 targets, comp 0.81): -10.87
+    without Riley Moss               (Drive+ 113.8, 14 targets, comp 0.21): -10.88
+    without Kamari Lassiter          (Drive+ 110.8, 19 targets, comp 0.26): -10.94
+    without Denzel Burke             (Drive+  86.0, 8 targets, comp 0.88): -11.05
+  without the 5 most influential DBs: -6.25

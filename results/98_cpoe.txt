@@ -1,0 +1,40 @@
+pool-receiver targets: 9835
+  xComp xc_ctx  : out-of-fold log-loss 0.5606 vs base rate 0.6559 (n 9835)
+  xComp xc_sep  : out-of-fold log-loss 0.5426 vs base rate 0.6559 (n 9835)
+
+wide targets 502: with xc_ctx 502, xc_sep 502, nflverse cp 502 | mean completion 0.552, xc_ctx 0.554, xc_sep 0.521, cp 0.576
+
+=== all wide targets (each outcome on its own available rows) === per 10 Drive+, percentage points; one-sided p for the negative direction
+  CP: completion (registered)                           -8.48 [-11.13,  -5.83]  110 vs 90  -17.0  p1 0.002  supported  n 502, DBs 60
+  xComp_ctx: how hard the throws were                   -2.45 [ -3.59,  -1.31]  110 vs 90   -4.9  p1 0.004  supported  n 502, DBs 60
+  CPOE_ctx: vs throw context (competition data)         -6.04 [ -8.83,  -3.24]  110 vs 90  -12.1  p1 0.002  supported  n 502, DBs 60
+  CPOE_sep: vs context + separation (after-throw only)  -4.73 [ -7.67,  -1.78]  110 vs 90   -9.5  p1 0.034  supported  n 502, DBs 60
+  CPOE_nv: vs nflverse cp (outside data)                -7.49 [-10.21,  -4.76]  110 vs 90  -15.0  p1 0.004  supported  n 502, DBs 60
+
+=== identical rows (all three xComps present) === per 10 Drive+, percentage points; one-sided p for the negative direction
+  CP: completion (registered)                           -8.48 [-11.13,  -5.83]  110 vs 90  -17.0  p1 0.002  supported  n 502, DBs 60
+  xComp_ctx: how hard the throws were                   -2.45 [ -3.59,  -1.31]  110 vs 90   -4.9  p1 0.004  supported  n 502, DBs 60
+  CPOE_ctx: vs throw context (competition data)         -6.04 [ -8.83,  -3.24]  110 vs 90  -12.1  p1 0.002  supported  n 502, DBs 60
+  CPOE_sep: vs context + separation (after-throw only)  -4.73 [ -7.67,  -1.78]  110 vs 90   -9.5  p1 0.026  supported  n 502, DBs 60
+  CPOE_nv: vs nflverse cp (outside data)                -7.49 [-10.21,  -4.76]  110 vs 90  -15.0  p1 0.006  supported  n 502, DBs 60
+
+=== season 2023 (identical rows) === per 10 Drive+, percentage points; one-sided p for the negative direction
+  CP: completion (registered)                           +5.21 [ -4.61, +15.03]  110 vs 90  +10.4  p1 0.758  wrong sign n 47, DBs 12
+  xComp_ctx: how hard the throws were                   +3.80 [ +1.72,  +5.88]  110 vs 90   +7.6  p1 0.896  wrong sign n 47, DBs 12
+  CPOE_ctx: vs throw context (competition data)         +1.41 [ -8.83, +11.65]  110 vs 90   +2.8  p1 0.581  wrong sign n 47, DBs 12
+  CPOE_sep: vs context + separation (after-throw only)  -0.76 [ -9.31,  +7.80]  110 vs 90   -1.5  p1 0.457  right sign n 47, DBs 12
+  CPOE_nv: vs nflverse cp (outside data)                +7.80 [ -3.13, +18.73]  110 vs 90  +15.6  p1 0.834  wrong sign n 47, DBs 12
+
+=== season 2024 (identical rows) === per 10 Drive+, percentage points; one-sided p for the negative direction
+  CP: completion (registered)                           -2.91 [ -7.00,  +1.18]  110 vs 90   -5.8  p1 0.250  right sign n 155, DBs 32
+  xComp_ctx: how hard the throws were                   -4.77 [ -6.58,  -2.97]  110 vs 90   -9.5  p1 0.004  supported  n 155, DBs 32
+  CPOE_ctx: vs throw context (competition data)         +1.87 [ -1.33,  +5.06]  110 vs 90   +3.7  p1 0.695  wrong sign n 155, DBs 32
+  CPOE_sep: vs context + separation (after-throw only)  +2.56 [ -0.21,  +5.33]  110 vs 90   +5.1  p1 0.749  wrong sign n 155, DBs 32
+  CPOE_nv: vs nflverse cp (outside data)                -2.79 [ -6.56,  +0.98]  110 vs 90   -5.6  p1 0.246  right sign n 155, DBs 32
+
+=== season 2025 (identical rows) === per 10 Drive+, percentage points; one-sided p for the negative direction
+  CP: completion (registered)                          -11.86 [-15.06,  -8.66]  110 vs 90  -23.7  p1 0.002  supported  n 300, DBs 54
+  xComp_ctx: how hard the throws were                   -2.07 [ -2.94,  -1.20]  110 vs 90   -4.1  p1 0.008  supported  n 300, DBs 54
+  CPOE_ctx: vs throw context (competition data)         -9.79 [-12.98,  -6.61]  110 vs 90  -19.6  p1 0.006  supported  n 300, DBs 54
+  CPOE_sep: vs context + separation (after-throw only)  -8.22 [-11.44,  -5.00]  110 vs 90  -16.4  p1 0.004  supported  n 300, DBs 54
+  CPOE_nv: vs nflverse cp (outside data)               -10.51 [-13.70,  -7.31]  110 vs 90  -21.0  p1 0.002  supported  n 300, DBs 54

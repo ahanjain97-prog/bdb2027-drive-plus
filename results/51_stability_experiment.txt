@@ -1,0 +1,29 @@
+drills with >= 15 repeaters: ['DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION', 'DB:LINE', 'DB:LINE_DRILL', 'DL:PASS_RUSH_DRILL', 'DL:SHORT_ZONE_BREAKS', 'FORTY_YARD_DASH:FORTY_YARD_DASH', 'OL:PASS_RUSH_DROP', 'SHORT_SHUTTLE:SHORT_SHUTTLE', 'TE:CORNER_ROUTE', 'TE:GAUNTLET_DRILL', 'THREE_CONE_DRILL:THREE_CONE_DRILL', 'WR:GAUNTLET_DRILL', 'WR:POST_CORNER_ROUTE_RIGHT']
+
+median test-retest across drills (feature x estimator):
+mode                    V0    V1    V2
+feature                               
+brake_dist_per_speed  0.19  0.23  0.23
+brake_rate            0.27  0.32  0.33
+entry_speed           0.48  0.52  0.52
+min_speed             0.25  0.31  0.31
+reaccel_rate          0.18  0.45  0.29
+start_accel           0.32  0.33  0.31
+top_speed             0.62  0.57  0.57
+
+per drill, V2:
+feature                                          brake_dist_per_speed  brake_rate  entry_speed  min_speed  reaccel_rate  start_accel  top_speed
+drill                                                                                                                                          
+DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION                  0.10        0.16         0.52       0.05          0.03         0.36       0.57
+DB:LINE                                                           NaN         NaN          NaN        NaN           NaN         0.35       0.64
+DB:LINE_DRILL                                                     NaN         NaN          NaN        NaN           NaN         0.34       0.49
+DL:PASS_RUSH_DRILL                                                NaN         NaN          NaN        NaN           NaN         0.13       0.63
+DL:SHORT_ZONE_BREAKS                                              NaN         NaN          NaN        NaN           NaN         0.24       0.35
+FORTY_YARD_DASH:FORTY_YARD_DASH                                   NaN         NaN          NaN        NaN           NaN         0.39       0.99
+OL:PASS_RUSH_DROP                                                 NaN         NaN          NaN        NaN           NaN        -0.10       0.57
+SHORT_SHUTTLE:SHORT_SHUTTLE                                      0.23        0.33         0.26       0.49          0.29         0.11       0.08
+TE:CORNER_ROUTE                                                   NaN         NaN          NaN        NaN           NaN        -0.10       0.64
+TE:GAUNTLET_DRILL                                                 NaN         NaN          NaN        NaN           NaN         0.24       0.62
+THREE_CONE_DRILL:THREE_CONE_DRILL                                0.33        0.60         0.68       0.31          0.56         0.68       0.52
+WR:GAUNTLET_DRILL                                                 NaN         NaN          NaN        NaN           NaN         0.31       0.57
+WR:POST_CORNER_ROUTE_RIGHT                                        NaN         NaN          NaN        NaN           NaN         0.80       0.65

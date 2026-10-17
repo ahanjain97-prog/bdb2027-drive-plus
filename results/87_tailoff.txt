@@ -1,0 +1,35 @@
+=== how common (all DBs, 224 attempts) ===
+kind  clip ends near the top  holds speed  slows and turns  straight-line pull-up  All
+yr                                                                                    
+2023                       0            0               56                      9   65
+2024                      80           11                0                      0   91
+2025                       0            0               52                     16   68
+All                       80           11              108                     25  224
+
+=== the 133 tail-offs: where and when they start ===
+  slowdown starts 1.70 s after the turn (IQR 1.50-2.10), after 15.4 yd of drive (IQR 13.1-18.3)
+  for comparison, attempts that hold speed reach their top at 0.90 s after the turn
+  speed lost: median 5.4 yd/s; heading change while slowing: median 66 deg; share turning > 45 deg: 0.81; share turning > 90 deg: 0.14
+  by year: {2023: {'n': 65, 't_decel': 1.8, 'd_decel': 16.3, 'turn': 73.74}, 2025: {'n': 68, 't_decel': 1.7, 'd_decel': 14.95, 'turn': 60.85}}
+
+=== repeatable? players with two assessable attempts: 63 | tail off both times 62 (chance alone ~61.0), once 0, never 1
+  attempt-to-attempt agreement r +1.00
+  when both tail off, slowdown timing attempt 1 vs 2: r +0.13 (n 62)
+
+=== does it pull Drive+ down? (within-year z of the attempt's top) ===
+                        attempts  top_z  t_top
+kind                                          
+clip ends near the top        80  -0.03    1.2
+holds speed                   11   0.21    0.9
+slows and turns              108  -0.03    1.1
+straight-line pull-up         25   0.14    0.9
+  early pull-ups (slowing before 0.8 s, i.e. before steps 3-5): 1 attempts, mean top z -1.16
+
+examples (CBs, biggest drops):
+           name   yr     dp  top  t_decel  d_decel  spd_drop  dir_change            kind
+    Arquon Bush 2023 100.44 9.64      1.7    16.12      9.08       45.71 slows and turns
+    Alex Austin 2023  96.53 9.57      1.8    16.96      9.06      103.43 slows and turns
+      Cam Smith 2023 102.61 9.30      1.8    16.30      8.40       81.87 slows and turns
+   Quincy Riley 2025 110.69 9.56      1.5    14.02      7.90      127.44 slows and turns
+Anthony Johnson 2023  89.86 8.84      1.5    12.98      7.20       99.18 slows and turns
+ Clark Phillips 2023 113.42 9.71      2.5    22.37      7.10      102.32 slows and turns

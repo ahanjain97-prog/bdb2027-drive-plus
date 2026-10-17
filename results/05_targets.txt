@@ -1,0 +1,76 @@
+                             players  med_n
+part   target                              
+2023   get_off                    30   63.5
+       ppa                        25  374.0
+       pressure_allowed           25  394.0
+       pressure_rate              30   63.5
+       sep                        40  156.0
+       snaps_per_game            122   12.0
+       tackle_rate                27  272.0
+       tprr                       40  177.0
+       yprr                       40  177.0
+2024   get_off                    57  110.0
+       ppa                        54  302.5
+       pressure_allowed           54  313.5
+       pressure_rate              57  110.0
+       sep                        76  139.0
+       snaps_per_game            247   13.0
+       tackle_rate                57  393.0
+       tprr                       76  165.5
+       yprr                       76  165.5
+2025   get_off                    90  126.0
+       ppa                        82  255.5
+       pressure_allowed           82  275.5
+       pressure_rate              90  126.0
+       sep                        97  175.0
+       snaps_per_game            354   12.0
+       tackle_rate                81  340.0
+       tprr                       97  204.0
+       yprr                       97  204.0
+career honors                    510    1.0
+       log_snaps_per_season      510    1.0
+       starts_per_season         510    1.0
+h0     get_off                    96   79.5
+       ppa                        89  181.0
+       pressure_allowed           89  188.0
+       pressure_rate              96   79.5
+       sep                       112  110.5
+       snaps_per_game            388    9.0
+       tackle_rate                87  265.0
+       tprr                      112  129.5
+       yprr                      112  129.5
+h1     get_off                    95   68.0
+       ppa                        89  253.0
+       pressure_allowed           89  264.0
+       pressure_rate              95   68.0
+       sep                       112  108.5
+       snaps_per_game            389   10.0
+       tackle_rate                89  276.0
+       tprr                      112  132.5
+       yprr                      112  132.5
+grp
+DB     118
+DL     118
+OL     121
+REC    148
+NaN      5
+baseline missing share:
+ log_pick                        0.00
+udfa                            0.00
+age_at_draft                    0.00
+power_conf                      0.00
+combine_height                  0.00
+combine_weight                  0.00
+hand_size                       0.00
+arm_length                      0.00
+wing_span                       0.00
+ten_yd_split                    0.17
+forty                           0.17
+vertical                        0.14
+broad_jump                      0.17
+three_cone                      0.65
+short_shuttle                   0.61
+bench_reps                      0.62
+ngs_athleticism_score           0.00
+ngs_college_production_score    0.00
+ngs_final_score                 0.00

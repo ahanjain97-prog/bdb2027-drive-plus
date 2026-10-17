@@ -1,0 +1,83 @@
+side consistency per tackle-SEASON (>= 100 dropbacks): median 0.992, 10th pct 0.693
+       2023 2024 2025       display_name
+nfl_id                                  
+55891    RT   RT   RT     Anton Harrison
+55874    RT   RT   RT     Darnell Wright
+55870    RT   LT   LT      Paris Johnson
+55878    RT   RT   LT    Broderick Jones
+57128   NaN   LT   RT        J.C. Latham
+57198   NaN   RT   RT       Delmar Glaze
+57135   NaN   LT   RT      Taliese Fuaga
+55976    RT   RT   LT       Dawand Jones
+57150   NaN   LT   LT       Tyler Guyton
+57183   NaN   RT   RT  Roger Rosengarten
+57126   NaN   RT   LT            Joe Alt
+57176   NaN   LT   LT       Patrick Paul
+58231   NaN  NaN   RT       Josh Conerly
+58206   NaN  NaN   LT      Will Campbell
+58253   NaN  NaN   LT   Aireontae Ersery
+57141   NaN   RT   RT       Troy Fautanu
+tackle dropbacks with a clear side (|y_field| >= 0.5): 16277; tackles 57
+side consistency per tackle (>= 100 dropbacks): median 0.877, 10th pct 0.603
+       side  consistency  dropbacks       display_name
+nfl_id                                                
+55891    RT         0.99       1342     Anton Harrison
+55874    RT         0.99       1329     Darnell Wright
+55870    LT         0.63       1043      Paris Johnson
+55878    RT         0.63        891    Broderick Jones
+57128    LT         0.60        864        J.C. Latham
+57198    RT         1.00        842       Delmar Glaze
+57135    LT         0.56        737      Taliese Fuaga
+55976    RT         0.77        655       Dawand Jones
+57150    LT         1.00        633       Tyler Guyton
+57183    RT         0.97        625  Roger Rosengarten
+57126    RT         0.63        591            Joe Alt
+57176    LT         0.91        579       Patrick Paul
+58231    RT         1.00        448       Josh Conerly
+58206    LT         1.00        433      Will Campbell
+58253    LT         0.94        409   Aireontae Ersery
+57141    RT         0.99        406       Troy Fautanu
+
+a) all tackle dropbacks by side (REG+POST):
+         ppa            pa            sa      
+        mean count    mean count    mean count
+side                                          
+LT    0.3198  4683  0.1013  4866  0.0154  4866
+RT    0.3101  7731  0.0965  8048  0.0149  8048
+   LT vs RT ppa difference (RT - LT, context-adjusted, clustered by tackle): -0.0123 (p 0.234)
+   within-tackle (played both sides, >= 30 each, n 11): RT - LT ppa mean +0.0031, t-test p 0.820
+
+b) tackle-vs-edge head-to-head reps with side: 1545 (LT 639, RT 906); rushers 72, tackles 34
+   rushers faced by side (rep-weighted means): LT: hoop turn speed z +0.38, rusher weight 258 lb, corner turned 0.139, ppa 0.345; RT: hoop turn speed z +0.35, rusher weight 258 lb, corner turned 0.181, ppa 0.326
+   ppa                  rusher-bend slope vs RT -0.0004 (p 0.972) | vs LT +0.0057 | interaction p 0.557  (reps 1362)
+   corner_turned        rusher-bend slope vs RT +0.0182 (p 0.384) | vs LT +0.0312 | interaction p 0.480  (reps 1398)
+   ol_pressure_allowed  rusher-bend slope vs RT +0.0008 (p 0.947) | vs LT -0.0024 | interaction p 0.859  (reps 1384)
+   dl_pressure          rusher-bend slope vs RT +0.0056 (p 0.608) | vs LT -0.0086 | interaction p 0.459  (reps 1398)
+
+c) what counters rusher bend, by side (interaction rusher hoop z x tackle trait z; negative = trait blunts bend):
+   z_ol_wave    | LT ppa -0.0035 (p 0.788, T 23) | LT corner_turned -0.0138 (p 0.449, T 23) | RT ppa -0.0137 (p 0.341, T 26) | RT corner_turned -0.0070 (p 0.725, T 27)
+   z_ol_mirror  | LT ppa -0.0043 (p 0.737, T 23) | LT corner_turned -0.0070 (p 0.685, T 23) | RT ppa +0.0159 (p 0.003, T 26) | RT corner_turned -0.0080 (p 0.651, T 27)
+   z_ol_arm     | LT ppa -0.0093 (p 0.158, T 23) | LT corner_turned -0.0217 (p 0.116, T 23) | RT ppa -0.0286 (p 0.169, T 26) | RT corner_turned +0.0361 (p 0.034, T 27)
+   z_ol_ten     | LT ppa -0.0243 (p 0.386, T 19) | LT corner_turned +0.0085 (p 0.851, T 19) | RT ppa -0.0232 (p 0.267, T 21) | RT corner_turned +0.0601 (p 0.001, T 22)
+   z_ol_w       | LT ppa -0.0015 (p 0.928, T 23) | LT corner_turned -0.0041 (p 0.629, T 23) | RT ppa -0.0151 (p 0.107, T 26) | RT corner_turned +0.0074 (p 0.677, T 27)
+
+d) tackle traits -> his peak pressure probability over expected (all dropbacks; negative r = trait helps):
+side              LT    RT  LT_n  RT_n
+trait                                 
+arm_length     -0.43 -0.11  12.0  14.0
+combine_height -0.69 -0.07  12.0  14.0
+combine_weight -0.49 -0.34  12.0  14.0
+mirror_speed   -0.02  0.19  12.0  14.0
+ten_yd_split     NaN  0.11   NaN  14.0
+wave_speed      0.14 -0.17  12.0  14.0
+wing_span      -0.46 -0.05  12.0  14.0
+p-values:
+side               LT     RT
+trait                       
+arm_length      0.159  0.702
+combine_height  0.013  0.801
+combine_weight  0.108  0.231
+mirror_speed    0.959  0.515
+ten_yd_split      NaN  0.719
+wave_speed      0.655  0.569
+wing_span       0.135  0.878

@@ -1,0 +1,18 @@
+(a) attempts 241; rejected by the frozen rule 17: {'angle out of range': 17}
+    recovered by the relaxed detector: 5 (reasons left: {'angle 12': 3, 'angle 10': 2, 'angle 13': 2, 'angle 11': 2, 'angle 20': 1, 'angle 17': 1, 'angle 16': 1})
+    single-attempt players who gain a second attempt: 4 of 18
+    validity:
+    frozen (reference)                 composite slope +0.089 (t +2.9) | LOCO composite +1.03% | LOCO completion +3.51% | DBs 76
+    frozen + recovered attempts        composite slope +0.085 (t +2.7) | LOCO composite +0.91% | LOCO completion +2.67% | DBs 76
+
+(b) attempt 1 vs 2 agreement: single-frame top r +0.47 | multi-frame index r +0.46 (n 103)
+    single-frame top                   composite slope +0.089 (t +2.9) | LOCO composite +1.03% | LOCO completion +3.51% | DBs 76
+    multi-frame drive index            composite slope +0.073 (t +2.4) | LOCO composite +0.50% | LOCO completion +3.78% | DBs 76
+
+(c) throws with NGS separation of the targeted receiver: 3785 of 22312 rows; toward-side rows 1619
+    zone                 ngs_sep   per 10 Drive+: toward -0.127 | away +0.015 | toward-away -0.142 (perm p 0.162; noise SD 0.129) | rows 2611
+    zone                 ngs_open  per 10 Drive+: toward -3.965 | away -1.086 | toward-away -2.879 (perm p 0.036; noise SD 1.834) | rows 2611
+    zone, < 20 air yds   ngs_sep   per 10 Drive+: toward -0.132 | away +0.020 | toward-away -0.151 (perm p 0.265; noise SD 0.157) | rows 2196
+    zone, < 20 air yds   ngs_open  per 10 Drive+: toward -2.803 | away +0.439 | toward-away -3.242 (perm p 0.070; noise SD 2.198) | rows 2196
+    all coverages        ngs_sep   per 10 Drive+: toward -0.101 | away -0.050 | toward-away -0.052 (perm p 0.549; noise SD 0.110) | rows 3785
+    all coverages        ngs_open  per 10 Drive+: toward -2.376 | away -1.446 | toward-away -0.930 (perm p 0.429; noise SD 1.489) | rows 3785

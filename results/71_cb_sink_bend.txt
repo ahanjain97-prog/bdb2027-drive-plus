@@ -1,0 +1,63 @@
+events: {'turn': 1914, 'attempt': 1193, 'plant': 571, 'flip': 521} | flips per attempt by drill: {'BOX_DRILL': 1.91, 'SHORT_SHUTTLE': 0.03, 'TERYL_AUSTIN_DRILL_1': 0.75, 'TERYL_AUSTIN_DRILL_2': 0.01, 'THREE_CONE_DRILL': 0.41, 'W_DRILL': 1.68}
+combine reliability (odd vs even events, Spearman-Brown): {'sink_rate': np.float64(-0.12), 'sink_dist': np.float64(-0.5), 'plant_depth': np.float64(-0.49), 'exit_rate': np.float64(-0.23), 'bend_speed': np.float64(-0.52), 'bend_lat': np.float64(-0.1), 'bend_radius': np.float64(-0.6), 'flip_speed': np.float64(0.05), 'flip_time': np.float64(0.22)}
+correlations among combine traits (CBs):
+              sink_rate  sink_dist  plant_depth  exit_rate  bend_speed  bend_lat  bend_radius  flip_speed  flip_time  flip_rate  drive
+sink_rate         1.00      -0.19        -0.66       0.41       -0.06      0.03        -0.11       -0.29      -0.06       0.22  -0.05
+sink_dist        -0.19       1.00         0.17      -0.23        0.14      0.17         0.02        0.04      -0.04      -0.03  -0.19
+plant_depth      -0.66       0.17         1.00      -0.52        0.07     -0.07         0.13        0.23       0.15      -0.08   0.22
+exit_rate         0.41      -0.23        -0.52       1.00       -0.26      0.06        -0.22       -0.02       0.09       0.37  -0.09
+bend_speed       -0.06       0.14         0.07      -0.26        1.00     -0.10         0.71        0.12       0.00      -0.07   0.23
+bend_lat          0.03       0.17        -0.07       0.06       -0.10      1.00        -0.49        0.21       0.16      -0.24   0.02
+bend_radius      -0.11       0.02         0.13      -0.22        0.71     -0.49         1.00       -0.01       0.04       0.02   0.22
+flip_speed       -0.29       0.04         0.23      -0.02        0.12      0.21        -0.01        1.00      -0.08      -0.02   0.00
+flip_time        -0.06      -0.04         0.15       0.09        0.00      0.16         0.04       -0.08       1.00      -0.04   0.05
+flip_rate         0.22      -0.03        -0.08       0.37       -0.07     -0.24         0.02       -0.02      -0.04       1.00  -0.10
+drive            -0.05      -0.19         0.22      -0.09        0.23      0.02         0.22        0.00       0.05      -0.10   1.00
+
+=== (2) does each combine trait show up in the CB's own NFL movement? (player level, CBs >= 10 reps) ===
+  sink_rate -> g_sink_rate: r +0.14 | sink_dist -> g_sink_rate: r -0.33 | plant_depth -> g_min_speed: r +0.08 | bend_speed -> g_bend_speed: r +0.31 | bend_lat -> g_bend_lat: r +0.11 | bend_radius -> g_bend_lat: r -0.26 | flip_speed -> g_flip: r +0.09 | flip_rate -> g_flip: r -0.02 | drive -> g_bend_speed: r +0.39  (n 36)
+
+=== (3) combine trait -> coverage outcome, by technique cell (b per SD; player-permutation p) ===
+b per SD:
+cell        man-matching                             zone-matching                            
+outcome       db_closing sep_at_throw sep_gain_break    db_closing sep_at_throw sep_gain_break
+trait                                                                                         
+bend_lat           0.045       -0.018         -0.036        -0.028       -0.027          0.015
+bend_radius        0.015        0.013          0.008         0.033       -0.069          0.011
+bend_speed         0.051        0.015         -0.019         0.096       -0.108         -0.053
+drive              0.016       -0.012         -0.007         0.168       -0.137         -0.085
+exit_rate         -0.037       -0.036          0.011        -0.000        0.012          0.048
+flip_rate         -0.012       -0.026          0.006        -0.004       -0.191          0.037
+flip_speed         0.053        0.019         -0.048        -0.132        0.196          0.097
+flip_time          0.030       -0.030         -0.029         0.225       -0.261         -0.128
+plant_depth        0.059       -0.005         -0.053        -0.014       -0.037         -0.018
+sink_dist          0.038        0.006         -0.010         0.052       -0.129         -0.052
+sink_rate          0.004       -0.053         -0.015         0.027       -0.036         -0.005
+
+perm p:
+cell        man-matching                             zone-matching                            
+outcome       db_closing sep_at_throw sep_gain_break    db_closing sep_at_throw sep_gain_break
+trait                                                                                         
+bend_lat           0.120        0.578          0.196         0.671        0.784          0.741
+bend_radius        0.571        0.595          0.767         0.631        0.482          0.804
+bend_speed         0.100        0.625          0.568         0.169        0.382          0.329
+drive              0.608        0.661          0.761         0.023        0.133          0.066
+exit_rate          0.229        0.286          0.754         0.997        0.947          0.365
+flip_rate          0.571        0.336          0.811         0.970        0.070          0.505
+flip_speed         0.116        0.578          0.116         0.163        0.150          0.126
+flip_time          0.449        0.452          0.462         0.033        0.050          0.073
+plant_depth        0.103        0.910          0.143         0.874        0.807          0.824
+sink_dist          0.209        0.841          0.757         0.439        0.186          0.286
+sink_rate          0.864        0.066          0.561         0.728        0.784          0.930
+
+with drive speed in the model (trait b, perm p) -- does the trait add beyond drive?
+    trait          cell      outcome   model      b  p_perm  reps  CBs
+sink_rate  man-matching sep_at_throw + drive -0.054   0.063   691   43
+sink_dist zone-matching sep_at_throw + drive -0.172   0.070   532   42
+sink_dist zone-matching   db_closing + drive  0.098   0.093   622   43
+ bend_lat  man-matching   db_closing + drive  0.046   0.100   814   43
+flip_time zone-matching sep_at_throw + drive -0.237   0.080   532   42
+flip_time zone-matching   db_closing + drive  0.187   0.060   622   43
+flip_rate zone-matching sep_at_throw + drive -0.192   0.043   532   42
+
+hits at p < .05 (alone): 3 of 66 (expected by chance 3.3)

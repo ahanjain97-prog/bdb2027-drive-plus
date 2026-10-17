@@ -1,0 +1,8 @@
+coverage reps 2451; receivers 122, DBs 93; with break 1.00, with throw 0.87
+tracking separation at the throw vs NGS nearest-defender separation: r 0.74, share where the pool DB IS the nearest defender (|diff| < 0.5 yd): 0.92
+                        sep_mean  sep_at_break  sep_gain_break  sep_at_throw  db_speed_deficit
+team_coverage_man_zone                                                                        
+MAN_COVERAGE                1.54          1.29           -0.14          1.16              0.71
+ZONE_COVERAGE               1.91          1.50            0.05          1.63              0.90
+targeted: 399  completion rate when targeted: 0.501
+sep at throw by targeted: {0.0: 1.8700000047683716, 1.0: 1.8899999856948853} | completion by sep at throw tercile: {Interval(0.28099999999999997, 1.001, closed='right'): 0.26, Interval(1.001, 1.763, closed='right'): 0.49, Interval(1.763, 31.024, closed='right'): 0.68}

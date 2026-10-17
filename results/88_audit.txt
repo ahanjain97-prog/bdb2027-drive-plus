@@ -1,0 +1,25 @@
+(A) pairs 35184, pre-break-only reps 1928 (registered definition had 2,040 reps on graded DBs)
+    reps 1928, DBs 69, targets 326, cells {'man-matching': 874, 'zone-matching': 706, 'other': 348}
+  [pre-break-only selection]
+    sep gained at break (all): -0.147 (perm p 0.003; n 1928, DBs 69)
+    zone-match closing: +0.225 (perm p 0.010; n 706, DBs 56)
+    open at throw (all): -4.398 (perm p 0.003; n 1667, DBs 67)
+    completion when targeted: -8.873 (perm p 0.003; n 326, DBs 50)
+  [registered 3-yd reps (reference)]
+    sep gained at break (all): -0.064 (perm p 0.047; n 2037, DBs 70)
+    zone-match closing: +0.169 (perm p 0.027; n 705, DBs 55)
+    open at throw (all): -2.327 (perm p 0.033; n 1780, DBs 69)
+    completion when targeted: -7.782 (perm p 0.010; n 327, DBs 51)
+
+(B) season heterogeneity: drive x 2025 interaction (2024 + 2025 seasons; 2023 too thin)
+    sep gained at break (all): 2024 slope -0.030, 2025 minus 2024 -0.057 (clustered p 0.278, perm p 0.302; DBs 66)
+    zone-match closing: 2024 slope +0.100, 2025 minus 2024 +0.101 (clustered p 0.316, perm p 0.385; DBs 52)
+    open at throw (all): 2024 slope -1.508, 2025 minus 2024 -1.372 (clustered p 0.299, perm p 0.478; DBs 65)
+    completion when targeted: 2024 slope -1.589, 2025 minus 2024 -9.336 (clustered p 0.005, perm p 0.060; DBs 49)
+
+(C) without GO routes
+  [registered reps, GO routes excluded]
+    sep gained at break (all): -0.049 (perm p 0.266; n 1510, DBs 66)
+    zone-match closing: +0.125 (perm p 0.133; n 473, DBs 52)
+    open at throw (all): -1.287 (perm p 0.299; n 1307, DBs 65)
+    completion when targeted: -7.063 (perm p 0.013; n 233, DBs 49)

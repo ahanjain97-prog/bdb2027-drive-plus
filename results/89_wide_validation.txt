@@ -1,0 +1,67 @@
+=== radius ladder (pre-break-only selection, WR/TE/RB routes, all graded DBs) ===
+  [radius 3 yd] reps 1981, DBs 69, targets 338, zone-matching 738
+    sep gained (all)                       -0.142 [-0.201, -0.084] p1 0.004 · supported  · n 1981, DBs 69
+    closing, zone-matching (align ≥ 0.5)   +0.264 [+0.155, +0.374] p1 0.008 · supported  · n 738, DBs 56
+    closing, all zone                      +0.358 [+0.208, +0.507] p1 0.004 · supported  · n 916, DBs 65
+    open at throw (all)                    -4.272 [-5.789, -2.754] p1 0.004 · supported  · n 1716, DBs 67
+    sep at throw (all)                     -0.316 [-0.448, -0.183] p1 0.004 · supported  · n 1716, DBs 67
+    completion (targets)                   -8.660 [-11.196, -6.123] p1 0.008 · supported  · n 338, DBs 50
+  [radius 4 yd] reps 2952, DBs 76, targets 502, zone-matching 1126
+    sep gained (all)                       -0.158 [-0.239, -0.077] p1 0.012 · supported  · n 2951, DBs 76
+    closing, zone-matching (align ≥ 0.5)   +0.249 [+0.122, +0.376] p1 0.016 · supported  · n 1125, DBs 66
+    closing, all zone                      +0.384 [+0.200, +0.568] p1 0.004 · supported  · n 1521, DBs 71
+    open at throw (all)                    -4.613 [-6.259, -2.967] p1 0.012 · supported  · n 2566, DBs 75
+    sep at throw (all)                     -0.363 [-0.519, -0.208] p1 0.008 · supported  · n 2566, DBs 75
+    completion (targets)                   -8.482 [-11.131, -5.832] p1 0.004 · supported  · n 502, DBs 60
+  [radius 5 yd] reps 4235, DBs 79, targets 728, zone-matching 1699
+    sep gained (all)                       -0.185 [-0.267, -0.103] p1 0.004 · supported  · n 4234, DBs 79
+    closing, zone-matching (align ≥ 0.5)   +0.276 [+0.157, +0.395] p1 0.008 · supported  · n 1698, DBs 70
+    closing, all zone                      +0.411 [+0.233, +0.588] p1 0.012 · supported  · n 2372, DBs 77
+    open at throw (all)                    -4.972 [-6.819, -3.125] p1 0.008 · supported  · n 3659, DBs 79
+    sep at throw (all)                     -0.462 [-0.624, -0.300] p1 0.004 · supported  · n 3659, DBs 79
+    completion (targets)                   -6.729 [-8.895, -4.563] p1 0.004 · supported  · n 728, DBs 62
+
+=== wide default (4 yd): corners only ===
+  [4 yd, CBs only] reps 2287, DBs 46, targets 400, zone-matching 925
+    sep gained (all)                       -0.175 [-0.264, -0.086] p1 0.008 · supported  · n 2286, DBs 46
+    closing, zone-matching (align ≥ 0.5)   +0.257 [+0.123, +0.390] p1 0.012 · supported  · n 924, DBs 43
+    closing, all zone                      +0.427 [+0.231, +0.623] p1 0.004 · supported  · n 1151, DBs 44
+    open at throw (all)                    -5.104 [-6.818, -3.390] p1 0.008 · supported  · n 1970, DBs 46
+    sep at throw (all)                     -0.430 [-0.599, -0.262] p1 0.004 · supported  · n 1970, DBs 46
+    completion (targets)                   -8.024 [-10.783, -5.265] p1 0.004 · supported  · n 400, DBs 40
+
+=== wide default (4 yd): matching threshold .7 (the registered one) ===
+  [4 yd, align ≥ .7] reps 2952, DBs 76, targets 502, zone-matching 1040
+    sep gained (all)                       -0.158 [-0.239, -0.077] p1 0.016 · supported  · n 2951, DBs 76
+    closing, zone-matching (align ≥ 0.7)   +0.192 [+0.067, +0.318] p1 0.036 · supported  · n 1039, DBs 63
+    closing, all zone                      +0.384 [+0.200, +0.568] p1 0.004 · supported  · n 1521, DBs 71
+    open at throw (all)                    -4.613 [-6.259, -2.967] p1 0.004 · supported  · n 2566, DBs 75
+    sep at throw (all)                     -0.363 [-0.519, -0.208] p1 0.004 · supported  · n 2566, DBs 75
+    completion (targets)                   -8.482 [-11.131, -5.832] p1 0.004 · supported  · n 502, DBs 60
+
+=== wide default (4 yd): by season ===
+  [4 yd, 2024 season] reps 973, DBs 46, targets 155, zone-matching 376
+    sep gained (all)                       -0.160 [-0.233, -0.088] p1 0.008 · supported  · n 973, DBs 46
+    closing, zone-matching (align ≥ 0.5)   +0.145 [+0.047, +0.242] p1 0.096 · supported  · n 376, DBs 37
+    closing, all zone                      +0.377 [+0.228, +0.525] p1 0.012 · supported  · n 500, DBs 41
+    open at throw (all)                    -4.562 [-6.401, -2.723] p1 0.012 · supported  · n 834, DBs 44
+    sep at throw (all)                     -0.391 [-0.570, -0.212] p1 0.012 · supported  · n 834, DBs 44
+    completion (targets)                   -2.909 [-6.997, +1.179] p1 0.275 · right sign · n 155, DBs 32
+  [4 yd, 2025 season] reps 1710, DBs 65, targets 300, zone-matching 649
+    sep gained (all)                       -0.167 [-0.271, -0.063] p1 0.036 · supported  · n 1709, DBs 65
+    closing, zone-matching (align ≥ 0.5)   +0.319 [+0.144, +0.494] p1 0.012 · supported  · n 648, DBs 57
+    closing, all zone                      +0.414 [+0.176, +0.652] p1 0.016 · supported  · n 887, DBs 61
+    open at throw (all)                    -4.778 [-6.669, -2.887] p1 0.016 · supported  · n 1492, DBs 64
+    sep at throw (all)                     -0.356 [-0.543, -0.168] p1 0.040 · supported  · n 1492, DBs 64
+    completion (targets)                   -11.860 [-15.058, -8.662] p1 0.004 · supported  · n 300, DBs 54
+
+=== wide default (4 yd): without GO routes ===
+  [4 yd, no GO] reps 2329, DBs 73, targets 394, zone-matching 833
+    sep gained (all)                       -0.163 [-0.261, -0.064] p1 0.020 · supported  · n 2329, DBs 73
+    closing, zone-matching (align ≥ 0.5)   +0.216 [+0.074, +0.358] p1 0.044 · supported  · n 833, DBs 63
+    closing, all zone                      +0.396 [+0.185, +0.607] p1 0.004 · supported  · n 1183, DBs 69
+    open at throw (all)                    -4.028 [-6.009, -2.046] p1 0.008 · supported  · n 2004, DBs 71
+    sep at throw (all)                     -0.355 [-0.540, -0.170] p1 0.008 · supported  · n 2004, DBs 71
+    completion (targets)                   -7.589 [-10.133, -5.046] p1 0.008 · supported  · n 394, DBs 58
+
+standard: one-sided player-permutation p < .10, 80% interval excluding 0, expected sign -> 'supported'.

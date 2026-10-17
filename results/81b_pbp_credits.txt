@@ -1,0 +1,32 @@
+pass snaps 43570, DBs 114 | named anywhere: PBU 619, INT 154, DPI 18, stop after catch 3443 -> credited targets 4222 (vs 327 pool-receiver coverage targets)
+credited targets by alignment: {'CB': 1918, 'SLOT_CB': 857, 'other': 1447} | per DB median: 25.5
+   [M.Sainristil] pbu 0 int 1 stop 0 dpi 0 | (12:13) Ja.Williams pass deep right intended for J.Gibbs INTERCEPTED by M.Sainristil at WAS 34. M.Sainristil to WAS 34 for no gain (J.Gibbs). Penalty 
+   [C.Smith] pbu 0 int 0 stop 1 dpi 0 | (15:00) (Shotgun) J.Daniels pass short right to J.Bates to MIA 28 for 4 yards (C.Smith).
+   [J.Jones] pbu 0 int 0 stop 1 dpi 0 | (3:11) (Shotgun) A.O'Connell pass deep left to T.Tucker to LV 45 for 20 yards (J.Jones).
+   [J.Simpson] pbu 0 int 0 stop 1 dpi 0 | (6:30) (Shotgun) J.McCarthy pass short middle to J.Nailor to GB 30 for 17 yards (J.Simpson).
+   [J.Newton] pbu 0 int 0 stop 1 dpi 0 | (6:15) (No Huddle, Shotgun) J.Johnson pass short right to J.Lane to CIN 27 for 12 yards (J.Newton).
+   [J.Jones] pbu 0 int 0 stop 1 dpi 0 | (10:15) (Shotgun) J.Wolford pass short left to T.Knue to JAX 24 for 4 yards (J.Jones).
+  all alignments       ball_play (per snap           ) +0.011 vs mean 1.77 (perm p 0.912; n 43570, DBs 114)
+  all alignments       credited  (per snap           ) -0.194 vs mean 9.69 (perm p 0.337; n 43570, DBs 114)
+  all alignments       pbu       (per snap           ) +0.019 vs mean 1.42 (perm p 0.749; n 43570, DBs 114)
+  all alignments       comp_c    (per credited target) -0.606 vs mean 81.69 (perm p 0.421; n 4222, DBs 112)
+  all alignments       bp_c      (per credited target) +0.606 vs mean 18.31 (perm p 0.435; n 4222, DBs 112)
+  all alignments       yds_c     (per credited target) -0.260 vs mean 9.57 (perm p 0.128; n 4222, DBs 112)
+  at CB / slot         ball_play (per snap           ) -0.013 vs mean 2.21 (perm p 0.886; n 25961, DBs 113)
+  at CB / slot         credited  (per snap           ) -0.198 vs mean 10.69 (perm p 0.371; n 25961, DBs 113)
+  at CB / slot         pbu       (per snap           ) -0.006 vs mean 1.90 (perm p 0.922; n 25961, DBs 113)
+  at CB / slot         comp_c    (per credited target) -0.441 vs mean 79.35 (perm p 0.619; n 2775, DBs 98)
+  at CB / slot         bp_c      (per credited target) +0.441 vs mean 20.65 (perm p 0.667; n 2775, DBs 98)
+  at CB / slot         yds_c     (per credited target) -0.167 vs mean 8.61 (perm p 0.273; n 2775, DBs 98)
+  at CB / slot, zone   ball_play (per snap           ) +0.094 vs mean 1.89 (perm p 0.435; n 17501, DBs 108)
+  at CB / slot, zone   credited  (per snap           ) +0.007 vs mean 10.75 (perm p 0.988; n 17501, DBs 108)
+  at CB / slot, zone   pbu       (per snap           ) +0.105 vs mean 1.55 (perm p 0.232; n 17501, DBs 108)
+  at CB / slot, zone   comp_c    (per credited target) -0.895 vs mean 82.47 (perm p 0.353; n 1882, DBs 93)
+  at CB / slot, zone   bp_c      (per credited target) +0.895 vs mean 17.53 (perm p 0.359; n 1882, DBs 93)
+  at CB / slot, zone   yds_c     (per credited target) -0.186 vs mean 8.45 (perm p 0.309; n 1882, DBs 93)
+  at CB / slot, man    ball_play (per snap           ) -0.263 vs mean 2.87 (perm p 0.212; n 8460, DBs 112)
+  at CB / slot, man    credited  (per snap           ) -0.655 vs mean 10.56 (perm p 0.078; n 8460, DBs 112)
+  at CB / slot, man    pbu       (per snap           ) -0.263 vs mean 2.64 (perm p 0.176; n 8460, DBs 112)
+  at CB / slot, man    comp_c    (per credited target) +0.593 vs mean 72.79 (perm p 0.754; n 893, DBs 85)
+  at CB / slot, man    bp_c      (per credited target) -0.593 vs mean 27.21 (perm p 0.754; n 893, DBs 85)
+  at CB / slot, man    yds_c     (per credited target) -0.180 vs mean 8.96 (perm p 0.525; n 893, DBs 85)

@@ -1,0 +1,14 @@
+direction check: targeted receivers 1 s after the throw on the side the description says, 99.9% of 7788 throws
+rows (pass attempt x graded pool CB with a clear side): 22312, CBs 57, plays 20357
+throws by rel: {'toward': 9215, 'away': 8547, 'middle': 4550} | by coverage: {'ZONE_COVERAGE': 14636, 'MAN_COVERAGE': 5975}
+  all   epa        Drive+ slope per 10 pts: toward -0.0076 | away -0.0105 | middle -0.0441 || toward-away +0.0029 (perm p 0.877); toward alone perm p 0.765 | rows 22312, CBs 57
+  all   completion Drive+ slope per 10 pts: toward -0.0145 | away -0.0021 | middle -0.0223 || toward-away -0.0124 (perm p 0.056); toward alone perm p 0.019 | rows 22312, CBs 57
+  all   success    Drive+ slope per 10 pts: toward -0.0081 | away +0.0024 | middle -0.0084 || toward-away -0.0105 (perm p 0.133); toward alone perm p 0.278 | rows 22312, CBs 57
+  zone  epa        Drive+ slope per 10 pts: toward -0.0155 | away -0.0157 | middle -0.0477 || toward-away +0.0001 (perm p 0.999); toward alone perm p 0.581 | rows 14636, CBs 56
+  zone  completion Drive+ slope per 10 pts: toward -0.0185 | away +0.0021 | middle -0.0250 || toward-away -0.0205 (perm p 0.026); toward alone perm p 0.018 | rows 14636, CBs 56
+  zone  success    Drive+ slope per 10 pts: toward -0.0105 | away +0.0038 | middle -0.0083 || toward-away -0.0143 (perm p 0.125); toward alone perm p 0.231 | rows 14636, CBs 56
+  man   epa        Drive+ slope per 10 pts: toward +0.0135 | away +0.0115 | middle -0.0123 || toward-away +0.0020 (perm p 0.955); toward alone perm p 0.808 | rows 5975, CBs 56
+  man   completion Drive+ slope per 10 pts: toward -0.0100 | away -0.0064 | middle -0.0161 || toward-away -0.0036 (perm p 0.811); toward alone perm p 0.339 | rows 5975, CBs 56
+  man   success    Drive+ slope per 10 pts: toward +0.0015 | away +0.0062 | middle +0.0089 || toward-away -0.0047 (perm p 0.698); toward alone perm p 0.878 | rows 5975, CBs 56
+
+avoidance: share of left/right throws going to his side 0.519; per 10 Drive+ points +0.0012 (perm p 0.863)

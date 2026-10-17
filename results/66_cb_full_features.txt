@@ -1,0 +1,3 @@
+CBs 60, view rows 120 (views per CB {2: 60}), features 1246
+feature families: {'curves': 880, 'transition phases': 7, 'mechanics': 359}
+coverage (share of CBs with each drill): {'BACK_PEDAL_AND_90_DEGREE_BREAK_TO_BALL': 1.0, 'BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION': 0.93, 'BOX_DRILL': 1.0, 'FORTY_YARD_DASH': 0.82, 'GAUNTLET_DRILL': 0.85, 'LINE_DRILL': 0.93, 'SHORT_SHUTTLE': 0.27, 'TERYL_AUSTIN_DRILL_1': 0.96, 'TERYL_AUSTIN_DRILL_2': 0.88, 'THREE_CONE_DRILL': 0.22, 'W_DRILL': 0.94}

@@ -1,0 +1,44 @@
+
+REC: tests 104, q<.10: 15
+group                      drill      feature  n  partial_r     p  q_bh_group
+  REC        WR:SLANT_ROUTE_LEFT   mean_speed 78      0.392 0.000       0.041
+  REC        WR:CURL_ROUTE_RIGHT   peak_decel 74     -0.343 0.003       0.090
+  REC WR:POST_CORNER_ROUTE_RIGHT   accel_0_1s 69     -0.348 0.003       0.090
+  REC        WR:SLANT_ROUTE_LEFT    top_speed 78      0.311 0.006       0.090
+  REC    WR:OVER_SHOULDER_ADJUST accel_0_0.5s 75     -0.310 0.007       0.090
+  REC    WR:COMEBACK_ROUTE_RIGHT   peak_decel 70     -0.318 0.007       0.090
+  REC    WR:OVER_SHOULDER_ADJUST   accel_0_1s 75     -0.304 0.008       0.090
+  REC    WR:COMEBACK_ROUTE_RIGHT   mean_speed 70      0.311 0.009       0.090
+
+OL: tests 64, q<.10: 5
+group                                     drill      feature   n  partial_r     p  q_bh_group
+   OL OL:FIVE_YARD_WAVE_DRILL_SLIDE_AND_SHUFFLE   mean_speed 104      0.348 0.000       0.016
+   OL OL:FIVE_YARD_WAVE_DRILL_SLIDE_AND_SHUFFLE  speed_at_1s 104      0.327 0.001       0.016
+   OL OL:FIVE_YARD_WAVE_DRILL_SLIDE_AND_SHUFFLE   accel_0_1s 104      0.320 0.001       0.016
+   OL                           OL:SCREEN_DRILL   peak_accel 103      0.320 0.001       0.016
+   OL           FORTY_YARD_DASH:FORTY_YARD_DASH   peak_decel  85     -0.315 0.003       0.042
+   OL OL:FIVE_YARD_WAVE_DRILL_SLIDE_AND_SHUFFLE accel_0_0.5s 104      0.250 0.010       0.112
+   OL          OL:OL_PULL_DRILL_LONG_PULL_RIGHT   peak_accel  82     -0.268 0.015       0.136
+   OL                           OL:SCREEN_DRILL   mean_speed 103      0.214 0.030       0.237
+
+DL: tests 56, q<.10: 0
+group                                          drill     feature   n  partial_r     p  q_bh_group
+   DL DL:FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION  t_to_90pct 101     -0.283 0.004       0.229
+   DL                          DL:RUN_THE_HOOP_DRILL  accel_0_1s  98      0.249 0.013       0.371
+   DL                          DL:RUN_AND_CLUB_DRILL  accel_0_1s 102      0.230 0.020       0.374
+   DL                          DL:RUN_THE_HOOP_DRILL speed_at_1s  98      0.204 0.044       0.611
+   DL                FORTY_YARD_DASH:FORTY_YARD_DASH   top_speed  82      0.196 0.078       0.644
+   DL                          DL:RUN_AND_CLUB_DRILL   top_speed 102      0.172 0.083       0.644
+   DL                          DL:RUN_THE_HOOP_DRILL  mean_speed  98      0.174 0.087       0.644
+   DL                          DL:RUN_AND_CLUB_DRILL speed_at_1s 102      0.168 0.092       0.644
+
+DB: tests 72, q<.10: 7
+group                                           drill      feature   n  partial_r     p  q_bh_group
+   DB DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION   mean_speed 104      0.382 0.000       0.005
+   DB                                    DB:BOX_DRILL   peak_accel 104     -0.278 0.004       0.084
+   DB                         DB:TERYL_AUSTIN_DRILL_1   mean_speed  85      0.306 0.004       0.084
+   DB                         DB:TERYL_AUSTIN_DRILL_2   peak_accel  95     -0.288 0.005       0.084
+   DB                                      DB:W_DRILL  speed_at_1s 103     -0.262 0.008       0.093
+   DB DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION   peak_decel 104      0.255 0.009       0.093
+   DB                                      DB:W_DRILL   accel_0_1s 103     -0.256 0.009       0.093
+   DB                                      DB:W_DRILL accel_0_0.5s 103     -0.248 0.012       0.105

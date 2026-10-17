@@ -1,0 +1,32 @@
+natural-experiment check (CBs on defense): r(drive, log pick) -0.35, r(drive, UDFA) -0.30, r(drive, dropback snaps) +0.19, r(drive, 40 speed) +0.40
+
+=== MAIN: drive x zone on defensive dropbacks (per SD of drive on the field; EPA = offense) ===
+   {'plays': 'pass', 'trait': 'drive', 'model': 'M1', 'outcome': 'epa', 'n_plays': 22793, 'n_CBs': 56, 'b_man': np.float64(-0.0327), 'b_zone': np.float64(-0.0268), 'b_zone_minus_man': np.float64(0.0059), 'perm_p_interaction': np.float64(0.7645)}
+   {'plays': 'pass', 'trait': 'drive', 'model': 'M1', 'outcome': 'success', 'n_plays': 22793, 'n_CBs': 56, 'b_man': np.float64(-0.0038), 'b_zone': np.float64(-0.0052), 'b_zone_minus_man': np.float64(-0.0014), 'perm_p_interaction': np.float64(0.8563)}
+   {'plays': 'pass', 'trait': 'drive', 'model': 'M1', 'outcome': 'completion', 'n_plays': 20059, 'n_CBs': 56, 'b_man': np.float64(-0.0223), 'b_zone': np.float64(-0.0153), 'b_zone_minus_man': np.float64(0.007), 'perm_p_interaction': np.float64(0.4112)}
+   {'plays': 'pass', 'trait': 'drive', 'model': 'M2', 'outcome': 'epa', 'n_plays': 22793, 'n_CBs': 56, 'b_man': np.float64(-0.0069), 'b_zone': np.float64(-0.0423), 'b_zone_minus_man': np.float64(-0.0354), 'perm_p_interaction': np.float64(0.4571)}
+   {'plays': 'pass', 'trait': 'drive', 'model': 'M2', 'outcome': 'success', 'n_plays': 22793, 'n_CBs': 56, 'b_man': np.float64(-0.0034), 'b_zone': np.float64(-0.0054), 'b_zone_minus_man': np.float64(-0.002), 'perm_p_interaction': np.float64(0.8563)}
+   {'plays': 'pass', 'trait': 'drive', 'model': 'M2', 'outcome': 'completion', 'n_plays': 20059, 'n_CBs': 56, 'b_man': np.float64(-0.0221), 'b_zone': np.float64(-0.0156), 'b_zone_minus_man': np.float64(0.0065), 'perm_p_interaction': np.float64(0.6607)}
+  plays by coverage: {'ZONE_COVERAGE': 16070, 'MAN_COVERAGE': 6723}
+
+=== zone-only and man-only slopes (M1 structure, separate fits; player permutation) ===
+  ZONE_COVERAGE  epa      -0.0305 per SD (perm p 0.293, plays 16070)
+  ZONE_COVERAGE  success  -0.0025 per SD (perm p 0.780, plays 16070)
+  MAN_COVERAGE   epa      -0.0211 per SD (perm p 0.723, plays 6723)
+  MAN_COVERAGE   success  -0.0073 per SD (perm p 0.513, plays 6723)
+
+=== PLACEBOS ===
+   {'plays': 'run', 'trait': 'drive', 'model': 'M1', 'outcome': 'epa', 'n_plays': 15343, 'n_CBs': 57, 'b': np.float64(-0.0022), 'perm_p': np.float64(0.897)}
+   {'plays': 'run', 'trait': 'drive', 'model': 'M1', 'outcome': 'success', 'n_plays': 15343, 'n_CBs': 57, 'b': np.float64(0.0005), 'perm_p': np.float64(0.9402)}
+   {'plays': 'pass', 'trait': 'forty_fast', 'model': 'M1', 'outcome': 'epa', 'n_plays': 20106, 'n_CBs': 49, 'b_man': np.float64(0.0269), 'b_zone': np.float64(-0.0227), 'b_zone_minus_man': np.float64(-0.0496), 'perm_p_interaction': np.float64(0.0963)}
+   {'plays': 'pass', 'trait': 'forty_fast', 'model': 'M1', 'outcome': 'success', 'n_plays': 20106, 'n_CBs': 49, 'b_man': np.float64(0.0111), 'b_zone': np.float64(0.001), 'b_zone_minus_man': np.float64(-0.0101), 'perm_p_interaction': np.float64(0.4286)}
+   {'plays': 'pass', 'trait': 'weight', 'model': 'M1', 'outcome': 'epa', 'n_plays': 22908, 'n_CBs': 57, 'b_man': np.float64(-0.0066), 'b_zone': np.float64(0.0342), 'b_zone_minus_man': np.float64(0.0409), 'perm_p_interaction': np.float64(0.1794)}
+   {'plays': 'pass', 'trait': 'weight', 'model': 'M1', 'outcome': 'success', 'n_plays': 22908, 'n_CBs': 57, 'b_man': np.float64(-0.0072), 'b_zone': np.float64(0.0037), 'b_zone_minus_man': np.float64(0.011), 'perm_p_interaction': np.float64(0.3887)}
+
+=== per-season replication of drive x zone (M1, EPA and success) ===
+  2023 (plays 2637): epa: man -0.7158, zone -0.6324, zone-man +0.0834 (t +0.85) | success: man -0.1355, zone -0.1226, zone-man +0.0129 (t +0.45)
+  2024 (plays 9720): epa: man +0.0420, zone +0.0166, zone-man -0.0254 (t -0.83) | success: man +0.0161, zone +0.0095, zone-man -0.0066 (t -0.72)
+  2025 (plays 10436): epa: man -0.0700, zone -0.0438, zone-man +0.0261 (t +0.89) | success: man -0.0137, zone -0.0123, zone-man +0.0014 (t +0.16)
+
+=== team-season view (55 defense-seasons with >= 60 zone and >= 25 man dropbacks with a pool CB on the field) ===
+  weighted r(snap-weighted CB drive, zone EPA - man EPA) +0.11 | r(drive, zone EPA) -0.34

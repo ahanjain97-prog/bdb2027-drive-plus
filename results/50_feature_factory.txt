@@ -1,0 +1,70 @@
+within-attempt (odd/even events) reliability, best drill x feature:
+                                         drill  kind     feature   n  within_attempt_rel
+                            DL:PASS_RUSH_DRILL  turn  turn_speed  34                0.86
+                                    DB:W_DRILL break  exit_burst  18                0.86
+                             WR:GO_ROUTE_RIGHT  turn  turn_speed  29                0.84
+                      OL:PASS_PRO_MIRROR_DRILL break entry_speed  22                0.80
+                             WR:GO_ROUTE_RIGHT  turn   turn_lean  29                0.74
+DL:FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION break  brake_dist  97                0.72
+                           WR:CURL_ROUTE_RIGHT  turn   turn_lean  96                0.67
+                          WR:DAGGER_ROUTE_LEFT  turn   turn_lean 106                0.64
+                           TE:WHEEL_ROUTE_LEFT  turn  turn_speed  33                0.59
+                         DL:RUN_THE_HOOP_DRILL  turn   turn_lean 109                0.58
+                                 SHORT_SHUTTLE break brake_decel 123                0.55
+                       DL:BACK_PEDAL_AND_REACT break entry_speed  27                0.55
+                                 SHORT_SHUTTLE break  exit_burst 123                0.54
+                              TE:IN_ROUTE_LEFT  turn  turn_speed  39                0.54
+DL:FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION break entry_speed  97                0.54
+attempts 6307, players 510, drills 58, features per attempt 41
+
+test-retest available for 13 drills; median by feature (top/bottom):
+feature
+brk_mean_brake_time    0.00
+decel_into_catch       0.04
+n_turns                0.10
+brk_mean_brake_dist    0.14
+catch_carry            0.14
+brk1_reaccel_time      0.15
+straightness           0.15
+speed_at_0.5s          0.16
+speed_at_1.5s          0.40
+turn_retention         0.42
+turn_lean_max          0.43
+brk1_exit_burst        0.45
+n_breaks               0.47
+duration               0.50
+brk1_entry_speed       0.52
+top_speed              0.57
+
+trait composites: count with split-half-over-drills >= .5, by group:
+                                traits  rel_ge_40  rel_ge_50
+group family                                                
+DB    agility_stopwatch_drills      38          5          1
+      all_db                        38          7          5
+      backpedal                     38          4          2
+      cod                           38          5          1
+DL    agility                       38          4          2
+      agility_stopwatch_drills      38          5          1
+      all_dl                        38          9          8
+      rush                          38          8          4
+OL    agility_stopwatch_drills      38          5          1
+      all_ol                        38          2          2
+      lateral                       38          3          1
+      pulls                         20          9          2
+TE    agility_stopwatch_drills      38          5          1
+      all_te                        38         15          9
+      routes                        38          7          1
+WR    agility_stopwatch_drills      38          5          1
+      ball                          23          1          1
+      breaking_routes               41          8          4
+      routes                        41         10          6
+
+WR most reliable family traits: routes|accel_0_1s 0.70, breaking_routes|accel_0_1s 0.68, breaking_routes|speed_at_1.5s 0.67, routes|speed_at_1.0s 0.64, routes|speed_at_1.5s 0.63, routes|top_speed 0.59, breaking_routes|speed_at_1.0s 0.59, routes|catch_carry 0.57, ball|n_breaks 0.56, routes|brk1_entry_speed 0.55, breaking_routes|brk1_entry_speed 0.55, agility_stopwatch_drills|top_speed 0.53, routes|mean_speed 0.49, routes|speed_at_0.5s 0.48
+
+DB most reliable family traits: all_db|top_speed 0.67, all_db|mean_speed 0.66, backpedal|mean_speed 0.65, backpedal|speed_at_1.5s 0.62, all_db|speed_at_0.5s 0.55, all_db|speed_at_1.5s 0.55, agility_stopwatch_drills|top_speed 0.53, cod|top_speed 0.52, all_db|speed_at_1.0s 0.51, agility_stopwatch_drills|brk_mean_brake_decel 0.48, agility_stopwatch_drills|speed_at_1.0s 0.46, cod|brk1_brake_time 0.46, all_db|path_len 0.45, agility_stopwatch_drills|accel_0_1s 0.44
+
+DL most reliable family traits: all_dl|top_speed 0.90, agility|top_speed 0.89, rush|top_speed 0.81, all_dl|mean_speed 0.67, rush|mean_speed 0.65, all_dl|turn_speed 0.61, all_dl|turn_lean_max 0.57, all_dl|turn_lean 0.57, all_dl|accel_sustained_peak 0.56, all_dl|jerk_rms 0.55, rush|turn_speed 0.53, agility_stopwatch_drills|top_speed 0.53, all_dl|brk_mean_entry_speed 0.52, rush|accel_sustained_peak 0.51
+
+OL most reliable family traits: all_ol|top_speed 0.81, pulls|top_speed 0.72, pulls|jerk_rms 0.58, lateral|top_speed 0.56, agility_stopwatch_drills|top_speed 0.53, all_ol|jerk_rms 0.50, pulls|accel_0_1s 0.49, agility_stopwatch_drills|brk_mean_brake_decel 0.48, pulls|speed_at_1.0s 0.47, agility_stopwatch_drills|speed_at_1.0s 0.46, pulls|turn_lean_max 0.45, agility_stopwatch_drills|accel_0_1s 0.44, pulls|turn_lean 0.43, lateral|turn_lean 0.41
+
+TE most reliable family traits: all_te|duration 0.72, all_te|brk_mean_exit_burst 0.64, routes|brk_mean_exit_burst 0.64, all_te|speed_at_1.5s 0.64, all_te|mean_speed 0.61, all_te|accel_0_1s 0.60, all_te|jerk_rms 0.57, all_te|accel_sustained_peak 0.56, all_te|straightness 0.55, agility_stopwatch_drills|top_speed 0.53, all_te|speed_at_1.0s 0.52, all_te|top_speed 0.49, routes|brk1_brake_time 0.49, all_te|brk1_brake_time 0.49

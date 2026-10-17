@@ -1,0 +1,30 @@
+fits: drill 214, forty 189
+test-retest: {'drive_vmax': '0.30 (n 97)', 'drive_tau': '0.09 (n 97)', 'drive_top': '0.56 (n 97)', 'forty_vmax': '0.53 (n 90)', 'forty_tau': '0.11 (n 90)'}
+
+correlations among CB sprint metrics:
+                drive_top  drive_vmax  drive_tau  forty_vmax  forty_tau  transition_tax  drive_share
+drive_top            1.00        0.22      -0.21        0.34       0.15            0.40         0.12
+drive_vmax           0.22        1.00       0.71        0.26       0.41           -0.23         0.94
+drive_tau           -0.21        0.71       1.00        0.02       0.21           -0.62         0.71
+forty_vmax           0.34        0.26       0.02        1.00       0.72            0.29        -0.08
+forty_tau            0.15        0.41       0.21        0.72       1.00            0.27         0.17
+transition_tax       0.40       -0.23      -0.62        0.29       0.27            1.00        -0.33
+drive_share          0.12        0.94       0.71       -0.08       0.17           -0.33         1.00
+
+rep-level prediction (per SD; player-permutation p):
+  sep_gain_break  drive_top       -0.0789 (clustered p 0.007, perm p 0.040) n 1707 CBs 46
+  sep_gain_break  drive_vmax      -0.0035 (clustered p 0.924, perm p 0.934) n 1707 CBs 46
+  sep_gain_break  drive_tau       +0.0091 (clustered p 0.846, perm p 0.847) n 1707 CBs 46
+  sep_gain_break  transition_tax  -0.0490 (clustered p 0.245, perm p 0.282) n 1335 CBs 39
+  sep_gain_break  drive_share     +0.0172 (clustered p 0.592, perm p 0.698) n 1335 CBs 39
+  sep_gain_break  forty_vmax      -0.0253 (clustered p 0.401, perm p 0.535) n 1335 CBs 39
+  sep_gain_break  forty_tau       -0.0034 (clustered p 0.921, perm p 0.920) n 1335 CBs 39
+  cpoe            drive_top       -0.0728 (clustered p 0.001, perm p 0.013) n 284 CBs 38
+  cpoe            drive_vmax      -0.0923 (clustered p 0.001, perm p 0.013) n 284 CBs 38
+  cpoe            drive_tau       -0.0080 (clustered p 0.842, perm p 0.824) n 284 CBs 38
+  cpoe            transition_tax  -0.0650 (clustered p 0.021, perm p 0.060) n 200 CBs 32
+  cpoe            drive_share     -0.0716 (clustered p 0.003, perm p 0.033) n 200 CBs 32
+  cpoe            forty_vmax      -0.0100 (clustered p 0.760, perm p 0.748) n 200 CBs 32
+  cpoe            forty_tau       -0.0158 (clustered p 0.662, perm p 0.734) n 200 CBs 32
+
+joint: drive_top -0.0607 (p 0.007), transition_tax +0.0008 (p 0.986), CBs 39

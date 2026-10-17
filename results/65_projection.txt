@@ -1,0 +1,24 @@
+
+sep_at_throw   [drive coefficient fitted out of class; CBs per k: {0: 35, 5: 30, 10: 27, 20: 21}]
+  k =  0: reps-only (tuned)   +0.0% | combine-only  +13.6% | combine prior + reps (tuned)  +13.6%   [untuned EB: reps +0%, prior+reps +14%]
+  k =  5: reps-only (tuned)   -1.0% | combine-only  +17.1% | combine prior + reps (tuned)  +15.6%   [untuned EB: reps -543%, prior+reps -553%]
+  k = 10: reps-only (tuned)   -1.6% | combine-only  +21.5% | combine prior + reps (tuned)  +21.5%   [untuned EB: reps -204%, prior+reps -197%]
+  k = 20: reps-only (tuned)  -50.6% | combine-only  +22.7% | combine prior + reps (tuned)  -16.5%   [untuned EB: reps -36%, prior+reps -29%]
+
+sep_gain_break   [drive coefficient fitted out of class; CBs per k: {0: 36, 5: 32, 10: 29, 20: 22}]
+  k =  0: reps-only (tuned)   +0.0% | combine-only   +8.8% | combine prior + reps (tuned)   +8.8%   [untuned EB: reps +0%, prior+reps +9%]
+  k =  5: reps-only (tuned)   -4.4% | combine-only   +8.6% | combine prior + reps (tuned)   +6.6%   [untuned EB: reps -42%, prior+reps -34%]
+  k = 10: reps-only (tuned)   -1.4% | combine-only  +13.6% | combine prior + reps (tuned)  +13.0%   [untuned EB: reps -61%, prior+reps -45%]
+  k = 20: reps-only (tuned)  -48.1% | combine-only  +25.7% | combine prior + reps (tuned)   +4.6%   [untuned EB: reps -120%, prior+reps -102%]
+
+sep_gain_break (zone reps)  [drive coefficient fitted out of class; CBs per k: {0: 27, 5: 18, 10: 11, 20: 7}]
+  k =  0: reps-only (tuned)   +0.0% | combine-only   +7.6% | combine prior + reps (tuned)   +7.6%   [untuned EB: reps +0%, prior+reps +8%]
+  k =  5: reps-only (tuned)  -19.1% | combine-only   +0.1% | combine prior + reps (tuned)  -11.0%   [untuned EB: reps -94%, prior+reps -93%]
+  k = 10: reps-only (tuned)  -27.5% | combine-only  +22.7% | combine prior + reps (tuned)  +21.3%   [untuned EB: reps -168%, prior+reps -140%]
+  k = 20: reps-only (tuned)   +0.0% | combine-only  +45.8% | combine prior + reps (tuned)  +45.8%   [untuned EB: reps -69%, prior+reps -54%]
+
+sep_at_throw (zone reps)  [drive coefficient fitted out of class; CBs per k: {0: 26, 5: 17, 10: 9, 20: 6}]
+  k =  0: reps-only (tuned)   +0.0% | combine-only  +19.0% | combine prior + reps (tuned)  +19.0%   [untuned EB: reps +0%, prior+reps +19%]
+  k =  5: reps-only (tuned)   +0.0% | combine-only  +13.3% | combine prior + reps (tuned)  +13.3%   [untuned EB: reps -161%, prior+reps -167%]
+  k = 10: reps-only (tuned)  +14.4% | combine-only  +32.1% | combine prior + reps (tuned)  +35.6%   [untuned EB: reps +3%, prior+reps +12%]
+  k = 20: reps-only (tuned)  +81.7% | combine-only  +51.0% | combine prior + reps (tuned)  +79.9%   [untuned EB: reps +65%, prior+reps +76%]

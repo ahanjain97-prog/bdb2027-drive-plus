@@ -1,0 +1,46 @@
+attempts 124, detected turn angle quantiles [ 87.  89.  93.  96. 100.], valid 123, players 121
+clip ends < 1.0 s after turn, share by year: {2023: 0.0, 2024: 0.0, 2025: 0.0}
+medians by year:
+       v_entry  v_out  v_02  v_04  v_06  v_08  v_10   top
+yr                                                      
+2023     3.45   5.09  5.91  6.63  7.20  7.53  7.83  7.94
+2024     3.16   5.13  5.78  6.38  6.85  7.19  7.37  7.53
+2025     2.88   5.38  6.05  6.60  7.04  7.32  7.52  7.71
+attempt 1 vs 2 r: {}
+
+BP-90 vs BP-45 phases (CBs with both: 54):
+            bp45_v_out  bp45_v_04  bp45_v_08  bp45_v_10  bp45_top
+bp90_v_out        0.11       0.07       0.03       0.00      0.07
+bp90_v_04         0.25       0.21       0.10       0.02      0.15
+bp90_v_08         0.42       0.40       0.24       0.13      0.29
+bp90_v_10         0.40       0.37       0.22       0.13      0.29
+bp90_top          0.27       0.28       0.17       0.10      0.25
+
+=== per SD (player-permutation p) ===
+task                          zone-matching:db_closing  zone-matching:sep_gain_break  all:sep_gain_break  targeted:cpoe
+metric                                                                                                                 
+bp90_v_out                                       0.118                        -0.081              -0.061         -0.036
+bp90_v_02                                        0.109                        -0.074              -0.056         -0.039
+bp90_v_04                                        0.106                        -0.066              -0.049         -0.044
+bp90_v_06                                        0.097                        -0.050              -0.042         -0.056
+bp90_v_08                                        0.089                        -0.039              -0.046         -0.050
+bp90_v_10                                        0.053                        -0.011              -0.040         -0.031
+bp90_top                                         0.020                        -0.002              -0.042         -0.013
+bp45_top (frozen)                                0.168                        -0.085              -0.067         -0.062
+bp45_v_10                                        0.181                        -0.099              -0.055         -0.071
+composite v_10 (both drills)                     0.153                        -0.077              -0.057         -0.068
+composite top (both drills)                      0.138                        -0.066              -0.068         -0.054
+task                          zone-matching:db_closing  zone-matching:sep_gain_break  all:sep_gain_break  targeted:cpoe
+metric                                                                                                                 
+bp90_v_out                                       0.116                         0.086               0.073          0.196
+bp90_v_02                                        0.179                         0.173               0.126          0.189
+bp90_v_04                                        0.203                         0.219               0.229          0.100
+bp90_v_06                                        0.262                         0.395               0.259          0.050
+bp90_v_08                                        0.312                         0.495               0.226          0.123
+bp90_v_10                                        0.551                         0.880               0.355          0.352
+bp90_top                                         0.837                         0.970               0.276          0.648
+bp45_top (frozen)                                0.007                         0.063               0.037          0.030
+bp45_v_10                                        0.037                         0.063               0.130          0.007
+composite v_10 (both drills)                     0.020                         0.096               0.136          0.033
+composite top (both drills)                      0.066                         0.176               0.037          0.066
+CBs: {'bp45_top (frozen)': 46, 'bp45_v_10': 43, 'bp90_top': 47, 'bp90_v_02': 47, 'bp90_v_04': 47, 'bp90_v_06': 47, 'bp90_v_08': 47, 'bp90_v_10': 47, 'bp90_v_out': 47, 'composite top (both drills)': 47, 'composite v_10 (both drills)': 47}

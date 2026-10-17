@@ -1,0 +1,50 @@
+
+cpoe: stability of the coefficient pattern across leave-one-class-out fits (Spearman) +0.62
+  speed    (t rel. to turn start, -1.0 .. +2.0 s, x1000): -0.2 -0.2 -0.3 -0.4 -0.4 -0.5 -0.5 -0.4 -0.5 -0.4 -0.4 -0.4 -0.4 -0.4 -0.4 -0.4 -0.4 -0.3 -0.4 -0.4 -0.4 -0.4 -0.4 -0.4 -0.3 -0.4 -0.4 -0.5 -0.9 -1.0 -1.1
+  along    (t rel. to turn start, -1.0 .. +2.0 s, x1000): -0.8 -0.9 -0.6 -0.4 +0.0 -0.0 -0.0 -0.1 -0.2 -0.0 +0.3 -0.2 -0.2 +0.0 -0.2 -0.2 +0.5 +0.3 -0.3 -0.1 -0.1 -0.2 +0.2 +0.2 -0.3 -0.3 -0.1 -0.6 -0.9 -0.9 -0.8
+  lateral  (t rel. to turn start, -1.0 .. +2.0 s, x1000): -0.6 +0.3 +0.2 -1.0 -0.3 -0.9 -0.7 -1.1 -1.1 -1.2 -0.6 -0.4 +0.1 +0.2 +0.7 +0.6 +0.4 +0.7 +0.9 +0.7 +1.1 +0.9 +0.5 +0.6 +0.7 +0.5 +0.9 +0.7 +0.2 +0.4 +0.0
+  turnrate (t rel. to turn start, -1.0 .. +2.0 s, x1000): -0.4 +0.6 +0.4 -0.2 -0.4 -0.8 -0.9 -1.0 -1.0 -1.0 -0.7 -0.3 -0.0 +0.4 +0.7 +0.7 +0.8 +0.9 +0.8 +0.8 +0.9 +0.8 +0.6 +0.7 +0.7 +0.6 +0.6 +0.7 +0.4 +0.5 +0.1
+Traceback (most recent call last):
+  File "/Users/ahanjain/bdb_ssl/code/68c_turn_curve_readout.py", line 34, in <module>
+    agg = w.groupby([lambda c: c.split("|turn_")[1].split("_")[0], phase]).sum().unstack()
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pandas/core/series.py", line 2247, in groupby
+    return SeriesGroupBy(
+        obj=self,
+    ...<7 lines>...
+        dropna=dropna,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pandas/core/groupby/groupby.py", line 1329, in __init__
+    grouper, exclusions, obj = get_grouper(
+                               ~~~~~~~~~~~^
+        obj,
+        ^^^^
+    ...<5 lines>...
+        dropna=self.dropna,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pandas/core/groupby/grouper.py", line 1054, in get_grouper
+    Grouping(
+    ~~~~~~~~^
+        group_axis,
+        ^^^^^^^^^^^
+    ...<6 lines>...
+        dropna=dropna,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pandas/core/groupby/grouper.py", line 603, in __init__
+    grouping_vector = index.map(grouping_vector)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6491, in map
+    new_values = self._map_values(mapper, na_action=na_action)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "/Users/ahanjain/bdb_ssl/code/68c_turn_curve_readout.py", line 32, in phase
+    t = float(c.split("_")[-1].rstrip("s"))
+ValueError: could not convert string to float: 'speed'

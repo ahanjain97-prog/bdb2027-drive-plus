@@ -1,0 +1,251 @@
+
+=== Tier B: selection-aware held-out-class OOS r (top-3 features chosen inside training classes) ===
+unit                                     outcome  n  oos_r_tracking  p_tracking  oos_r_stopwatch  p_stopwatch  q_tracking  q_stopwatch
+  WR                   REC YAC over NGS expected 47           0.119       0.259           -0.176        0.831       0.869        0.910
+  WR                              REC sep_oe all 66           0.174       0.090            0.260        0.045       0.763        0.281
+  WR                      REC sep_oe in-breaking 69          -0.092       0.781            0.285        0.020       0.980        0.172
+  WR                     REC sep_oe out-breaking 65           0.036       0.383            0.169        0.159       0.869        0.439
+  WR                             REC sep_oe stop 60           0.029       0.393            0.097        0.348       0.869        0.667
+  WR                         REC sep_oe vertical 66           0.068       0.254           -0.076        0.677       0.869        0.843
+  WR                           REC sep_oe vs man 62           0.039       0.388            0.124        0.209       0.869        0.497
+  WR                         REC sep_oe vs press 29          -0.060       0.607           -0.055        0.582       0.980        0.824
+  WR                          REC sep_oe vs zone 65           0.061       0.313            0.272        0.075       0.869        0.286
+  WR                    REC targets per route oe 65          -0.145       0.871           -0.285        0.950       0.980        0.950
+  WR                        COV created sep_mean 59          -0.131       0.796            0.121        0.294       0.980        0.614
+  WR                  COV created sep_gain_break 59          -0.126       0.836            0.140        0.174       0.980        0.441
+  WR                    COV created sep_at_throw 59           0.129       0.204           -0.045        0.617       0.869        0.832
+  TE                              REC sep_oe all 23           0.135       0.294           -0.409        0.871       0.869        0.910
+  TE                      REC sep_oe in-breaking 23           0.236       0.164            0.474        0.050       0.858        0.286
+  TE                     REC sep_oe out-breaking 23           0.179       0.169            0.283        0.179       0.858        0.441
+  TE                             REC sep_oe stop 23           0.303       0.154            0.424        0.109       0.858        0.358
+  TE                         REC sep_oe vertical 20          -0.322       0.826           -0.209        0.692       0.980        0.843
+  TE                           REC sep_oe vs man 20           0.055       0.398           -0.242        0.726       0.869        0.864
+  TE                          REC sep_oe vs zone 23           0.285       0.100           -0.242        0.761       0.763        0.875
+  TE                    REC targets per route oe 23          -0.111       0.647           -0.017        0.582       0.980        0.824
+  CB                          CB pass tackles_oe 38          -0.476       0.980            0.216        0.174       0.980        0.441
+  CB                           CB run tackles_oe 37           0.070       0.358           -0.030        0.527       0.869        0.824
+  CB                        COV allowed sep_mean 36          -0.197       0.866           -0.218        0.841       0.980        0.910
+  CB                    COV allowed sep_at_break 36          -0.182       0.811            0.223        0.149       0.980        0.429
+  CB                  COV allowed sep_gain_break 36           0.292       0.050            0.237        0.085       0.572        0.307
+  CB                    COV allowed sep_at_throw 36          -0.107       0.662            0.088        0.313       0.980        0.636
+  CB                COV allowed db_speed_deficit 36          -0.259       0.935            0.149        0.249       0.980        0.536
+  CB                  COV allowed (man) sep_mean 33          -0.117       0.692           -0.276        0.891       0.980        0.917
+  CB              COV allowed (man) sep_at_break 33          -0.127       0.731            0.368        0.065       0.980        0.286
+  CB            COV allowed (man) sep_gain_break 33          -0.191       0.841           -0.004        0.458       0.980        0.790
+  CB              COV allowed (man) sep_at_throw 33           0.083       0.403            0.305        0.075       0.869        0.286
+  CB          COV allowed (man) db_speed_deficit 33          -0.168       0.761            0.012        0.483       0.980        0.793
+  CB                        TACKLE closing_speed 34          -0.347       0.975           -0.163        0.751       0.980        0.875
+  CB                          TACKLE pursuit_eff 34          -0.130       0.766            0.371        0.025       0.980        0.191
+  CB                            TACKLE breakdown 34           0.179       0.299            0.270        0.114       0.869        0.358
+  CB                    TACKLE yds_after_arrival 34           0.240       0.219           -0.065        0.627       0.869        0.832
+   S                           S pass tackles_oe 32           0.387       0.035            0.089        0.373       0.481        0.696
+   S                            S run tackles_oe 28           0.118       0.259            0.059        0.478       0.869        0.793
+   S                        TACKLE closing_speed 22          -0.155       0.284            0.303        0.443       0.869        0.783
+   S                          TACKLE pursuit_eff 22          -0.242       0.920           -0.425        0.846       0.980        0.910
+   S                            TACKLE breakdown 22           0.039       0.433            0.509        0.045       0.878        0.281
+   S                    TACKLE yds_after_arrival 22           0.505       0.025            0.339        0.104       0.429        0.358
+EDGE                             EDGE depth2s_oe 41          -0.161       0.811            0.539        0.005       0.980        0.069
+EDGE              EDGE get_off_oe (lower=better) 42           0.158       0.174            0.408        0.005       0.858        0.069
+EDGE                         EDGE penetration_oe 42          -0.018       0.488            0.420        0.020       0.909        0.172
+EDGE                            EDGE pressure_oe 42           0.030       0.368           -0.004        0.562       0.869        0.824
+EDGE                             EDGE run TFL_oe 44           0.015       0.502            0.414        0.010       0.912        0.114
+EDGE                     EDGE run penetration_oe 44           0.041       0.398            0.148        0.249       0.869        0.536
+EDGE                         EDGE run tackles_oe 44          -0.235       0.945           -0.315        0.950       0.980        0.950
+EDGE                             H2H corner rate 38          -0.028       0.602            0.293        0.065       0.980        0.286
+EDGE                   H2H blocker ppa_oe vs him 38           0.333       0.020            0.112        0.338       0.429        0.667
+ IDL                              IDL depth2s_oe 29           0.230       0.139            0.529        0.005       0.858        0.069
+ IDL               IDL get_off_oe (lower=better) 30           0.347       0.065            0.636        0.005       0.638        0.069
+ IDL                          IDL penetration_oe 30           0.384       0.025            0.564        0.005       0.429        0.069
+ IDL                             IDL pressure_oe 30           0.554       0.010            0.280        0.119       0.429        0.358
+ IDL                              IDL run TFL_oe 37          -0.370       0.955           -0.076        0.582       0.980        0.824
+ IDL                      IDL run penetration_oe 37          -0.273       0.910            0.368        0.055       0.980        0.286
+ IDL                          IDL run tackles_oe 37          -0.075       0.617            0.109        0.393       0.980        0.714
+ IDL                             H2H corner rate 33          -0.111       0.637           -0.171        0.697       0.980        0.843
+ IDL                   H2H blocker ppa_oe vs him 33          -0.174       0.761           -0.223        0.866       0.980        0.910
+   T   T pressure prob allowed_oe (lower=better) 27           0.021       0.468           -0.113        0.657       0.896        0.843
+   T       T pressures allowed_oe (lower=better) 27           0.097       0.333           -0.062        0.587       0.869        0.824
+   T                     H2H corner allowed rate 30          -0.072       0.567            0.342        0.070       0.980        0.286
+   T                                  H2H ppa_oe 30           0.000       0.463           -0.164        0.776       0.896        0.878
+ IOL IOL pressure prob allowed_oe (lower=better) 38          -0.301       0.925           -0.010        0.572       0.980        0.824
+ IOL     IOL pressures allowed_oe (lower=better) 38          -0.129       0.801           -0.065        0.597       0.980        0.824
+ IOL                     H2H corner allowed rate 36           0.044       0.433            0.141        0.234       0.878        0.536
+ IOL                                  H2H ppa_oe 36          -0.032       0.602           -0.103        0.677       0.980        0.843
+
+tracking p<.05: 6 of 69 (expected 3.5); q<.10: 0 | stopwatch p<.05: 12
+
+=== features picked in >= 2 of 3 training folds (with their held-out-class r) ===
+unit                                     outcome                                                             feature  folds_selected train_r_signs     heldout_class_r
+  CB                          CB pass tackles_oe                                drill:DB:W_DRILL:brk_mean_brake_time               3           -++ +0.73, -0.61, +0.14
+  CB          COV allowed (man) db_speed_deficit                                   drill:DB:LINE_DRILL:speed_at_1.5s               2            -- -0.78, -0.22, +0.03
+  CB              COV allowed (man) sep_at_break                                            fam:backpedal:accel_0_1s               2            ++ -0.10, +0.51, +0.52
+  CB              COV allowed (man) sep_at_throw       drill:DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION:n_turns               2            ++ +0.51, +0.06, +0.68
+  CB                  COV allowed (man) sep_mean                                       drill:DB:LINE_DRILL:top_speed               2            -- -0.33, -0.17, -0.65
+  CB                    COV allowed sep_at_throw     drill:DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION:top_speed               2            -- -0.24, -0.50, -0.05
+  CB                    COV allowed sep_at_throw                                drill:DB:W_DRILL:brk_mean_exit_burst               2            ++ +0.15, +0.47, -0.14
+  CB                  COV allowed sep_gain_break     drill:DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION:top_speed               2            -- -0.28, -0.36, -0.21
+  CB                        COV allowed sep_mean                                               fam:cod:speed_at_0.5s               2            -- -0.29, -0.53, -0.28
+  CB                            TACKLE breakdown                                            fam:all_db:speed_at_1.0s               2            ++ +0.50, +0.53, +0.79
+  CB                            TACKLE breakdown                                            fam:backpedal:accel_0_1s               2            ++ +0.56, +0.54, +0.68
+  CB                        TACKLE closing_speed                          drill:FORTY_YARD_DASH:accel_sustained_peak               2            ++ +0.15, +0.60, -0.54
+  CB                        TACKLE closing_speed       drill:DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION:n_turns               2            +- -0.55, +0.56, +0.17
+  CB                          TACKLE pursuit_eff                          drill:FORTY_YARD_DASH:accel_sustained_peak               2            -- -0.37, -0.22, -0.32
+  CB                    TACKLE yds_after_arrival                          drill:FORTY_YARD_DASH:accel_sustained_peak               3           +++ +0.37, +0.83, +0.41
+EDGE                             EDGE depth2s_oe                              drill:THREE_CONE_DRILL:brk1_brake_time               2            ++        +0.66, -0.75
+EDGE                             EDGE depth2s_oe                                     drill:FORTY_YARD_DASH:top_speed               2            ++        +0.51, +0.27
+EDGE              EDGE get_off_oe (lower=better)                              drill:THREE_CONE_DRILL:brk1_brake_time               2            --        -0.78, +0.81
+EDGE                         EDGE penetration_oe                                              frozen:hoop_turn_speed               2            ++ +0.25, +0.60, +0.46
+EDGE                         EDGE penetration_oe                              drill:THREE_CONE_DRILL:brk1_brake_time               2            ++        +0.61, -0.88
+EDGE                            EDGE pressure_oe                                drill:THREE_CONE_DRILL:turn_lean_max               2            ++        +0.89, -0.74
+EDGE                     EDGE run penetration_oe                         drill:THREE_CONE_DRILL:brk_mean_entry_speed               2            ++        +0.85, +0.41
+EDGE                     EDGE run penetration_oe                               drill:THREE_CONE_DRILL:turn_retention               2            ++        +0.76, +0.91
+EDGE                         EDGE run tackles_oe                         drill:THREE_CONE_DRILL:brk_mean_entry_speed               2            --        -0.39, -0.17
+EDGE                   H2H blocker ppa_oe vs him                                     drill:FORTY_YARD_DASH:top_speed               3           +++ +0.62, +0.44, +0.83
+EDGE                   H2H blocker ppa_oe vs him                                     drill:THREE_CONE_DRILL:duration               2            --               -0.78
+ IDL                             H2H corner rate                                    fam:agility:accel_sustained_peak               2            ++ +0.18, +0.14, +0.20
+ IDL                             H2H corner rate                                                 fam:all_dl:jerk_rms               2            ++ +0.07, -0.29, +0.20
+ IDL                              IDL depth2s_oe                                              frozen:hoop_turn_speed               2            ++ +0.64, +0.58, +0.73
+ IDL                              IDL depth2s_oe                               drill:DL:RUN_THE_HOOP_DRILL:turn_lean               2            ++ +0.67, +0.32, +0.87
+ IDL                              IDL depth2s_oe                                     fam:all_dl:accel_sustained_peak               2            ++ +0.76, +0.83, +0.44
+ IDL               IDL get_off_oe (lower=better)                                     drill:FORTY_YARD_DASH:top_speed               3           --- -0.94, -0.67, -0.19
+ IDL               IDL get_off_oe (lower=better)                               drill:DL:RUN_THE_HOOP_DRILL:turn_lean               2            -- -0.64, -0.34, -0.58
+ IDL                          IDL penetration_oe                                              frozen:hoop_turn_speed               2            ++ +0.73, +0.77, +0.64
+ IDL                          IDL penetration_oe                               drill:DL:RUN_THE_HOOP_DRILL:turn_lean               2            ++ +0.76, +0.46, +0.79
+ IDL                          IDL penetration_oe                                     fam:all_dl:accel_sustained_peak               2            ++ +0.90, +0.91, +0.55
+ IDL                             IDL pressure_oe                          drill:FORTY_YARD_DASH:accel_sustained_peak               3           +++ +0.68, +0.57, +0.48
+ IDL                             IDL pressure_oe                                      drill:FORTY_YARD_DASH:duration               3           --- -0.88, -0.45, -0.13
+ IDL                              IDL run TFL_oe                               drill:DL:RUN_THE_HOOP_DRILL:turn_lean               2            -- +0.25, +0.27, -0.61
+ IDL                              IDL run TFL_oe                                     fam:all_dl:accel_sustained_peak               2            -- +0.42, -0.20, -0.68
+ IDL                              IDL run TFL_oe                                    fam:agility:accel_sustained_peak               2            -+ +0.18, +0.09, -0.61
+ IDL                      IDL run penetration_oe                              drill:DL:PASS_RUSH_DRILL:turn_lean_max               2            +- -0.56, +0.62, +0.07
+ IDL                      IDL run penetration_oe                          drill:FORTY_YARD_DASH:accel_sustained_peak               2            ++ +0.52, -0.31, +0.05
+ IDL                          IDL run tackles_oe                                     fam:all_dl:accel_sustained_peak               2            -- -0.07, -0.18, -0.40
+ IOL                     H2H corner allowed rate                 drill:OL:PASS_PRO_MIRROR_DRILL:brk_mean_entry_speed               2            --        -0.20, -0.54
+ IOL                                  H2H ppa_oe                                        drill:SHORT_SHUTTLE:n_breaks               2            --        -0.38, -0.52
+ IOL IOL pressure prob allowed_oe (lower=better)                             fam:agility_stopwatch_drills:accel_0_1s               2            ++ -0.26, +0.32, +0.72
+ IOL     IOL pressures allowed_oe (lower=better)                             fam:agility_stopwatch_drills:accel_0_1s               2            ++ -0.16, +0.33, +0.89
+   S                           S pass tackles_oe                                        fam:cod:accel_sustained_peak               2            -- -0.03, -0.65, -0.66
+   S                           S pass tackles_oe     drill:DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION:turn_lean               2            -- -0.37, -0.06, -0.74
+   S                           S pass tackles_oe                                        drill:DB:LINE_DRILL:jerk_rms               2            ++ +0.33, +0.66, -0.05
+   S                            S run tackles_oe drill:DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION:speed_at_1.5s               3           +++ +0.34, +0.42, +0.39
+   S                            TACKLE breakdown                                                    fam:cod:path_len               2            -- -0.44, -0.32, -0.67
+   S                          TACKLE pursuit_eff                                               fam:cod:speed_at_0.5s               2            -- -0.09, -0.65, -0.01
+   S                    TACKLE yds_after_arrival     drill:DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION:top_speed               3           --- -0.84, -0.56, +0.13
+   S                    TACKLE yds_after_arrival                          drill:FORTY_YARD_DASH:accel_sustained_peak               2            ++        +0.09, +0.80
+   T                     H2H corner allowed rate                                 drill:FORTY_YARD_DASH:speed_at_1.5s               2            -- +0.00, -0.80, +0.10
+   T                     H2H corner allowed rate                          drill:FORTY_YARD_DASH:accel_sustained_peak               2            -- +0.32, -0.72, -0.27
+   T                     H2H corner allowed rate                                    drill:FORTY_YARD_DASH:mean_speed               2            -- -0.62, -0.71, +0.20
+   T                                  H2H ppa_oe                                               fam:lateral:turn_lean               2            -- -0.37, -0.54, -0.03
+   T                                  H2H ppa_oe                                     drill:FORTY_YARD_DASH:top_speed               2            -- -0.38, -0.49, -0.15
+   T   T pressure prob allowed_oe (lower=better)                                   drill:OL:PASS_RUSH_DROP:top_speed               2            -- +0.17, -0.49, -0.74
+   T   T pressure prob allowed_oe (lower=better)                                 drill:FORTY_YARD_DASH:speed_at_1.5s               2            -- -0.67, -0.64, +0.32
+   T   T pressure prob allowed_oe (lower=better)                          drill:FORTY_YARD_DASH:accel_sustained_peak               2            -- -0.51, -0.60, -0.05
+   T       T pressures allowed_oe (lower=better)                                   drill:OL:PASS_RUSH_DROP:top_speed               2            -- -0.01, -0.60, -0.84
+   T       T pressures allowed_oe (lower=better)                                 drill:FORTY_YARD_DASH:speed_at_1.5s               2            -- -0.39, -0.70, +0.22
+   T       T pressures allowed_oe (lower=better)                                    drill:FORTY_YARD_DASH:mean_speed               2            -- -0.51, -0.75, +0.37
+  TE                              REC sep_oe all                                      fam:all_te:brk_mean_exit_burst               3           --- -0.65, -0.73, -0.02
+  TE                      REC sep_oe in-breaking                                      fam:all_te:brk_mean_exit_burst               2            -- -0.67, -0.46, -0.60
+  TE                      REC sep_oe in-breaking                                     drill:FORTY_YARD_DASH:top_speed               2            -- -0.48, +0.29, -0.68
+  TE                      REC sep_oe in-breaking                                drill:TE:GAUNTLET_DRILL:straightness               2            ++ +0.56, -0.15, +0.09
+  TE                     REC sep_oe out-breaking                                             fam:all_te:straightness               2            -- -0.71, -0.41, +0.37
+  TE                     REC sep_oe out-breaking                                    drill:TE:GAUNTLET_DRILL:duration               2            ++ +0.67, +0.34, -0.28
+  TE                             REC sep_oe stop                                            fam:routes:turn_lean_max               2            -- -0.20, -0.74, -0.13
+  TE                             REC sep_oe stop                                            fam:all_te:speed_at_1.5s               2            ++ +0.61, +0.38, +0.39
+  TE                             REC sep_oe stop                                  drill:TE:GAUNTLET_DRILL:mean_speed               2            ++ +0.27, -0.09, +0.61
+  TE                         REC sep_oe vertical                                drill:TE:GAUNTLET_DRILL:straightness               2            -- -0.47, +0.80, -0.16
+  TE                           REC sep_oe vs man                                                fam:all_te:top_speed               2            -- -0.54, +0.26, -0.17
+  TE                           REC sep_oe vs man                                drill:TE:WHEEL_ROUTE_LEFT:turn_speed               2            --        -0.24, -0.05
+  TE                          REC sep_oe vs zone                                      fam:all_te:brk_mean_exit_burst               2            -- -0.61, -0.78, -0.04
+  TE                          REC sep_oe vs zone                                       fam:routes:brk_mean_cut_angle               2            -- -0.54, -0.52, +0.08
+  WR                    COV created sep_at_throw                                              fam:routes:catch_carry               2            ++               +0.37
+  WR                  COV created sep_gain_break                            drill:WR:SPEED_OUT_ROUTE_LEFT:accel_0_1s               2            -- -0.42, -0.20, -0.20
+  WR                   REC YAC over NGS expected                                     drill:FORTY_YARD_DASH:top_speed               2            -- -0.50, +0.05, -0.79
+  WR                   REC YAC over NGS expected                      drill:WR:POST_CORNER_ROUTE_RIGHT:turn_lean_max               2            ++ +0.45, -0.08, +0.57
+  WR                              REC sep_oe all                                   drill:SHORT_SHUTTLE:speed_at_1.0s               3           +++ +0.55, +0.53, +0.85
+  WR                              REC sep_oe all                                        drill:SHORT_SHUTTLE:n_breaks               2            ++  +nan, +0.42, +0.76
+  WR                      REC sep_oe in-breaking                                   drill:SHORT_SHUTTLE:speed_at_1.0s               2            ++ -0.22, +0.39, +0.80
+  WR                     REC sep_oe out-breaking                                     drill:FORTY_YARD_DASH:top_speed               2            ++ +0.52, +0.13, +0.31
+  WR                             REC sep_oe stop                                   drill:WR:GO_ROUTE_RIGHT:turn_lean               2            -- -0.37, -0.44, -0.12
+  WR                         REC sep_oe vertical                                    drill:THREE_CONE_DRILL:turn_lean               2            ++        +0.63, +0.36
+  WR                         REC sep_oe vertical                                      drill:THREE_CONE_DRILL:t_to_90               2            ++        +0.71, +0.14
+  WR                         REC sep_oe vertical                                              fam:routes:catch_carry               2            --               -0.49
+  WR                           REC sep_oe vs man                                              fam:routes:catch_carry               2            --               -0.58
+  WR                           REC sep_oe vs man                                   drill:SHORT_SHUTTLE:speed_at_1.0s               2            ++ +0.38, +0.69, +0.53
+  WR                           REC sep_oe vs man                                drill:THREE_CONE_DRILL:speed_at_1.0s               2            --        -0.82, -0.06
+  WR                         REC sep_oe vs press                         drill:WR:POST_CORNER_ROUTE_RIGHT:accel_0_1s               2            ++        +0.46, +0.20
+  WR                         REC sep_oe vs press                      drill:WR:POST_CORNER_ROUTE_RIGHT:speed_at_0.5s               2            ++        +0.43, +0.13
+  WR                          REC sep_oe vs zone                                   drill:SHORT_SHUTTLE:speed_at_1.0s               2            ++ +0.58, +0.09, +0.82
+  WR                    REC targets per route oe                                      drill:THREE_CONE_DRILL:t_to_90               2            --        -0.58, +0.31
+
+=== Tier C: OOS R^2 (leave-one-class-out ridge) ===
+unit                                     outcome  n  R2 size  R2 size+stopwatch  R2 size+stopwatch+tracking  tracking_adds
+  WR                   REC YAC over NGS expected 47   -0.086             -0.077                      -0.047          0.030
+  WR                              REC sep_oe all 66    0.407              0.322                       0.175         -0.147
+  WR                      REC sep_oe in-breaking 69    0.210              0.234                       0.072         -0.162
+  WR                     REC sep_oe out-breaking 65    0.116              0.139                      -0.100         -0.239
+  WR                             REC sep_oe stop 60    0.057              0.052                      -0.028         -0.080
+  WR                         REC sep_oe vertical 66    0.148             -0.244                      -0.004          0.241
+  WR                           REC sep_oe vs man 62    0.044              0.013                      -0.045         -0.058
+  WR                         REC sep_oe vs press 29   -0.826             -0.718                  -33349.699     -33348.981
+  WR                          REC sep_oe vs zone 65    0.390              0.329                       0.163         -0.166
+  WR                    REC targets per route oe 65   -0.058             -0.106                      -0.112         -0.007
+  WR                        COV created sep_mean 59   -0.015             -0.053                      -0.015          0.038
+  WR                  COV created sep_gain_break 59   -0.068             -0.108                      -0.213         -0.105
+  WR                    COV created sep_at_throw 59   -0.148             -0.192                      -0.066          0.126
+  TE                              REC sep_oe all 23   -0.036             -0.043                      -0.760         -0.718
+  TE                      REC sep_oe in-breaking 23    0.016             -1.430                      -0.469          0.961
+  TE                     REC sep_oe out-breaking 23   -0.099             -0.065                      -0.191         -0.126
+  TE                             REC sep_oe stop 23   -0.080             -0.208                      -0.102          0.107
+  TE                         REC sep_oe vertical 20   -0.076             -0.040                      -0.038          0.003
+  TE                           REC sep_oe vs man 20   -0.403             -1.435                      -0.863          0.572
+  TE                          REC sep_oe vs zone 23   -0.040             -0.044                      -1.236         -1.192
+  TE                    REC targets per route oe 23   -1.006             -0.366                      -0.408         -0.043
+  CB                          CB pass tackles_oe 38   -0.035             -0.038                      -0.042         -0.004
+  CB                           CB run tackles_oe 37   -0.130             -0.090                      -0.082          0.008
+  CB                        COV allowed sep_mean 36   -0.121             -0.086                      -0.121         -0.036
+  CB                    COV allowed sep_at_break 36   -0.099             -0.099                      -0.117         -0.018
+  CB                  COV allowed sep_gain_break 36   -0.101             -0.140                      -0.061          0.080
+  CB                    COV allowed sep_at_throw 36   -0.074             -0.297                      -0.083          0.214
+  CB                COV allowed db_speed_deficit 36   -0.075             -0.130                      -0.119          0.011
+  CB                  COV allowed (man) sep_mean 33   -0.018             -0.035                      -0.019          0.015
+  CB              COV allowed (man) sep_at_break 33   -0.163             -0.046                      -0.039          0.007
+  CB            COV allowed (man) sep_gain_break 33   -0.163             -0.075                      -0.134         -0.059
+  CB              COV allowed (man) sep_at_throw 33   -0.188             -0.569                      -0.418          0.150
+  CB          COV allowed (man) db_speed_deficit 33   -0.149             -0.104                     -11.907        -11.804
+  CB                        TACKLE closing_speed 34    0.017             -0.010                      -0.002          0.008
+  CB                          TACKLE pursuit_eff 34   -0.076             -0.077                      -0.208         -0.131
+  CB                            TACKLE breakdown 34   -0.150             -0.134                      -0.220         -0.086
+  CB                    TACKLE yds_after_arrival 34   -0.192             -0.230                      -0.216          0.013
+   S                           S pass tackles_oe 32   -0.159             -0.152                      -0.073          0.079
+   S                            S run tackles_oe 28   -0.185             -0.767                      -0.098          0.669
+   S                        TACKLE closing_speed 22   -0.467             -0.466                      -1.853         -1.387
+   S                          TACKLE pursuit_eff 22   -0.143             -0.144                      -0.146         -0.002
+   S                            TACKLE breakdown 22   -0.057             -0.043                      -0.515         -0.472
+   S                    TACKLE yds_after_arrival 22   -0.041             -0.046                      -0.263         -0.217
+EDGE                             EDGE depth2s_oe 41   -0.042              0.141                      -0.037         -0.177
+EDGE              EDGE get_off_oe (lower=better) 42   -0.060             -0.037                       0.021          0.058
+EDGE                         EDGE penetration_oe 42   -0.149             -0.062                      -0.095         -0.033
+EDGE                            EDGE pressure_oe 42   -0.163             -0.201                      -0.684         -0.483
+EDGE                             EDGE run TFL_oe 44   -0.048              0.074                      -0.033         -0.107
+EDGE                     EDGE run penetration_oe 44    0.013              0.039                      -0.025         -0.064
+EDGE                         EDGE run tackles_oe 44   -0.130             -0.116                      -0.257         -0.140
+EDGE                             H2H corner rate 38   -0.017             -0.046                      -0.323         -0.277
+EDGE                   H2H blocker ppa_oe vs him 38   -0.009              0.036                       0.022         -0.014
+ IDL                              IDL depth2s_oe 29   -0.122             -0.373                      -0.510         -0.136
+ IDL               IDL get_off_oe (lower=better) 30    0.198              0.141                       0.080         -0.061
+ IDL                          IDL penetration_oe 30    0.103              0.167                      -0.087         -0.253
+ IDL                             IDL pressure_oe 30   -0.357             -0.837                      -0.233          0.604
+ IDL                              IDL run TFL_oe 37   -0.147             -0.147                      -1.517         -1.370
+ IDL                      IDL run penetration_oe 37   -0.064             -0.026                      -0.074         -0.049
+ IDL                          IDL run tackles_oe 37   -0.020             -0.019                      -0.022         -0.003
+ IDL                             H2H corner rate 33   -0.230             -0.367                      -0.269          0.099
+ IDL                   H2H blocker ppa_oe vs him 33   -0.005             -0.031                      -0.007          0.024
+   T   T pressure prob allowed_oe (lower=better) 27   -0.110             -0.510                      -0.083          0.427
+   T       T pressures allowed_oe (lower=better) 27    0.001             -0.381                      -0.250          0.131
+   T                     H2H corner allowed rate 30   -0.069             -0.139                      -0.243         -0.104
+   T                                  H2H ppa_oe 30   -0.363             -0.342                      -0.322          0.020
+ IOL IOL pressure prob allowed_oe (lower=better) 38   -0.088             -0.120                      -0.077          0.043
+ IOL     IOL pressures allowed_oe (lower=better) 38   -0.025             -0.023                      -0.017          0.006
+ IOL                     H2H corner allowed rate 36   -0.044             -0.074                      -0.019          0.055
+ IOL                                  H2H ppa_oe 36   -0.015             -0.036                      -0.037         -0.001
+
+tracking adds > 0 in 29 of 69; > .05 in 16

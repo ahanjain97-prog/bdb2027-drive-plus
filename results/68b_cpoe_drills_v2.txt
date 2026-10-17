@@ -1,0 +1,16 @@
+                                             oos_mse_reduction_%                       perm_p             
+split                                            draft-class-out new-prospect draft-class-out new-prospect
+block                                                                                                     
+TRANSITION turn-anchored curves                            2.606        5.082           0.030        0.040
+BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION               2.520        6.597           0.010        0.010
+GAUNTLET_DRILL                                             1.576        0.583           0.040        0.416
+TRANSITION real-time curves                                1.178        4.149           0.050        0.050
+TERYL_AUSTIN_DRILL_1                                       1.060        3.303           0.089        0.079
+SHORT_SHUTTLE                                              0.988        0.840           0.089        0.228
+BOX_DRILL                                                  0.819        1.821           0.119        0.168
+THREE_CONE_DRILL                                           0.505       -2.485           0.188        0.822
+W_DRILL                                                   -0.137        0.835           0.337        0.317
+LINE_DRILL                                                -0.847       -1.313           0.703        0.832
+FORTY_YARD_DASH                                           -1.402       -0.246           0.832        0.624
+TERYL_AUSTIN_DRILL_2                                      -1.677       -8.437           0.762        0.970
+BACK_PEDAL_AND_90_DEGREE_BREAK_TO_BALL                    -2.802        1.280           0.822        0.248

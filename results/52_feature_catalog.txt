@@ -1,0 +1,25 @@
+unit  players  tracking_features  family  drill  outcomes
+  WR      106                 73      12     61        13
+  TE       42                 58      15     43         9
+  CB       60                 36      14     22        16
+   S       58                 26      11     15         6
+EDGE       66                 63      21     41         9
+ IDL       52                 50      14     35         9
+   T       50                 47      12     35         4
+ IOL       71                 49      14     35         4
+
+WR outcomes: REC YAC over NGS expected (n 47); REC sep_oe all (n 66); REC sep_oe in-breaking (n 69); REC sep_oe out-breaking (n 65); REC sep_oe stop (n 60); REC sep_oe vertical (n 66); REC sep_oe vs man (n 62); REC sep_oe vs press (n 29); REC sep_oe vs zone (n 65); REC targets per route oe (n 65); COV created sep_mean (n 59); COV created sep_gain_break (n 59); COV created sep_at_throw (n 59)
+
+TE outcomes: REC YAC over NGS expected (n 19); REC sep_oe all (n 23); REC sep_oe in-breaking (n 23); REC sep_oe out-breaking (n 23); REC sep_oe stop (n 23); REC sep_oe vertical (n 20); REC sep_oe vs man (n 20); REC sep_oe vs zone (n 23); REC targets per route oe (n 23)
+
+CB outcomes: CB pass tackles_oe (n 38); CB run tackles_oe (n 37); COV allowed sep_mean (n 36); COV allowed sep_at_break (n 36); COV allowed sep_gain_break (n 36); COV allowed sep_at_throw (n 36); COV allowed db_speed_deficit (n 36); COV allowed (man) sep_mean (n 33); COV allowed (man) sep_at_break (n 33); COV allowed (man) sep_gain_break (n 33); COV allowed (man) sep_at_throw (n 33); COV allowed (man) db_speed_deficit (n 33); TACKLE closing_speed (n 34); TACKLE pursuit_eff (n 34); TACKLE breakdown (n 34); TACKLE yds_after_arrival (n 34)
+
+S outcomes: S pass tackles_oe (n 32); S run tackles_oe (n 28); TACKLE closing_speed (n 22); TACKLE pursuit_eff (n 22); TACKLE breakdown (n 22); TACKLE yds_after_arrival (n 22)
+
+EDGE outcomes: EDGE depth2s_oe (n 41); EDGE get_off_oe (lower=better) (n 42); EDGE penetration_oe (n 42); EDGE pressure_oe (n 42); EDGE run TFL_oe (n 44); EDGE run penetration_oe (n 44); EDGE run tackles_oe (n 44); H2H corner rate (n 38); H2H blocker ppa_oe vs him (n 38)
+
+IDL outcomes: IDL depth2s_oe (n 29); IDL get_off_oe (lower=better) (n 30); IDL penetration_oe (n 30); IDL pressure_oe (n 30); IDL run TFL_oe (n 37); IDL run penetration_oe (n 37); IDL run tackles_oe (n 37); H2H corner rate (n 33); H2H blocker ppa_oe vs him (n 33)
+
+T outcomes: T pressure prob allowed_oe (lower=better) (n 27); T pressures allowed_oe (lower=better) (n 27); H2H corner allowed rate (n 30); H2H ppa_oe (n 30)
+
+IOL outcomes: IOL pressure prob allowed_oe (lower=better) (n 38); IOL pressures allowed_oe (lower=better) (n 38); H2H corner allowed rate (n 36); H2H ppa_oe (n 36)

@@ -1,0 +1,23 @@
+drive_contrast test-retest (view 0 vs 1, where the two attempts differ): 0.88
+r with frozen drive speed (CBs): 0.04
+
+=== cpoe ===
+  drive speed (frozen)             -0.0655 per SD (clustered p 0.002, perm p 0.012) | held-out-class gain +0.21% | n 284, CBs 38
+  drive contrast (late - early)    -0.0724 per SD (clustered p 0.003, perm p 0.012) | held-out-class gain +3.20% | n 284, CBs 38
+  drive ratio (late / early)       -0.0723 per SD (clustered p 0.002, perm p 0.005) | held-out-class gain -9.00% | n 284, CBs 38
+  contrast, given drive speed      -0.0641 per SD (clustered p 0.004, perm p 0.010) | held-out-class gain -4.98% | n 284, CBs 38
+
+=== sep_at_throw ===
+  drive speed (frozen)             -0.1063 per SD (clustered p 0.007, perm p 0.052) | held-out-class gain +0.55% | n 1479, CBs 46
+  drive contrast (late - early)    -0.0117 per SD (clustered p 0.843, perm p 0.833) | held-out-class gain -1.26% | n 1480, CBs 47
+  drive ratio (late / early)       -0.0183 per SD (clustered p 0.758, perm p 0.783) | held-out-class gain -0.78% | n 1480, CBs 47
+  contrast, given drive speed      +0.0087 per SD (clustered p 0.871, perm p 0.893) | held-out-class gain -0.33% | n 1479, CBs 46
+
+=== sep_gain_break ===
+  drive speed (frozen)             -0.0788 per SD (clustered p 0.007, perm p 0.017) | held-out-class gain +0.45% | n 1707, CBs 46
+  drive contrast (late - early)    +0.0149 per SD (clustered p 0.679, perm p 0.681) | held-out-class gain -12.97% | n 1709, CBs 47
+  drive ratio (late / early)       +0.0138 per SD (clustered p 0.701, perm p 0.716) | held-out-class gain -26.66% | n 1709, CBs 47
+  contrast, given drive speed      +0.0297 per SD (clustered p 0.381, perm p 0.439) | held-out-class gain -1.72% | n 1707, CBs 46
+  expected completion % allowed at drive-contrast p10 (-0.34 yd/s): 55.7%
+  expected completion % allowed at drive-contrast p50 (+0.69 yd/s): 52.1%
+  expected completion % allowed at drive-contrast p90 (+3.87 yd/s): 41.3%

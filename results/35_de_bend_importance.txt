@@ -1,0 +1,52 @@
+A) edge rushers with >= 50 REG+POST rush snaps: 42; with hoop data 39
+outcome                corner_rate_vs_T  penetration_oe  pressure_oe
+trait                                                               
+arm_length                        -0.12           -0.08        -0.19
+broad_jump                         0.48            0.51         0.17
+forty (lower=faster)              -0.17           -0.45        -0.07
+hoop_peak_lean                    -0.12            0.27         0.08
+hoop_turn_speed                    0.19            0.41         0.09
+rushdrill_sust_lean                0.15            0.13        -0.03
+ten_yd (lower=faster)             -0.20           -0.38        -0.21
+vertical                           0.20            0.18         0.11
+weight                            -0.14           -0.45        -0.11
+
+ p-values:
+outcome                corner_rate_vs_T  penetration_oe  pressure_oe
+trait                                                               
+arm_length                        0.510           0.603        0.231
+broad_jump                        0.008           0.001        0.321
+forty (lower=faster)              0.427           0.010        0.709
+hoop_peak_lean                    0.506           0.091        0.608
+hoop_turn_speed                   0.298           0.010        0.596
+rushdrill_sust_lean               0.404           0.425        0.866
+ten_yd (lower=faster)             0.337           0.030        0.248
+vertical                          0.304           0.290        0.514
+weight                            0.419           0.003        0.504
+
+ r given weight:
+outcome                corner_rate_vs_T  penetration_oe  pressure_oe
+trait                                                               
+arm_length                        -0.19           -0.13        -0.20
+broad_jump                         0.39            0.28         0.13
+forty (lower=faster)              -0.09           -0.31        -0.03
+hoop_peak_lean                    -0.14            0.22         0.06
+hoop_turn_speed                    0.18            0.37         0.07
+rushdrill_sust_lean                0.11           -0.02        -0.07
+ten_yd (lower=faster)             -0.11           -0.20        -0.19
+vertical                           0.14            0.03         0.08
+
+B) NFL skill in one half of games -> result in the other half (edge rushers):
+                        skill        outcome  r_mean  r_AtoB  r_BtoA  n  p_max
+                   apex_speed penetration_oe   0.370   0.435   0.305 39  0.059
+                   apex_speed    pressure_oe   0.222   0.287   0.156 39  0.342
+                    arc_speed penetration_oe   0.388   0.437   0.339 39  0.035
+                    arc_speed    pressure_oe   0.200   0.259   0.141 39  0.393
+              corner_bend_p75 penetration_oe   0.330   0.388   0.272 39  0.094
+              corner_bend_p75    pressure_oe   0.088   0.118   0.059 39  0.723
+get_off_median (lower=faster) penetration_oe  -0.517  -0.437  -0.596 39  0.005
+get_off_median (lower=faster)    pressure_oe  -0.229  -0.205  -0.253 39  0.211
+
+C) CV R^2 of half-B outcome from half-A skills (mean of both directions):
+  pressure_oe: corner_bend_p75: -0.101; arc_speed: -0.051; get_off_median: -0.046; apex_speed: -0.034; corner_bend_p75 + arc_speed + get_off_median + apex_speed: -0.123
+  penetration_oe: corner_bend_p75: +0.011; arc_speed: -0.004; get_off_median: +0.140; apex_speed: -0.029; corner_bend_p75 + arc_speed + get_off_median + apex_speed: +0.017

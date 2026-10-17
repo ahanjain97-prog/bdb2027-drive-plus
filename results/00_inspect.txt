@@ -1,0 +1,217 @@
+   n_frames  player_plays  players  games
+0  22654290        314944      497   1001 
+
+                        event         n
+0                        None  21153553
+1                   ball_snap    314278
+2                pass_forward    187479
+3               first_contact    184368
+4                      tackle    184269
+5                pass_arrived    141322
+6         pass_outcome_caught    113171
+7                     handoff     92594
+8     pass_outcome_incomplete     64869
+9                 play_action     51855
+10              out_of_bounds     34791
+11  autoevent_passinterrupted     24748
+12                        run     16589
+13                    qb_sack     12529
+14              man_in_motion     10534
+15                   line_set      8759
+16                  touchdown      7794
+17                play_submit      7781
+18               dropped_pass      5496
+19     pass_outcome_touchdown      4275
+20  pass_outcome_interception      4264
+21                pass_tipped      3651
+22                     fumble      3345
+23                   qb_kneel      3102
+24       autoevent_playaction      2444
+25                   qb_slide      2360
+26                   qb_sneak      2109
+27   fumble_offense_recovered      2059
+28   fumble_defense_recovered      2032
+29              qb_strip_sack      1411
+30                    lateral      1346
+31                run_attempt      1280
+32                pass_shovel       757
+33                snap_direct       680
+34                   qb_spike       564
+35                      shift       423
+36       two_point_conversion       404
+37                  touchback       381
+38               penalty_flag       369
+39       huddle_break_offense        81 
+
+                              nf_q  one_snap  no_snap                                         dur_q
+0  [31.0, 55.0, 69.0, 93.0, 125.0]  0.997571  0.00227  [3.0, 6.800000190734863, 12.400000095367432] 
+
+                                                pre_snap_s                                                            post_snap_s
+0  [0.8999998569488525, 0.8999998569488525, 1.0, 1.0, 1.0]  [2.0, 4.400000095367432, 5.8999998569488525, 8.299999952316284, 11.5] 
+
+                                                                                                        dt_q  c_vx_sin  c_vy_cos  c_vx_cos  c_vy_sin   c_speed  o_null  dir_null
+0  [0.09999990463256836, 0.09999990463256836, 0.09999990463256836, 0.10000014305114746, 0.10000014305114746]  0.997294  0.996819 -0.018467 -0.019093  0.992444     0.0       0.0 
+
+     amin                 aq  min(s)     max(s)  min(x)      max(x)  min(y)     max(y)
+0 -14.396  [0.0, 1.36, 5.23]     0.0  16.879999   -6.33  127.400002   -8.78  63.959999 
+
+Traceback (most recent call last):
+  File "/Users/ahanjain/bdb_ssl/code/00_inspect.py", line 27, in <module>
+    q("""SELECT count(*) trk, count(*) FILTER (WHERE p.game_id IS NOT NULL) matched FROM
+    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         (SELECT DISTINCT game_id, play_id, nfl_id FROM gt) t LEFT JOIN pp p USING (game_id, play_id, nfl_id)""")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahanjain/bdb_ssl/code/00_inspect.py", line 8, in <lambda>
+    q = lambda s: print(con.execute(s).df().to_string(), "\n", flush=True)
+                        ~~~~~~~~~~~^^^
+_duckdb.ParserException: Parser Error: syntax error at or near "matched"
+
+LINE 1: ... count(*) trk, count(*) FILTER (WHERE p.game_id IS NOT NULL) matched FROM
+                                                                        ^
+0   314197  314197      50 
+
+   season season_type    g
+0    2023        POST   13
+1    2023         PRE   49
+2    2023         REG  271
+3    2024        POST   13
+4    2024         PRE   49
+5    2024         REG  272
+6    2025        POST   13
+7    2025         PRE   49
+8    2025         REG  272 
+
+   games_not_in_games_csv
+0                       0 
+
+   lined_up_position      n
+0                  G  48507
+1                  T  42851
+2               EDGE  38398
+3                 CB  35017
+4      INTERIOR_LINE  30301
+5                 WR  28077
+6        HIGH_SAFETY  25608
+7            SLOT_WR  18755
+8                  C  14959
+9            SLOT_CB  14537
+10                TE   6803
+11               OLB   6362
+12               MLB   1824
+13              None   1383
+14                RB    320
+15        BOX_SAFETY    266
+16                FB    228
+17          EXTRA_OL      1 
+
+   route_ran       n
+0       None  260889
+1         GO    9715
+2      HITCH    8816
+3      CROSS    6756
+4         IN    5582
+5        OUT    5179
+6       POST    4865
+7     CORNER    4232
+8      SLANT    3413
+9       FLAT    3287
+10    SCREEN    1321
+11     WHEEL      83
+12     ANGLE      59 
+
+       coverage_assignment       n
+0                     None  241545
+1            NO_ASSIGNMENT   29442
+2                      MAN   10745
+3           CURL_FLAT_LEFT    2988
+4         DEEP_THIRD_RIGHT    2859
+5          CURL_FLAT_RIGHT    2781
+6        DEEP_THIRD_MIDDLE    2655
+7          DEEP_THIRD_LEFT    2065
+8   QUARTERS_OUTSIDE_RIGHT    2042
+9     QUARTERS_INSIDE_LEFT    2036
+10   QUARTERS_INSIDE_RIGHT    1771
+11              FLAT_RIGHT    1718
+12          DEEP_HALF_LEFT    1692
+13         DEEP_HALF_RIGHT    1481
+14               DEEP_FREE    1469
+15          HOOK_CURL_LEFT    1403
+16               FLAT_LEFT    1361
+17         HOOK_CURL_RIGHT    1358
+18   QUARTERS_OUTSIDE_LEFT    1335
+19                    HOLE    1274
+20                 PREVENT     177 
+
+  team_coverage_type      n
+0       COVER_3_ZONE  97938
+1        COVER_1_MAN  56381
+2       COVER_4_ZONE  43685
+3               None  38919
+4       COVER_2_ZONE  32999
+5       COVER_6_ZONE  22596
+6        COVER_0_MAN  18179
+7        COVER_2_MAN   2867
+8            PREVENT    633 
+
+  offense_formation       n
+0           SHOTGUN  182052
+1        SINGLEBACK   69220
+2             EMPTY   22754
+3            I_FORM   16406
+4            PISTOL   14880
+5              None    5335
+6             JUMBO    2708
+7           WILDCAT     842 
+
+   receiver_alignment       n
+0                 2x2  130055
+1                 3x1  126352
+2                 2x1   27989
+3                 3x2   21103
+4                None    4597
+5                 4x1    1974
+6                 1x1    1100
+7                 0x0     643
+8                 3x0     173
+9                 4x0     136
+10                2x0      46
+11                3x3      14
+12                5x2       6
+13                4x2       4
+14                4x3       4
+15                1x0       1 
+
+  pass_result       n
+0           C  115903
+1              103636
+2           I   65187
+3           S   13888
+4           R   11326
+5          IN    4257 
+
+  play_nullified_by_penalty       n
+0                         N  301707
+1                         Y   12490 
+
+   nfl_position      n  off_share
+0             G  47882   1.000000
+1             T  44608   1.000000
+2            CB  44455   0.000000
+3            WR  42806   1.000000
+4            SS  24962   0.000000
+5            DE  23604   0.000000
+6           OLB  21324   0.000000
+7            DT  20790   0.000048
+8             C  15230   0.999081
+9            FS  14630   0.000000
+10           TE  10410   1.000000
+11           NT   2517   0.000000
+12          ILB    389   0.000000
+13          MLB    282   0.000000
+14           DB    186   0.000000
+15           RB     86   1.000000
+16           FB     36   1.000000 
+
+   ys_null  at50
+0     4102  4102 
+

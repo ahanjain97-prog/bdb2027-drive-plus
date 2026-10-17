@@ -1,0 +1,22 @@
+turns per attempt by drill:
+ drill
+OL_PULL_DRILL_DEEP_SHORT_PULL_LEFT    1.0
+OL_PULL_DRILL_FOLD_BLOCK_RIGHT        1.0
+OL_PULL_DRILL_LONG_PULL_RIGHT         2.0
+PASS_RUSH_DRILL                       1.0
+RUN_THE_HOOP_DRILL                    3.0
+
+median turn metrics by family x direction:
+               peak_lat  lean_deg  apex_speed  radius  retention
+family    dir                                                   
+hoop      L        6.99     33.07        3.53    1.78       0.83
+          R        6.30     30.41        2.52    1.01       0.58
+pull      L        4.92     24.63        2.65    1.30       1.65
+          R        4.36     22.10        5.60    7.32       2.24
+rushdrill L        5.44     26.88        4.45    3.52       1.76
+          R        5.53     27.27        4.30    3.38       1.55
+r(c_hoop_L_peak_lat, c_hoop_R_peak_lat) = 0.26  n 109
+r(c_rushdrill_L_peak_lat, c_rushdrill_R_peak_lat) = 0.33  n 104
+r(c_hoop_peak_lat, c_rushdrill_peak_lat) = 0.36  n 109
+r(c_pull_L_peak_lat, c_pull_R_peak_lat) = 0.48  n 100
+r(c_hoop_apex_speed, c_rushdrill_apex_speed) = 0.28  n 109

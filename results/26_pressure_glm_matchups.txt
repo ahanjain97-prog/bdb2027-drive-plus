@@ -1,0 +1,7 @@
+pressure ~ z_hoop + edge + C(blitz) + C(down) + C(ytg_b)
+   n snaps 24652, players 90: OR per SD hoop turn speed 1.059 [0.934, 1.201], p 0.3729  (base pressure rate 0.101)
+pressure ~ z_hoop + z_w + edge + C(blitz) + C(down) + C(ytg_b)
+   n snaps 24652, players 90: OR per SD hoop turn speed 1.030 [0.908, 1.168], p 0.6472  (base pressure rate 0.101)
+penetration (yd) ~ hoop: b per SD 0.066 yd (se 0.048, p 0.1702)
+
+plays with a pool OL AND a pool DL (opposite teams by construction): 36472 of 114954

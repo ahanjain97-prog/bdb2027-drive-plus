@@ -1,0 +1,92 @@
+sep_gain_break | draft-class-out: drive +0.50% (r +0.32) | ridge_all -2.09% (r -0.08) | enet_all +0.18% (r +0.27) | xgb_all -0.62% (r +0.01)
+sep_gain_break | season-forward: drive +0.55% (r +0.37) | ridge_all -1.26% (r +0.06) | enet_all -0.03% (r +0.11) | xgb_all -3.29% (r +0.11)
+sep_gain_break | new-prospect: drive +0.64% (r +0.17) | ridge_all -1.61% (r -0.13) | enet_all +0.07% (r -0.02) | xgb_all -0.09% (r +0.04)
+sep_at_throw | draft-class-out: drive +0.60% (r +0.33) | ridge_all -2.00% (r +0.12) | enet_all -2.14% (r -0.00) | xgb_all -1.71% (r +0.19)
+sep_at_throw | season-forward: drive +1.18% (r +0.41) | ridge_all -0.69% (r +0.24) | enet_all -0.29% (r +0.14) | xgb_all -5.90% (r +0.20)
+sep_at_throw | new-prospect: drive +0.63% (r +0.14) | ridge_all -0.94% (r -0.20) | enet_all +1.10% (r +0.35) | xgb_all +1.44% (r +0.35)
+db_closing | draft-class-out: drive +0.81% (r +0.36) | ridge_all -2.07% (r -0.04) | enet_all -2.64% (r -0.05) | xgb_all -2.43% (r +0.21)
+db_closing | season-forward: drive +1.07% (r +0.37) | ridge_all -0.13% (r +0.17) | enet_all +0.29% (r +0.23) | xgb_all -0.71% (r +0.24)
+db_closing | new-prospect: drive +0.97% (r +0.29) | ridge_all -1.52% (r -0.11) | enet_all +0.09% (r -0.07) | xgb_all +1.19% (r +0.39)
+cpoe | draft-class-out: drive +0.53% (r +0.25) | ridge_all +4.07% (r +0.56) | enet_all +2.65% (r +0.46) | xgb_all +2.05% (r +0.43)
+cpoe | season-forward: drive +0.58% (r +0.59) | ridge_all +1.02% (r +0.23) | enet_all +0.00% (r -0.00) | xgb_all -5.02% (r -0.02)
+cpoe | new-prospect: drive +8.09% (r +0.73) | ridge_all +5.78% (r +0.29) | enet_all +3.96% (r +0.34) | xgb_all -0.28% (r -0.15)
+sep_gain_break (zone) | draft-class-out: drive +0.92% (r +0.27) | ridge_all -4.19% (r -0.21) | enet_all +0.00% (r -0.20) | xgb_all -1.26% (r +0.01)
+sep_gain_break (zone) | season-forward: drive +1.03% (r +0.31) | ridge_all -1.17% (r -0.01) | enet_all +0.00% (r +nan) | xgb_all -8.22% (r -0.02)
+sep_gain_break (zone) | new-prospect: drive +0.59% (r +0.11) | ridge_all -3.47% (r -0.27) | enet_all +0.00% (r +nan) | xgb_all +0.34% (r +0.07)
+sep_at_throw (zone) | draft-class-out: drive +1.06% (r +0.32) | ridge_all -2.00% (r +0.02) | enet_all -15.07% (r -0.08) | xgb_all -2.43% (r +0.01)
+sep_at_throw (zone) | season-forward: drive +2.27% (r +0.36) | ridge_all -0.61% (r +0.12) | enet_all -1.00% (r -0.11) | xgb_all -8.72% (r +0.17)
+sep_at_throw (zone) | new-prospect: drive +0.12% (r +0.15) | ridge_all -6.93% (r -0.07) | enet_all -4.47% (r +0.00) | xgb_all -4.69% (r -0.35)
+
+              outcome           split     model  reps  CBs  oos_mse_reduction_%  cb_effect_r  perm_p  null_95pct  n_perm
+       sep_gain_break draft-class-out     drive  1709   47                0.500        0.321   0.030       0.250     100
+       sep_gain_break draft-class-out ridge_all  1709   47               -2.087       -0.079   0.851       0.460     100
+       sep_gain_break draft-class-out  enet_all  1709   47                0.183        0.269   0.188       0.212      15
+       sep_gain_break draft-class-out   xgb_all  1709   47               -0.622        0.010   0.231       0.359      25
+       sep_gain_break  season-forward     drive  1709   47                0.545        0.365   0.020       0.425     100
+       sep_gain_break  season-forward ridge_all  1709   47               -1.258        0.058   0.545      -0.452     100
+       sep_gain_break  season-forward  enet_all  1709   47               -0.028        0.114   0.812       0.125      15
+       sep_gain_break  season-forward   xgb_all  1709   47               -3.292        0.115   0.692      -2.396      25
+       sep_gain_break    new-prospect     drive  1709   47                0.642        0.173   0.050       0.557     100
+       sep_gain_break    new-prospect ridge_all  1709   47               -1.605       -0.127   0.851       1.560     100
+       sep_gain_break    new-prospect  enet_all  1709   47                0.072       -0.023   0.188       0.517      15
+       sep_gain_break    new-prospect   xgb_all  1709   47               -0.093        0.035   0.231       0.566      25
+         sep_at_throw draft-class-out     drive  1480   47                0.596        0.334   0.030       0.313     100
+         sep_at_throw draft-class-out ridge_all  1480   47               -2.000        0.119   0.871       0.550     100
+         sep_at_throw draft-class-out  enet_all  1480   47               -2.145       -0.004   0.938       0.370      15
+         sep_at_throw draft-class-out   xgb_all  1480   47               -1.710        0.186   0.731      -0.248      25
+         sep_at_throw  season-forward     drive  1480   47                1.181        0.411   0.020       0.616     100
+         sep_at_throw  season-forward ridge_all  1480   47               -0.691        0.241   0.327       0.182     100
+         sep_at_throw  season-forward  enet_all  1480   47               -0.294        0.143   0.875       0.040      15
+         sep_at_throw  season-forward   xgb_all  1480   47               -5.902        0.203   0.423      -4.554      25
+         sep_at_throw    new-prospect     drive  1480   47                0.630        0.144   0.129       0.989     100
+         sep_at_throw    new-prospect ridge_all  1480   47               -0.939       -0.198   0.723       1.762     100
+         sep_at_throw    new-prospect  enet_all  1480   47                1.098        0.353   0.125       0.677      15
+         sep_at_throw    new-prospect   xgb_all  1480   47                1.435        0.354   0.231       2.623      25
+           db_closing draft-class-out     drive  1709   47                0.807        0.362   0.010       0.433     100
+           db_closing draft-class-out ridge_all  1709   47               -2.073       -0.039   0.703       0.833     100
+           db_closing draft-class-out  enet_all  1709   47               -2.642       -0.047   0.875       0.351      15
+           db_closing draft-class-out   xgb_all  1709   47               -2.429        0.205   0.769       0.500      25
+           db_closing  season-forward     drive  1709   47                1.069        0.366   0.020       0.473     100
+           db_closing  season-forward ridge_all  1709   47               -0.127        0.167   0.366       0.486     100
+           db_closing  season-forward  enet_all  1709   47                0.285        0.232   0.188       0.417      15
+           db_closing  season-forward   xgb_all  1709   47               -0.706        0.243   0.385      -0.024      25
+           db_closing    new-prospect     drive  1709   47                0.969        0.288   0.040       0.622     100
+           db_closing    new-prospect ridge_all  1709   47               -1.518       -0.113   0.752       1.844     100
+           db_closing    new-prospect  enet_all  1709   47                0.091       -0.073   0.250       0.613      15
+           db_closing    new-prospect   xgb_all  1709   47                1.185        0.392   0.269       3.448      25
+                 cpoe draft-class-out     drive   284   38                0.530        0.251   0.248       1.574     100
+                 cpoe draft-class-out ridge_all   284   38                4.071        0.556   0.010       1.529     100
+                 cpoe draft-class-out  enet_all   284   38                2.653        0.460   0.062       0.451      15
+                 cpoe draft-class-out   xgb_all   284   38                2.047        0.435   0.077       0.773      25
+                 cpoe  season-forward     drive   284   38                0.584        0.586   0.149       1.002     100
+                 cpoe  season-forward ridge_all   284   38                1.016        0.235   0.020       0.604     100
+                 cpoe  season-forward  enet_all   284   38                0.000       -0.000   0.562       0.556      15
+                 cpoe  season-forward   xgb_all   284   38               -5.016       -0.017   0.577      -3.671      25
+                 cpoe    new-prospect     drive   284   38                8.088        0.732   0.010       3.343     100
+                 cpoe    new-prospect ridge_all   284   38                5.775        0.293   0.030       3.964     100
+                 cpoe    new-prospect  enet_all   284   38                3.961        0.337   0.062       1.671      15
+                 cpoe    new-prospect   xgb_all   284   38               -0.283       -0.155   0.423       4.527      25
+sep_gain_break (zone) draft-class-out     drive   736   44                0.923        0.273   0.030       0.599     100
+sep_gain_break (zone) draft-class-out ridge_all   736   44               -4.192       -0.211   0.980       1.227     100
+sep_gain_break (zone) draft-class-out  enet_all   736   44                0.000       -0.201   0.438       0.655      15
+sep_gain_break (zone) draft-class-out   xgb_all   736   44               -1.257        0.009   0.308       0.717      25
+sep_gain_break (zone)  season-forward     drive   736   44                1.030        0.310   0.020       0.707     100
+sep_gain_break (zone)  season-forward ridge_all   736   44               -1.174       -0.009   0.495       0.923     100
+sep_gain_break (zone)  season-forward  enet_all   736   44                0.000          NaN   0.875       0.626      15
+sep_gain_break (zone)  season-forward   xgb_all   736   44               -8.225       -0.019   0.462      -6.904      25
+sep_gain_break (zone)    new-prospect     drive   736   44                0.595        0.109   0.119       1.946     100
+sep_gain_break (zone)    new-prospect ridge_all   736   44               -3.467       -0.272   0.851       3.182     100
+sep_gain_break (zone)    new-prospect  enet_all   736   44                0.000          NaN   1.000       3.510      15
+sep_gain_break (zone)    new-prospect   xgb_all   736   44                0.343        0.072   0.346       3.238      25
+  sep_at_throw (zone) draft-class-out     drive   641   43                1.057        0.317   0.040       0.859     100
+  sep_at_throw (zone) draft-class-out ridge_all   641   43               -1.997        0.023   0.723       0.705     100
+  sep_at_throw (zone) draft-class-out  enet_all   641   43              -15.071       -0.080   1.000       0.009      15
+  sep_at_throw (zone) draft-class-out   xgb_all   641   43               -2.426        0.013   0.692       1.012      25
+  sep_at_throw (zone)  season-forward     drive   641   43                2.274        0.363   0.030       1.152     100
+  sep_at_throw (zone)  season-forward ridge_all   641   43               -0.614        0.121   0.436       0.692     100
+  sep_at_throw (zone)  season-forward  enet_all   641   43               -1.003       -0.111   0.812       0.000      15
+  sep_at_throw (zone)  season-forward   xgb_all   641   43               -8.724        0.167   0.038      -9.364      25
+  sep_at_throw (zone)    new-prospect     drive   641   43                0.120        0.152   0.297       1.459     100
+  sep_at_throw (zone)    new-prospect ridge_all   641   43               -6.926       -0.070   0.891       4.630     100
+  sep_at_throw (zone)    new-prospect  enet_all   641   43               -4.466        0.004   0.875       1.416      15
+  sep_at_throw (zone)    new-prospect   xgb_all   641   43               -4.692       -0.351   0.731       3.904      25

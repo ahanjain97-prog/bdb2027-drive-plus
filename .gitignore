@@ -1,0 +1,13 @@
+# competition data and everything derived at row level (not redistributable; rebuild with the scripts)
+/data
+/checkpoints
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# large build outputs that the scripts regenerate
+submission/review.html
+submission/print.html
+*.npy
+*.pt

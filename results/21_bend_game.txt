@@ -1,0 +1,20 @@
+plays to process 174457
+  out[c_] = pd.to_numeric(out[c_].astype("object").replace({True: 1, False: 0}), errors="coerce").astype(float)
+  out[c_] = pd.to_numeric(out[c_].astype("object").replace({True: 1, False: 0}), errors="coerce").astype(float)
+  out[c_] = pd.to_numeric(out[c_].astype("object").replace({True: 1, False: 0}), errors="coerce").astype(float)
+  out[c_] = pd.to_numeric(out[c_].astype("object").replace({True: 1, False: 0}), errors="coerce").astype(float)
+  out[c_] = pd.to_numeric(out[c_].astype("object").replace({True: 1, False: 0}), errors="coerce").astype(float)
+  out[c_] = pd.to_numeric(out[c_].astype("object").replace({True: 1, False: 0}), errors="coerce").astype(float)
+  out[c_] = pd.to_numeric(out[c_].astype("object").replace({True: 1, False: 0}), errors="coerce").astype(float)
+  out[c_] = pd.to_numeric(out[c_].astype("object").replace({True: 1, False: 0}), errors="coerce").astype(float)
+  out[c_] = pd.to_numeric(out[c_].astype("object").replace({True: 1, False: 0}), errors="coerce").astype(float)
+  out[c_] = pd.to_numeric(out[c_].astype("object").replace({True: 1, False: 0}), errors="coerce").astype(float)
+DL pass-rush snaps 32865; corner found 0.90
+                   peak_lat  lean_deg  apex_speed  radius  t_corner  pressure
+lined_up_position                                                            
+EDGE                   2.64     13.83        3.44    4.71       1.9       0.0
+INTERIOR_LINE          1.82      9.60        2.78    4.95       1.7       0.0
+turn dir share L by alignment: {'EDGE': 0.5, 'INTERIOR_LINE': 0.41}
+OL run snaps 42532; pull rate 0.065; climb rate 0.290
+OL pull plays medians: {'move_peak_lat': 2.19, 'move_apex_speed': 3.6, 'yards_gained': 3.0}
+DL run: stall/release medians {'stall_speed': 2.23, 'release_gain': 0.96} tackle_any 0.119

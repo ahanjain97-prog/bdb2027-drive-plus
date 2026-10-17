@@ -1,0 +1,49 @@
+         block group  n  rel_pc1  rel_mean_top8  n_pc_rel>.5  fingerprint_top1  chance  fingerprint_within_sub  chance_within_sub  novel_share_top8  reliable_and_novel_pcs
+     ssl:resid   REC 98    0.866          0.733            8             0.531   0.010                   0.541              0.020             0.312                     1.0
+     ssl:resid    OL 97    0.787          0.576            5             0.433   0.010                   0.485              0.021             0.320                     1.0
+     ssl:resid    DL 92    0.925          0.614            7             0.489   0.011                   0.533              0.022             0.285                     0.0
+     ssl:resid    DB 89    0.425          0.538            4             0.360   0.011                   0.404              0.022             0.245                     0.0
+       ssl:raw   REC 98    0.945          0.755            8             0.592   0.010                   0.602              0.020             0.356                     2.0
+       ssl:raw    OL 97    0.785          0.636            6             0.381   0.010                   0.402              0.021             0.335                     1.0
+       ssl:raw    DL 92    0.963          0.649            5             0.478   0.011                   0.489              0.022             0.329                     0.0
+       ssl:raw    DB 89    0.957          0.620            8             0.427   0.011                   0.438              0.022             0.339                     0.0
+ sslasym:resid   REC 98    0.725          0.635            6             0.449   0.010                   0.469              0.020             0.439                     2.0
+ sslasym:resid    OL 97    0.796          0.612            6             0.485   0.010                   0.505              0.021             0.476                     2.0
+ sslasym:resid    DL 92    0.720          0.667            7             0.413   0.011                   0.489              0.022             0.389                     1.0
+ sslasym:resid    DB 89    0.554          0.524            5             0.416   0.011                   0.461              0.022             0.413                     1.0
+    phys:resid   REC 98    0.811          0.767            8             0.531   0.010                   0.531              0.020               NaN                     NaN
+    phys:resid    OL 97    0.618          0.593            5             0.464   0.010                   0.577              0.021               NaN                     NaN
+    phys:resid    DL 92    0.704          0.686            8             0.554   0.011                   0.609              0.022               NaN                     NaN
+    phys:resid    DB 89    0.781          0.624            8             0.449   0.011                   0.517              0.022               NaN                     NaN
+      phys:raw   REC 98    0.922          0.773            8             0.510   0.010                   0.531              0.020               NaN                     NaN
+      phys:raw    OL 97    0.772          0.633            6             0.474   0.010                   0.526              0.021               NaN                     NaN
+      phys:raw    DL 92    0.949          0.683            7             0.489   0.011                   0.522              0.022               NaN                     NaN
+      phys:raw    DB 89    0.889          0.645            8             0.483   0.011                   0.494              0.022               NaN                     NaN
+surprise:resid   REC 98    0.408          0.460            2             0.061   0.010                   0.112              0.020               NaN                     NaN
+surprise:resid    OL 97    0.738          0.501            1             0.082   0.010                   0.155              0.021               NaN                     NaN
+surprise:resid    DL 92    0.350          0.553            2             0.065   0.011                   0.109              0.022               NaN                     NaN
+surprise:resid    DB 89    0.336          0.286            0             0.034   0.011                   0.045              0.022               NaN                     NaN
+
+ssl:resid REC: PC1 rel 0.87 novel 0.04; PC2 rel 0.84 novel 0.05; PC3 rel 0.74 novel 0.16; PC4 rel 0.76 novel 0.34; PC5 rel 0.68 novel 0.35; PC6 rel 0.63 novel 0.43; PC7 rel 0.75 novel 0.43; PC8 rel 0.60 novel 0.69
+
+ssl:resid OL: PC1 rel 0.79 novel 0.19; PC2 rel 0.74 novel 0.09; PC3 rel 0.76 novel 0.21; PC4 rel 0.45 novel 0.51; PC5 rel 0.51 novel 0.20; PC6 rel 0.33 novel 0.28; PC7 rel 0.58 novel 0.59; PC8 rel 0.44 novel 0.49
+
+ssl:resid DL: PC1 rel 0.92 novel 0.02; PC2 rel 0.72 novel 0.16; PC3 rel 0.72 novel 0.10; PC4 rel 0.61 novel 0.19; PC5 rel 0.63 novel 0.41; PC6 rel 0.26 novel 0.72; PC7 rel 0.52 novel 0.29; PC8 rel 0.54 novel 0.39
+
+ssl:resid DB: PC1 rel 0.42 novel 0.33; PC2 rel 0.86 novel 0.02; PC3 rel 0.40 novel 0.18; PC4 rel 0.61 novel 0.19; PC5 rel 0.44 novel 0.28; PC6 rel 0.62 novel 0.32; PC7 rel 0.55 novel 0.30; PC8 rel 0.39 novel 0.34
+
+ssl:raw REC: PC1 rel 0.94 novel 0.11; PC2 rel 0.87 novel 0.06; PC3 rel 0.86 novel 0.15; PC4 rel 0.73 novel 0.38; PC5 rel 0.73 novel 0.41; PC6 rel 0.69 novel 0.48; PC7 rel 0.64 novel 0.53; PC8 rel 0.58 novel 0.72
+
+ssl:raw OL: PC1 rel 0.78 novel 0.19; PC2 rel 0.70 novel 0.40; PC3 rel 0.72 novel 0.09; PC4 rel 0.80 novel 0.29; PC5 rel 0.40 novel 0.49; PC6 rel 0.76 novel 0.44; PC7 rel 0.37 novel 0.27; PC8 rel 0.56 novel 0.53
+
+ssl:raw DL: PC1 rel 0.96 novel 0.14; PC2 rel 0.81 novel 0.16; PC3 rel 0.64 novel 0.20; PC4 rel 0.65 novel 0.29; PC5 rel 0.72 novel 0.30; PC6 rel 0.43 novel 0.60; PC7 rel 0.49 novel 0.52; PC8 rel 0.49 novel 0.42
+
+ssl:raw DB: PC1 rel 0.96 novel 0.41; PC2 rel 0.58 novel 0.37; PC3 rel 0.65 novel 0.46; PC4 rel 0.53 novel 0.25; PC5 rel 0.57 novel 0.30; PC6 rel 0.64 novel 0.35; PC7 rel 0.52 novel 0.36; PC8 rel 0.51 novel 0.20
+
+sslasym:resid REC: PC1 rel 0.72 novel 0.54; PC2 rel 0.81 novel 0.13; PC3 rel 0.81 novel 0.10; PC4 rel 0.46 novel 0.63; PC5 rel 0.44 novel 0.75; PC6 rel 0.66 novel 0.28; PC7 rel 0.65 novel 0.49; PC8 rel 0.52 novel 0.59
+
+sslasym:resid OL: PC1 rel 0.80 novel 0.23; PC2 rel 0.80 novel 0.73; PC3 rel 0.56 novel 0.57; PC4 rel 0.76 novel 0.35; PC5 rel 0.68 novel 0.25; PC6 rel 0.40 novel 0.71; PC7 rel 0.51 novel 0.47; PC8 rel 0.39 novel 0.50
+
+sslasym:resid DL: PC1 rel 0.72 novel 0.64; PC2 rel 0.88 novel 0.10; PC3 rel 0.68 novel 0.39; PC4 rel 0.56 novel 0.43; PC5 rel 0.75 novel 0.26; PC6 rel 0.64 novel 0.22; PC7 rel 0.44 novel 0.66; PC8 rel 0.67 novel 0.40
+
+sslasym:resid DB: PC1 rel 0.55 novel 0.73; PC2 rel 0.50 novel 0.41; PC3 rel 0.79 novel 0.10; PC4 rel 0.54 novel 0.34; PC5 rel 0.36 novel 0.37; PC6 rel 0.58 novel 0.48; PC7 rel 0.50 novel 0.57; PC8 rel 0.37 novel 0.31

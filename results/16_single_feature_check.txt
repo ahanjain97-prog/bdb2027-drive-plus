@@ -1,0 +1,26 @@
+combine_feature     official_10yd  official_forty  tracked_40_peak_accel  tracked_40_top_speed  tracked_peak_decel  tracked_peak_lateral
+group game_target                                                                                                                       
+DB    accel_peak           -0.004          -0.024                 -0.005                -0.002              -0.001                -0.002
+      decel_peak           -0.005          -0.003                 -0.013                -0.002              -0.002                -0.004
+      lateral_peak         -0.006          -0.002                 -0.003                -0.001              -0.008                -0.008
+      top_speed             0.040           0.095                 -0.012                 0.112              -0.002                -0.011
+DL    accel_peak           -0.002          -0.002                 -0.001                -0.001              -0.002                -0.005
+      decel_peak           -0.004          -0.003                 -0.002                -0.005              -0.000                -0.004
+      lateral_peak         -0.001          -0.002                 -0.001                -0.003              -0.003                -0.001
+      top_speed            -0.006          -0.007                  0.024                -0.009              -0.003                -0.009
+OL    accel_peak           -0.007          -0.005                 -0.021                -0.005               0.000                -0.003
+      decel_peak            0.000          -0.005                 -0.001                -0.005              -0.016                -0.005
+      lateral_peak         -0.003          -0.004                 -0.005                -0.004              -0.008                -0.002
+      top_speed             0.005           0.005                  0.000                 0.025              -0.006                -0.000
+REC   accel_peak           -0.007          -0.002                 -0.008                -0.007              -0.015                -0.008
+      decel_peak            0.000          -0.002                 -0.003                -0.004               0.000                -0.002
+      lateral_peak         -0.005          -0.001                 -0.004                -0.001               0.002                -0.002
+      top_speed            -0.003           0.024                  0.000                 0.053              -0.003                 0.006
+
+size-only R^2:
+game_target  accel_peak  decel_peak  lateral_peak  top_speed
+group                                                       
+DB               -0.006      -0.037        -0.042      0.019
+DL                0.700       0.565         0.709      0.547
+OL                0.089       0.219         0.045     -0.047
+REC               0.275       0.464         0.520      0.724

@@ -1,0 +1,126 @@
+sep_gain_break done
+sep_at_throw done
+sep_at_throw (zone) done
+cpoe done
+            outcome                                               block  n_features  oos_mse_reduction_%  cb_effect_r  perm_p
+               cpoe drill: BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION         125                4.228        0.615   0.010
+               cpoe                       transition drill: curves only          80                2.194        0.610   0.030
+               cpoe                               drill: GAUNTLET_DRILL         118                1.975        0.441   0.020
+               cpoe       drill: BACK_PEDAL_AND_90_DEGREE_BREAK_TO_BALL         100                1.241        0.312   0.030
+               cpoe                                drill: SHORT_SHUTTLE         113                0.793        0.319   0.059
+               cpoe                         drill: TERYL_AUSTIN_DRILL_1         118                0.689        0.443   0.109
+               cpoe                                    drill: BOX_DRILL         118                0.034        0.082   0.307
+               cpoe                             drill: THREE_CONE_DRILL         118                0.032        0.037   0.337
+               cpoe                              drill: FORTY_YARD_DASH         100                0.010        0.066   0.426
+               cpoe                                      drill: W_DRILL         118               -0.155        0.162   0.238
+               cpoe                                   drill: LINE_DRILL         100               -0.459       -0.299   0.723
+               cpoe                         drill: TERYL_AUSTIN_DRILL_2         118               -1.086       -0.410   0.733
+               cpoe                transition drill: mechanics + phases          45               -7.072       -0.250   0.990
+       sep_at_throw                             drill: THREE_CONE_DRILL         118                0.630        0.347   0.020
+       sep_at_throw                transition drill: mechanics + phases          45                0.460        0.300   0.040
+       sep_at_throw                                    drill: BOX_DRILL         118                0.447        0.316   0.030
+       sep_at_throw                              drill: FORTY_YARD_DASH         100               -0.122        0.061   0.386
+       sep_at_throw drill: BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION         125               -0.177        0.201   0.347
+       sep_at_throw                       transition drill: curves only          80               -0.297        0.072   0.614
+       sep_at_throw                                   drill: LINE_DRILL         100               -0.391        0.036   0.594
+       sep_at_throw       drill: BACK_PEDAL_AND_90_DEGREE_BREAK_TO_BALL         100               -0.892       -0.173   0.673
+       sep_at_throw                                drill: SHORT_SHUTTLE         113               -1.411       -0.164   0.861
+       sep_at_throw                         drill: TERYL_AUSTIN_DRILL_1         118               -1.632       -0.081   0.911
+       sep_at_throw                               drill: GAUNTLET_DRILL         118               -1.657       -0.513   0.822
+       sep_at_throw                         drill: TERYL_AUSTIN_DRILL_2         118               -1.705       -0.294   0.921
+       sep_at_throw                                      drill: W_DRILL         118               -5.367        0.120   0.970
+sep_at_throw (zone)                                      drill: W_DRILL         118                0.613        0.295   0.069
+sep_at_throw (zone)                             drill: THREE_CONE_DRILL         118                0.556        0.239   0.050
+sep_at_throw (zone)                transition drill: mechanics + phases          45                0.327        0.198   0.119
+sep_at_throw (zone) drill: BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION         125                0.311        0.217   0.119
+sep_at_throw (zone)                                   drill: LINE_DRILL         100                0.198        0.152   0.149
+sep_at_throw (zone)                       transition drill: curves only          80                0.139        0.180   0.198
+sep_at_throw (zone)                                    drill: BOX_DRILL         118               -0.081        0.039   0.228
+sep_at_throw (zone)                              drill: FORTY_YARD_DASH         100               -0.292       -0.086   0.515
+sep_at_throw (zone)       drill: BACK_PEDAL_AND_90_DEGREE_BREAK_TO_BALL         100               -0.434        0.003   0.416
+sep_at_throw (zone)                         drill: TERYL_AUSTIN_DRILL_1         118               -0.540       -0.070   0.396
+sep_at_throw (zone)                                drill: SHORT_SHUTTLE         113               -1.476       -0.223   0.851
+sep_at_throw (zone)                               drill: GAUNTLET_DRILL         118               -2.522       -0.468   0.891
+sep_at_throw (zone)                         drill: TERYL_AUSTIN_DRILL_2         118               -4.757       -0.392   0.941
+     sep_gain_break                                      drill: W_DRILL         118                0.543        0.335   0.040
+     sep_gain_break drill: BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION         125                0.198        0.210   0.119
+     sep_gain_break                             drill: THREE_CONE_DRILL         118               -0.036        0.026   0.376
+     sep_gain_break                       transition drill: curves only          80               -0.154        0.065   0.465
+     sep_gain_break                                    drill: BOX_DRILL         118               -0.269       -0.010   0.366
+     sep_gain_break                                   drill: LINE_DRILL         100               -0.417       -0.108   0.772
+     sep_gain_break                         drill: TERYL_AUSTIN_DRILL_2         118               -0.928       -0.152   0.832
+     sep_gain_break                               drill: GAUNTLET_DRILL         118               -1.394       -0.314   0.871
+     sep_gain_break                         drill: TERYL_AUSTIN_DRILL_1         118               -1.484        0.048   0.941
+     sep_gain_break       drill: BACK_PEDAL_AND_90_DEGREE_BREAK_TO_BALL         100               -2.469        0.036   0.970
+     sep_gain_break                transition drill: mechanics + phases          45               -2.504       -0.074   1.000
+     sep_gain_break                                drill: SHORT_SHUTTLE         113               -4.097       -0.311   0.970
+     sep_gain_break                              drill: FORTY_YARD_DASH         100               -8.385       -0.025   1.000
+
+=== all-feature ridge: where the weight sits, and how stable it is ===
+
+sep_gain_break: coefficient stability across leave-one-class-out fits (Spearman, mean of pairs) +0.40
+  share of |coefficient| mass by drill: {'W_DRILL': 0.131, 'SHORT_SHUTTLE': 0.116, 'BOX_DRILL': 0.103, 'TERYL_AUSTIN_DRILL_1': 0.1, 'GAUNTLET_DRILL': 0.096, 'TERYL_AUSTIN_DRILL_2': 0.093, 'BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION': 0.09, 'LINE_DRILL': 0.088, 'BACK_PEDAL_AND_90_DEGREE_BREAK_TO_BALL': 0.082, 'THREE_CONE_DRILL': 0.055, 'FORTY_YARD_DASH': 0.046}
+  by family: {'curve': 0.67, 'mechanic': 0.323, 'transition phase': 0.008}
+  top features: BOX_DRILL|curve_turnrate_01 -0.0054, SHORT_SHUTTLE|curve_turnrate_08 +0.0054, W_DRILL|brk_mean_reaccel_time +0.0048, BOX_DRILL|curve_lateral_01 -0.0043, W_DRILL|brk1_reaccel_time +0.0041, SHORT_SHUTTLE|brk_mean_reaccel_time +0.0040, SHORT_SHUTTLE|curve_turnrate_03 +0.0039, SHORT_SHUTTLE|curve_lateral_15 +0.0037, TERYL_AUSTIN_DRILL_1|brk_mean_exit_burst +0.0035, GAUNTLET_DRILL|curve_along_10 +0.0035, W_DRILL|curve_turnrate_18 -0.0034, BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION|top_speed -0.0034
+  transition-drill speed-curve coefficients over normalized time (0 -> 1): [0.36, 1.03, 0.73, 0.41, 0.24, 0.05, 0.03, 0.33, 0.42, 0.28, 0.01, -0.73, -1.49, -1.21, -0.6, 0.16, 0.32, 0.16, 0.07, -0.87]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/patsy/compat.py", line 40, in call_and_wrap_exc
+    return f(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/patsy/eval.py", line 179, in eval
+    return eval(code, {}, VarLookupDict([inner_namespace] + self._namespaces))
+  File "<string>", line 1, in <module>
+TypeError: 'DataFrame' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ahanjain/bdb_ssl/code/68_cb_drill_breakdown.py", line 66, in <module>
+    cm = smf.ols(f"{y} ~ {ctx}", data=d).fit(); d["res"] = cm.resid
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/statsmodels/base/model.py", line 203, in from_formula
+    tmp = handle_formula_data(data, None, formula, depth=eval_env,
+                              missing=missing)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/statsmodels/formula/formulatools.py", line 68, in handle_formula_data
+    result = dmatrices(
+        formula, Y, depth, return_type="dataframe", NA_action=na_action
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/patsy/highlevel.py", line 317, in dmatrices
+    (lhs, rhs) = _do_highlevel_design(
+                 ~~~~~~~~~~~~~~~~~~~~^
+        formula_like, data, eval_env, NA_action, return_type
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/patsy/highlevel.py", line 162, in _do_highlevel_design
+    design_infos = _try_incr_builders(
+        formula_like, data_iter_maker, eval_env, NA_action
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/patsy/highlevel.py", line 56, in _try_incr_builders
+    return design_matrix_builders(
+        [formula_like.lhs_termlist, formula_like.rhs_termlist],
+    ...<2 lines>...
+        NA_action,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/patsy/build.py", line 746, in design_matrix_builders
+    (num_column_counts, cat_levels_contrasts) = _examine_factor_types(
+                                                ~~~~~~~~~~~~~~~~~~~~~^
+        all_factors, factor_states, data_iter_maker, NA_action
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/patsy/build.py", line 491, in _examine_factor_types
+    value = factor.eval(factor_states[factor], data)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/patsy/eval.py", line 599, in eval
+    return self._eval(memorize_state["eval_code"], memorize_state, data)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/patsy/eval.py", line 582, in _eval
+    return call_and_wrap_exc(
+        "Error evaluating factor",
+    ...<3 lines>...
+        inner_namespace=inner_namespace,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/patsy/compat.py", line 43, in call_and_wrap_exc
+    raise new_exc from e
+patsy.PatsyError: Error evaluating factor: TypeError: 'DataFrame' object is not callable
+    sep_at_throw ~ wr_skill + C(team_coverage_man_zone) + C(route_ran)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^

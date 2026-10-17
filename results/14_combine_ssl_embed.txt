@@ -1,0 +1,7 @@
+combine attempts embedded: 6307 players 510 finite True
+drill
+SKILL_DRILLS_DL:PASS_RUSH_DRILL                                 217
+SHORT_SHUTTLE:SHORT_SHUTTLE                                     222
+SKILL_DRILLS_OL:PASS_RUSH_DROP                                  239
+SKILL_DRILLS_DB:BACK_PEDAL_AND_TRANSITION_45_DEGREE_REACTION    241
+FORTY_YARD_DASH:FORTY_YARD_DASH                                 793

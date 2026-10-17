@@ -1,0 +1,6 @@
+DB reps 2042, team-seasons 68, CB-team-seasons with >= 15 other reps 54; team zone-match rate (loo) median 0.32, IQR 0.25-0.42
+does the team rate predict the focal CB's own zone-matching share? r 0.32
+  db_closing     drive +0.123 (p 0.169) | drive x team zone-match rate -0.039 per SD (perm p 0.676) | reps 610, CBs 25
+  sep_gain_break drive -0.057 (p 0.177) | drive x team zone-match rate +0.034 per SD (perm p 0.651) | reps 610, CBs 25
+  sep_at_throw   drive -0.019 (p 0.836) | drive x team zone-match rate -0.023 per SD (perm p 0.858) | reps 539, CBs 25
+  cpoe           drive -0.082 (p 0.010) | drive x team zone-match rate +0.068 per SD (perm p 0.232) | reps 109, CBs 19

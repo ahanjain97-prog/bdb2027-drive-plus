@@ -1,0 +1,51 @@
+
+==================== S1  3-yd reps, CBs only (original card) ====================
+DBs with reps 46 (CB 46, S/DB 0) | reps 1717 | targets 284 | by season: reps {2023: 108, 2024: 627, 2025: 982}, DBs {2023: 10, 2024: 27, 2025: 41}, targets {2023: 17, 2024: 97, 2025: 170}
+             DBs with reps (CB / S)  reps  targets  DBs targeted  completion % allowed  EPA per target  zone-match closing (adj)  sep gained at break (adj)
+Drive+ tier                                                                                                                                                
+110+                     8    8 / 0   522       85             8                 34.12           -0.14                     -0.48                      -0.02
+100-110                 15   15 / 0   490       81            11                 49.38            0.10                     -0.75                       0.10
+90-100                  17   17 / 0   515       84            13                 48.81            0.04                     -0.83                       0.09
+<90                      6    6 / 0   190       34             6                 76.47            0.84                     -1.02                       0.29
+continuous, per 10 Drive+ points:
+   completion % (per 10 pts): -9.372 (perm p 0.002, 38 DBs)
+   EPA per target: -0.207 (perm p 0.088, 38 DBs)
+   EPA per target, zone: -0.237 (perm p 0.044, 31 DBs)
+   zone-match closing: +0.163 (perm p 0.014, 43 DBs)
+   sep gained at break: -0.066 (perm p 0.028, 46 DBs)
+110+ minus <90, completion % allowed: -42.35 [-58.50, -28.73] (player bootstrap 95% CI)
+110+ minus <90, EPA per target: -0.98 [-1.72, -0.41] (player bootstrap 95% CI)
+
+==================== S2  3-yd reps, all graded DBs, any alignment ====================
+DBs with reps 70 (CB 46, S/DB 24) | reps 2040 | targets 327 | by season: reps {2023: 167, 2024: 727, 2025: 1146}, DBs {2023: 17, 2024: 39, 2025: 59}, targets {2023: 27, 2024: 109, 2025: 191}
+             DBs with reps (CB / S)  reps  targets  DBs targeted  completion % allowed  EPA per target  zone-match closing (adj)  sep gained at break (adj)
+Drive+ tier                                                                                                                                                
+110+                    11    8 / 3   530       87             9                 35.63           -0.14                     -0.48                      -0.02
+100-110                 19   15 / 4   520       87            14                 47.13            0.00                     -0.72                       0.09
+90-100                  30  17 / 13   784      117            20                 49.57            0.08                     -1.00                       0.13
+<90                     10    6 / 4   206       36             8                 75.00            0.87                     -0.99                       0.26
+continuous, per 10 Drive+ points:
+   completion % (per 10 pts): -9.289 (perm p 0.002, 51 DBs)
+   EPA per target: -0.241 (perm p 0.050, 51 DBs)
+   EPA per target, zone: -0.249 (perm p 0.104, 35 DBs)
+   zone-match closing: +0.169 (perm p 0.012, 55 DBs)
+   sep gained at break: -0.064 (perm p 0.036, 70 DBs)
+110+ minus <90, completion % allowed: -39.37 [-54.89, -23.49] (player bootstrap 95% CI)
+110+ minus <90, EPA per target: -1.01 [-1.72, -0.44] (player bootstrap 95% CI)
+
+==================== S3  4-yd reps, all graded DBs, any alignment (largest) ====================
+DBs with reps 78 (CB 47, S/DB 31) | reps 3073 | targets 483 | by season: reps {2023: 267, 2024: 1040, 2025: 1766}, DBs {2023: 20, 2024: 45, 2025: 66}, targets {2023: 43, 2024: 150, 2025: 290}
+             DBs with reps (CB / S)  reps  targets  DBs targeted  completion % allowed  EPA per target  zone-match closing (adj)  sep gained at break (adj)
+Drive+ tier                                                                                                                                                
+110+                    12    8 / 4   728      107            10                 37.38           -0.13                     -0.58                       0.03
+100-110                 22   15 / 7   739      124            18                 49.19           -0.05                     -0.64                       0.27
+90-100                  32  18 / 14  1277      195            24                 52.82            0.07                     -1.07                       0.26
+<90                     12    6 / 6   329       57             8                 73.68            0.86                     -0.91                       0.41
+continuous, per 10 Drive+ points:
+   completion % (per 10 pts): -9.420 (perm p 0.002, 60 DBs)
+   EPA per target: -0.245 (perm p 0.010, 60 DBs)
+   EPA per target, zone: -0.323 (perm p 0.002, 49 DBs)
+   zone-match closing: +0.157 (perm p 0.082, 63 DBs)
+   sep gained at break: -0.087 (perm p 0.062, 78 DBs)
+110+ minus <90, completion % allowed: -36.30 [-47.91, -22.69] (player bootstrap 95% CI)
+110+ minus <90, EPA per target: -0.98 [-1.43, -0.55] (player bootstrap 95% CI)

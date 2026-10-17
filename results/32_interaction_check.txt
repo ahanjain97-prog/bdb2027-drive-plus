@@ -1,0 +1,32 @@
+dl_pressure          interaction b -0.0105  t -2.61  player-permutation p 0.020  (null |t| 95th pct 2.12)
+ppa                  interaction b -0.0096  t -2.83  player-permutation p 0.012  (null |t| 95th pct 2.11)
+ol_pressure_allowed  interaction b -0.0098  t -2.41  player-permutation p 0.030  (null |t| 95th pct 2.13)
+corner_turned        interaction b -0.0013  t -0.26  player-permutation p 0.798  (null |t| 95th pct 2.32)
+
+subsets / controls (interaction coefficient, two-way clustered p):
+  tackle vs edge                             reps  2227 | dl_pressure -0.0087 (p 0.345) | ppa -0.0054 (p 0.419) | ol_pressure_allowed -0.0077 (p 0.395)
+  interior (G/C vs IDL)                      reps  3290 | dl_pressure -0.0084 (p 0.023) | ppa -0.0128 (p 0.001) | ol_pressure_allowed -0.0090 (p 0.017)
+  + both weights + OL arm                    reps  6647 | dl_pressure -0.0109 (p 0.001) | ppa -0.0102 (p 0.001) | ol_pressure_allowed -0.0100 (p 0.017)
+  + weights + blocker 10-yd & rusher 10-yd   reps  4240 | dl_pressure -0.0082 (p 0.074) | ppa -0.0122 (p 0.004) | ol_pressure_allowed -0.0077 (p 0.283)
+  2023-24 seasons                            reps  1994 | dl_pressure -0.0096 (p 0.151) | ppa -0.0066 (p 0.298) | ol_pressure_allowed -0.0027 (p 0.538)
+  2025 season                                reps  4653 | dl_pressure -0.0119 (p 0.016) | ppa -0.0118 (p 0.011) | ol_pressure_allowed -0.0131 (p 0.010)
+
+rusher pressure rate by rusher bend tercile x blocker quickness tercile (REG+POST reps):
+blocker_feet  slow feet  mid feet  quick feet
+rusher_bend                                  
+low bend          0.073     0.076       0.083
+mid bend          0.092     0.087       0.087
+high bend         0.124     0.117       0.080
+reps per cell:
+blocker_feet  slow feet  mid feet  quick feet
+rusher_bend                                  
+low bend            739       789         804
+mid bend            841       566         756
+high bend           670       836         646
+
+blocker peak pressure probability by the same cells:
+blocker_feet  slow feet  mid feet  quick feet
+rusher_bend                                  
+low bend          0.268     0.262       0.273
+mid bend          0.286     0.293       0.263
+high bend         0.319     0.325       0.298

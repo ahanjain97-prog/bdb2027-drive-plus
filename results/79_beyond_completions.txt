@@ -1,0 +1,33 @@
+xComp model: 9787 targets | out-of-fold log-loss 0.5626 vs base rate 0.6553 | xEPA out-of-fold R2 0.016
+
+[coverage_reps] reps 2040, reps scored (a throw happened) 1780, targets 326, DBs 70 | calibration on these targets: mean xcomp 0.454 vs actual 0.482; log-loss 0.6128 vs 0.6925
+
+[coverage_reps_4yd] reps 3073, reps scored (a throw happened) 2654, targets 480, DBs 78 | calibration on these targets: mean xcomp 0.506 vs actual 0.510; log-loss 0.6120 vs 0.6929
+
+=== [coverage_reps] which metric is a stable DB trait, and what Drive+ does to it ===
+                              observations  DBs  obs per DB (median)  split-half r (DBs with >=5 per half)  DBs in split-half  Drive+ slope per 10 pts  perm p  slope / metric SD
+metric                                                                                                                                                                           
+completion allowed (targets)           327   51                  5.0                                 0.010                  9                   -0.078   0.010             -0.156
+CPOE (targets)                         326   51                  5.0                                 0.095                  9                   -0.049   0.090             -0.107
+xComp allowed per rep                 1780   69                 15.0                                 0.341                 40                   -0.008   0.107             -0.038
+xEPA allowed per rep                  1780   69                 15.0                                 0.091                 40                   -0.023   0.115             -0.037
+separation at throw                   1780   69                 15.0                                 0.262                 40                   -0.095   0.050             -0.052
+open rate (sep >= 2 yd)               1780   69                 15.0                                 0.223                 40                   -0.023   0.022             -0.052
+zone-match closing                     705   55                  9.0                                 0.597                 26                    0.169   0.020              0.094
+
+=== [coverage_reps_4yd] which metric is a stable DB trait, and what Drive+ does to it ===
+                              observations  DBs  obs per DB (median)  split-half r (DBs with >=5 per half)  DBs in split-half  Drive+ slope per 10 pts  perm p  slope / metric SD
+metric                                                                                                                                                                           
+completion allowed (targets)           483   60                  6.0                                 0.520                 16                   -0.078   0.002             -0.156
+CPOE (targets)                         480   60                  6.0                                 0.466                 15                   -0.047   0.075             -0.103
+xComp allowed per rep                 2654   78                 16.5                                 0.505                 49                   -0.013   0.022             -0.060
+xEPA allowed per rep                  2654   78                 16.5                                 0.320                 49                   -0.033   0.025             -0.052
+separation at throw                   2654   78                 16.5                                 0.355                 49                   -0.168   0.007             -0.067
+open rate (sep >= 2 yd)               2654   78                 16.5                                 0.335                 49                   -0.036   0.007             -0.074
+zone-match closing                    1190   63                 12.0                                 0.330                 36                    0.160   0.080              0.073
+
+=== (5) predicting 2025 completion % allowed (log-loss on 2025 targets; lower = better) ===
+  train targets 2023-24: 193 (34 DBs); 2025 targets 290 (55 DBs); fitted prior strength: league 2980.9 targets, Drive+ 2980.9
+  returning DBs (185 targets, 29 DBs): league mean: +0.0% | his raw 2023-24 rate: -16.2% | shrink to league mean: +0.0% | shrink to Drive+ prior: +2.1% | Drive+ prior alone: +2.1% | his 2023-24 xComp per rep (calibrated): -0.4%
+  2025 rookies (no NFL history) (105 targets, 26 DBs): league mean: +0.0% | his raw 2023-24 rate: +0.0% | shrink to league mean: +0.0% | shrink to Drive+ prior: +3.3% | Drive+ prior alone: +3.3% | his 2023-24 xComp per rep (calibrated): +0.2%
+  all 2025 targets (290 targets, 55 DBs): league mean: +0.0% | his raw 2023-24 rate: -10.3% | shrink to league mean: +0.0% | shrink to Drive+ prior: +2.6% | Drive+ prior alone: +2.6% | his 2023-24 xComp per rep (calibrated): -0.2%

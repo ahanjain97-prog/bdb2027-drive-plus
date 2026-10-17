@@ -1,0 +1,75 @@
+=== 1) penetration vs pressure (play level, REG+POST rush snaps) ===
+  max_depth_live  n  26616  AUC for pressure 0.785
+  depth_2s        n  21959  AUC for pressure 0.648
+  peak_lat        n  24290  AUC for pressure 0.722
+  sust_lat        n  24223  AUC for pressure 0.722
+  player split-half reliability (Spearman-Brown):
+    poe                0.29
+    max_depth_live_oe  0.56
+    depth_2s_oe        0.61
+    tk_oe              0.32
+    tfl_oe             0.24
+    rdepth_oe          0.83
+
+=== 2) matrix summary: tests, p<.05 (expected), q<.10, replicating in both halves ===
+       tests  p05  expected  q10  replicating
+scope                                        
+DL       198   16       9.9    6           10
+EDGE     198   10       9.9    0            5
+IDL      198   26       9.9    4           20
+
+=== 3) links that replicate in both halves of games (any scope) ===
+scope               combine              game  n      r     p  q_bh  r_half0  r_half1  r_plus_weight
+   DL           c_hoop_time      g_apex_speed 91 -0.382 0.000 0.018   -0.359   -0.343         -0.167
+   DL           c_hoop_time       g_arc_speed 91 -0.375 0.000 0.018   -0.349   -0.341         -0.154
+   DL           c_hoop_time      o_depth2s_oe 69 -0.414 0.000 0.018   -0.235   -0.354         -0.299
+   DL           c_hoop_time  o_penetration_oe 69 -0.406 0.001 0.018   -0.206   -0.383         -0.271
+   DL     c_hoop_sust_speed  o_penetration_oe 69  0.406 0.001 0.018    0.421    0.286          0.311
+   DL     c_hoop_mean_speed  o_penetration_oe 69  0.405 0.001 0.018    0.446    0.211          0.318
+   DL           c_hoop_time g_corner_bend_p75 91 -0.290 0.005 0.132   -0.288   -0.253         -0.107
+   DL           c_hoop_time    g_arc_sust_lat 91 -0.290 0.005 0.132   -0.314   -0.240         -0.099
+   DL            c_hoop_dur      g_apex_speed 91 -0.246 0.019 0.361   -0.244   -0.253         -0.097
+   DL            c_hoop_dur       g_arc_speed 91 -0.238 0.023 0.361   -0.229   -0.251         -0.084
+ EDGE           c_hoop_time      g_apex_speed 52 -0.413 0.002 0.230   -0.416   -0.314         -0.162
+ EDGE           c_hoop_time       g_arc_speed 52 -0.412 0.002 0.230   -0.410   -0.319         -0.149
+ EDGE           c_hoop_time    g_arc_sust_lat 52 -0.356 0.010 0.316   -0.353   -0.313         -0.115
+ EDGE           c_hoop_time g_corner_bend_p75 52 -0.356 0.010 0.316   -0.342   -0.313         -0.119
+ EDGE            c_hoop_dur      g_apex_speed 52 -0.233 0.097 0.890   -0.236   -0.246         -0.114
+  IDL           c_hoop_time      g_apex_speed 39 -0.603 0.000 0.008   -0.438   -0.584         -0.471
+  IDL           c_hoop_time       g_arc_speed 39 -0.590 0.000 0.008   -0.425   -0.573         -0.466
+  IDL           c_hoop_time  o_penetration_oe 27 -0.660 0.000 0.012   -0.464   -0.584         -0.467
+  IDL           c_hoop_time      o_depth2s_oe 27 -0.600 0.001 0.046   -0.390   -0.466         -0.459
+  IDL  c_rushdrill_sust_lat g_corner_bend_p75 44  0.432 0.003 0.133    0.326    0.363          0.379
+  IDL     c_hoop_sust_speed  o_penetration_oe 27  0.509 0.007 0.178    0.410    0.531          0.245
+  IDL            c_hoop_dur      g_apex_speed 39 -0.427 0.007 0.178   -0.354   -0.382         -0.289
+  IDL     c_hoop_mean_speed      g_apex_speed 39  0.424 0.007 0.178    0.378    0.294          0.261
+  IDL            c_hoop_dur       g_arc_speed 39 -0.408 0.010 0.213   -0.339   -0.367         -0.275
+  IDL  c_rushdrill_sust_lat    g_arc_sust_lat 44  0.376 0.012 0.213    0.275    0.273          0.325
+  IDL     c_hoop_mean_speed       g_arc_speed 39  0.399 0.012 0.213    0.349    0.290          0.241
+  IDL  c_rushdrill_peak_lat       g_arc_speed 44  0.371 0.013 0.213    0.386    0.311          0.252
+  IDL  c_rushdrill_peak_lat      g_apex_speed 44  0.364 0.015 0.213    0.400    0.280          0.234
+  IDL     c_hoop_mean_speed  o_penetration_oe 27  0.458 0.016 0.213    0.401    0.341          0.204
+  IDL  c_rushdrill_sust_lat       g_arc_speed 44  0.360 0.016 0.213    0.386    0.270          0.251
+  IDL  c_rushdrill_peak_lat g_corner_bend_p75 44  0.357 0.017 0.213    0.312    0.350          0.292
+  IDL  c_rushdrill_sust_lat      g_apex_speed 44  0.348 0.021 0.224    0.375    0.253          0.229
+  IDL c_hoop_heading_change       g_arc_speed 39 -0.367 0.022 0.224   -0.354   -0.287         -0.270
+  IDL c_hoop_heading_change      g_apex_speed 39 -0.362 0.024 0.234   -0.334   -0.299         -0.258
+  IDL  c_rushdrill_peak_lat    g_arc_sust_lat 44  0.333 0.027 0.255    0.299    0.280          0.274
+
+=== top 15 by p, pooled DL ===
+scope               combine              game  n      r     p  q_bh  r_half0  r_half1  r_plus_weight
+   DL           c_hoop_time      g_apex_speed 91 -0.382 0.000 0.018   -0.359   -0.343         -0.167
+   DL           c_hoop_time       g_arc_speed 91 -0.375 0.000 0.018   -0.349   -0.341         -0.154
+   DL           c_hoop_time      o_depth2s_oe 69 -0.414 0.000 0.018   -0.235   -0.354         -0.299
+   DL           c_hoop_time  o_penetration_oe 69 -0.406 0.001 0.018   -0.206   -0.383         -0.271
+   DL     c_hoop_sust_speed  o_penetration_oe 69  0.406 0.001 0.018    0.421    0.286          0.311
+   DL     c_hoop_mean_speed  o_penetration_oe 69  0.405 0.001 0.018    0.446    0.211          0.318
+   DL           c_hoop_time g_corner_bend_p75 91 -0.290 0.005 0.132   -0.288   -0.253         -0.107
+   DL           c_hoop_time    g_arc_sust_lat 91 -0.290 0.005 0.132   -0.314   -0.240         -0.099
+   DL       c_hoop_peak_lat  o_penetration_oe 69  0.305 0.011 0.236    0.315    0.183          0.228
+   DL            c_hoop_dur      g_apex_speed 91 -0.246 0.019 0.361   -0.244   -0.253         -0.097
+   DL     c_hoop_mean_speed      o_depth2s_oe 69  0.277 0.021 0.361    0.369    0.145          0.183
+   DL            c_hoop_dur       g_arc_speed 91 -0.238 0.023 0.361   -0.229   -0.251         -0.084
+   DL c_hoop_heading_change      o_depth2s_oe 69 -0.272 0.024 0.361   -0.148   -0.253         -0.197
+   DL       c_hoop_sust_lat  o_penetration_oe 69  0.254 0.035 0.502    0.264    0.146          0.161
+   DL     c_hoop_sust_speed      o_depth2s_oe 69  0.247 0.041 0.535    0.326    0.156          0.141

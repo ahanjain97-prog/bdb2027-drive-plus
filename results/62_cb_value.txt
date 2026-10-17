@@ -1,0 +1,19 @@
+expected-completion model: 8268 pool-receiver targets, cross-fitted Brier 0.1976 vs base rate 0.2306 (skill 14.3%)
+
+=== target avoidance (all coverage reps) ===
+  targeted ~ drive (+ receiver propensity, route, cov) -0.0071 per SD (clustered p 0.376, perm p 0.419) n 1717 CBs 46 | held-out-class MSE gain > 0 in 2/3
+     ZONE_COVERAGE                             -0.0090 per SD (clustered p 0.320, perm p nan) n 739 CBs 43 | held-out-class MSE gain > 0 in 2/3
+     MAN_COVERAGE                              -0.0034 per SD (clustered p 0.852, perm p nan) n 978 CBs 43 | held-out-class MSE gain > 0 in 0/3
+  base target rate per coverage rep 0.165
+
+=== completion over expected allowed (targeted reps) ===
+  CPOE ~ drive                                 -0.0722 per SD (clustered p 0.001, perm p 0.005) n 284 CBs 38 | held-out-class MSE gain > 0 in 2/3
+     ZONE_COVERAGE                             -0.0556 per SD (clustered p 0.059, perm p nan) n 97 CBs 31 | held-out-class MSE gain > 0 in 2/3
+     MAN_COVERAGE                              -0.0729 per SD (clustered p 0.007, perm p nan) n 187 CBs 36 | held-out-class MSE gain > 0 in 1/3
+
+=== EPA per coverage rep (0 when not targeted) ===
+  EPA per rep ~ drive                          -0.0241 per SD (clustered p 0.105, perm p 0.190) n 1717 CBs 46 | held-out-class MSE gain > 0 in 1/3
+     ZONE_COVERAGE                             -0.0338 per SD (clustered p 0.012, perm p nan) n 739 CBs 43 | held-out-class MSE gain > 0 in 2/3
+     MAN_COVERAGE                              -0.0161 per SD (clustered p 0.485, perm p nan) n 978 CBs 43 | held-out-class MSE gain > 0 in 0/3
+
+per 100 tight-coverage reps, +1 SD drive speed: -0.7 targets, -2.4 offensive EPA

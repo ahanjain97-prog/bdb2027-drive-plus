@@ -1,0 +1,7 @@
+CBs per tercile: {'fastest third': 16, 'slowest third': 15, 'middle third': 15} | reps per cell x tercile:
+ terc           slowest third  middle third  fastest third
+cell                                                     
+man-matching             254           193            370
+zone-matching            170           123            331
+zone-matching: fastest-minus-slowest separation change at +0.5 s -0.32 yd [-0.70, +0.03], at +1.0 s -0.69 [-1.29, -0.20], at +1.5 s -1.02 [-1.80, -0.36]; band below 0 from: 0.6 s
+man-matching: fastest-minus-slowest separation change at +0.5 s -0.04 yd [-0.18, +0.09], at +1.0 s -0.14 [-0.30, +0.02], at +1.5 s -0.28 [-0.46, -0.08]; band below 0 from: 1.1 s

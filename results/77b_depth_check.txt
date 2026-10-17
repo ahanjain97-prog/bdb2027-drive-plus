@@ -1,0 +1,20 @@
+
+=== zone coverage (per 10 Drive+ points) ===
+  completion, no depth control       toward -0.0185 | away +0.0021 | toward-away -0.0205 (perm p 0.026, rows 14636)
+  completion, air-yard bins held      toward -0.0152 | away -0.0007 | toward-away -0.0145 (perm p 0.054, rows 14636)
+  EPA, air-yard bins held             toward -0.0212 | away -0.0135 | toward-away -0.0077 (perm p 0.754, rows 14636)
+  share of throws that are short      toward -0.0123 | away +0.0096 | toward-away -0.0219 (perm p 0.012, rows 14636)
+  short throws (< 10 yd air)   completion: toward -0.0068 | away +0.0005 | toward-away -0.0073 (perm p 0.331, rows 10061)
+  short throws (< 10 yd air)   EPA:        toward +0.0087 | away -0.0096 | toward-away +0.0182 (perm p 0.441, rows 10061)
+  throws >= 10 yd air          completion: toward -0.0283 | away -0.0026 | toward-away -0.0257 (perm p 0.118, rows 4575)
+  throws >= 10 yd air          EPA:        toward -0.0680 | away -0.0123 | toward-away -0.0558 (perm p 0.361, rows 4575)
+
+=== all coverage (per 10 Drive+ points) ===
+  completion, no depth control       toward -0.0145 | away -0.0021 | toward-away -0.0124 (perm p 0.052, rows 22312)
+  completion, air-yard bins held      toward -0.0114 | away -0.0048 | toward-away -0.0066 (perm p 0.246, rows 22312)
+  EPA, air-yard bins held             toward -0.0129 | away -0.0074 | toward-away -0.0055 (perm p 0.776, rows 22312)
+  share of throws that are short      toward -0.0122 | away +0.0082 | toward-away -0.0203 (perm p 0.004, rows 22312)
+  short throws (< 10 yd air)   completion: toward -0.0084 | away -0.0038 | toward-away -0.0046 (perm p 0.457, rows 14738)
+  short throws (< 10 yd air)   EPA:        toward -0.0075 | away -0.0038 | toward-away -0.0037 (perm p 0.828, rows 14738)
+  throws >= 10 yd air          completion: toward -0.0115 | away -0.0025 | toward-away -0.0089 (perm p 0.371, rows 7574)
+  throws >= 10 yd air          EPA:        toward -0.0164 | away -0.0071 | toward-away -0.0093 (perm p 0.824, rows 7574)

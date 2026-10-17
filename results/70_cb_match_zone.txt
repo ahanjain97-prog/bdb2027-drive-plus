@@ -1,0 +1,46 @@
+CB coverage reps by shell: {'man (0/1/2-man)': 978, 'Cover 3 zone': 279, 'Cover 4 quarters': 193, 'Cover 2 zone': 143, 'Cover 6': 123, 'other': 3}
+pre-break technique by coverage: {'matching': {'MAN_COVERAGE': 817, 'ZONE_COVERAGE': 626}, 'not matching': {'MAN_COVERAGE': 35, 'ZONE_COVERAGE': 52}}
+share 'matching' by shell: {'Cover 2 zone': 0.83, 'Cover 3 zone': 0.85, 'Cover 4 quarters': 0.84, 'Cover 6': 0.86, 'man (0/1/2-man)': 0.84, 'other': 1.0}
+
+=== drive-speed effect (per SD) by coverage shell and by pre-break technique ===
+outcome                db_closing  sep_at_throw  sep_gain_break
+group                                                          
+Cover 2 zone                0.140        -0.091          -0.026
+Cover 3 zone                0.221        -0.184          -0.132
+Cover 4 quarters            0.104        -0.175          -0.021
+Cover 6                     0.195        -0.142          -0.120
+man (0/1/2-man)             0.038        -0.016          -0.028
+man, matching               0.016        -0.012          -0.007
+quarters-type (4 + 6)       0.145        -0.139          -0.064
+zone, matching              0.168        -0.137          -0.085
+
+player-permutation p:
+outcome                db_closing  sep_at_throw  sep_gain_break
+group                                                          
+Cover 2 zone                0.542         0.774           0.870
+Cover 3 zone                0.166         0.096           0.133
+Cover 4 quarters            0.452         0.113           0.877
+Cover 6                     0.246         0.402           0.289
+man (0/1/2-man)             0.269         0.638           0.259
+man, matching               0.601         0.701           0.794
+quarters-type (4 + 6)       0.159         0.150           0.422
+zone, matching              0.017         0.126           0.050
+
+reps / CBs: {'man (0/1/2-man)': {'reps': 973, 'CBs': 43}, 'Cover 2 zone': {'reps': 141, 'CBs': 36}, 'Cover 3 zone': {'reps': 277, 'CBs': 39}, 'Cover 4 quarters': {'reps': 190, 'CBs': 33}, 'Cover 6': {'reps': 123, 'CBs': 33}, 'zone, matching': {'reps': 622, 'CBs': 43}, 'man, matching': {'reps': 814, 'CBs': 43}, 'quarters-type (4 + 6)': {'reps': 313, 'CBs': 39}}
+
+=== interactions (difference in the drive slope; player-permutation p) ===
+  sep_gain_break  zone, matching minus zone, not matching: +0.838 yd/SD (perm p 0.090, reps 673)
+  sep_gain_break  zone, matching minus man, matching: -0.073 yd/SD (perm p 0.167, reps 1436)
+  sep_gain_break  Cover 4 quarters minus Cover 3 zone: +0.098 yd/SD (perm p 0.536, reps 467)
+  sep_at_throw    zone, matching minus zone, not matching: +0.298 yd/SD (perm p 0.324, reps 580)
+  sep_at_throw    zone, matching minus man, matching: -0.110 yd/SD (perm p 0.237, reps 1223)
+  sep_at_throw    Cover 4 quarters minus Cover 3 zone: +0.023 yd/SD (perm p 0.843, reps 403)
+  db_closing      zone, matching minus zone, not matching: -1.165 yd/SD (perm p 0.057, reps 673)
+  db_closing      zone, matching minus man, matching: +0.147 yd/SD (perm p 0.040, reps 1436)
+  db_closing      Cover 4 quarters minus Cover 3 zone: -0.101 yd/SD (perm p 0.631, reps 467)
+
+league dropback coverage mix (plays with a pool DB on the field): {'Cover 3 zone': 0.302, 'man (0/1/2-man)': 0.268, 'Cover 4 quarters': 0.158, 'Cover 2 zone': 0.129, 'Cover 6': 0.086, 'other': 0.057}
+  most Cover 4 quarters: ARI 25%, LAC 24%, HOU 23%, SF 23%, KC 21%, TEN 21%
+  most Cover 6: PHI 17%, JAX 13%, CIN 13%, GB 13%, SEA 13%, CAR 12%
+  most Cover 3 zone: NO 48%, CAR 46%, IND 43%, LV 41%, TB 39%, CHI 39%
+  most man (0/1/2-man): CLE 42%, DET 39%, DEN 37%, NYG 37%, NYJ 36%, BAL 33%

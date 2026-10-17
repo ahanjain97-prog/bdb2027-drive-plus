@@ -1,0 +1,127 @@
+trait,cell,outcome,model,b,p_perm,reps,CBs
+sink_rate,zone-matching,sep_gain_break,alone,-0.005431984280357995,0.9302325581395349,624,44
+sink_rate,zone-matching,sep_gain_break,+ drive,-0.010155768697715166,0.8205980066445183,622,43
+sink_rate,zone-matching,sep_at_throw,alone,-0.035555398641639785,0.7840531561461794,533,43
+sink_rate,zone-matching,sep_at_throw,+ drive,-0.0426438384906783,0.6810631229235881,532,42
+sink_rate,zone-matching,db_closing,alone,0.027307354961488298,0.7275747508305648,624,44
+sink_rate,zone-matching,db_closing,+ drive,0.03856219728223785,0.6179401993355482,622,43
+sink_rate,man-matching,sep_gain_break,alone,-0.015009803772157923,0.5614617940199336,814,43
+sink_rate,man-matching,sep_gain_break,+ drive,-0.015155758175142496,0.5614617940199336,814,43
+sink_rate,man-matching,sep_at_throw,alone,-0.05333307204672468,0.0664451827242525,691,43
+sink_rate,man-matching,sep_at_throw,+ drive,-0.05380267211243282,0.06312292358803986,691,43
+sink_rate,man-matching,db_closing,alone,0.003940460012118237,0.8637873754152824,814,43
+sink_rate,man-matching,db_closing,+ drive,0.0042481094892311486,0.8770764119601329,814,43
+sink_dist,zone-matching,sep_gain_break,alone,-0.05171960482864542,0.2857142857142857,624,44
+sink_dist,zone-matching,sep_gain_break,+ drive,-0.07649307024168403,0.1362126245847176,622,43
+sink_dist,zone-matching,sep_at_throw,alone,-0.12879547114118223,0.18604651162790697,533,43
+sink_dist,zone-matching,sep_at_throw,+ drive,-0.17162904289150055,0.06976744186046512,532,42
+sink_dist,zone-matching,db_closing,alone,0.05209613879640956,0.43853820598006643,624,44
+sink_dist,zone-matching,db_closing,+ drive,0.09779169109555078,0.09302325581395349,622,43
+sink_dist,man-matching,sep_gain_break,alone,-0.009663421329668034,0.7574750830564784,814,43
+sink_dist,man-matching,sep_gain_break,+ drive,-0.010117132929527008,0.7641196013289037,814,43
+sink_dist,man-matching,sep_at_throw,alone,0.005691762053224192,0.840531561461794,691,43
+sink_dist,man-matching,sep_at_throw,+ drive,0.004677640394545053,0.9036544850498339,691,43
+sink_dist,man-matching,db_closing,alone,0.03794577889913764,0.20930232558139536,814,43
+sink_dist,man-matching,db_closing,+ drive,0.0389819714909561,0.18272425249169436,814,43
+plant_depth,zone-matching,sep_gain_break,alone,-0.018104576199026595,0.8239202657807309,624,44
+plant_depth,zone-matching,sep_gain_break,+ drive,0.02047529818853058,0.8106312292358804,622,43
+plant_depth,zone-matching,sep_at_throw,alone,-0.03739423168495936,0.8073089700996677,533,43
+plant_depth,zone-matching,sep_at_throw,+ drive,0.021674854624854953,0.9069767441860465,532,42
+plant_depth,zone-matching,db_closing,alone,-0.014185410471523496,0.8737541528239202,624,44
+plant_depth,zone-matching,db_closing,+ drive,-0.099599082744643,0.31893687707641194,622,43
+plant_depth,man-matching,sep_gain_break,alone,-0.05329439060277288,0.14285714285714285,814,43
+plant_depth,man-matching,sep_gain_break,+ drive,-0.055228469381035275,0.12956810631229235,814,43
+plant_depth,man-matching,sep_at_throw,alone,-0.0046603590172753714,0.9102990033222591,691,43
+plant_depth,man-matching,sep_at_throw,+ drive,5.853379517428009e-06,1.0,691,43
+plant_depth,man-matching,db_closing,alone,0.0592594932704516,0.10299003322259136,814,43
+plant_depth,man-matching,db_closing,+ drive,0.057967574133415946,0.11295681063122924,814,43
+exit_rate,zone-matching,sep_gain_break,alone,0.04772267073297495,0.3654485049833887,624,44
+exit_rate,zone-matching,sep_gain_break,+ drive,0.039636444030174224,0.5049833887043189,622,43
+exit_rate,zone-matching,sep_at_throw,alone,0.012378219035863818,0.946843853820598,533,43
+exit_rate,zone-matching,sep_at_throw,+ drive,-0.0034368755947427436,0.9634551495016611,532,42
+exit_rate,zone-matching,db_closing,alone,-0.00023965006738079636,0.9966777408637874,624,44
+exit_rate,zone-matching,db_closing,+ drive,0.014890946603569384,0.8338870431893688,622,43
+exit_rate,man-matching,sep_gain_break,alone,0.0108620240145765,0.7541528239202658,814,43
+exit_rate,man-matching,sep_gain_break,+ drive,0.009450311027838765,0.7242524916943521,814,43
+exit_rate,man-matching,sep_at_throw,alone,-0.036135069973736646,0.2857142857142857,691,43
+exit_rate,man-matching,sep_at_throw,+ drive,-0.04170570915871162,0.2059800664451827,691,43
+exit_rate,man-matching,db_closing,alone,-0.036797543739108964,0.2292358803986711,814,43
+exit_rate,man-matching,db_closing,+ drive,-0.034511048852786184,0.28903654485049834,814,43
+bend_speed,zone-matching,sep_gain_break,alone,-0.05264804743048147,0.3289036544850498,624,44
+bend_speed,zone-matching,sep_gain_break,+ drive,-0.0161879112945726,0.8006644518272426,622,43
+bend_speed,zone-matching,sep_at_throw,alone,-0.10832996093453053,0.38205980066445183,533,43
+bend_speed,zone-matching,sep_at_throw,+ drive,-0.05384197194341752,0.654485049833887,532,42
+bend_speed,zone-matching,db_closing,alone,0.0958178948315151,0.16943521594684385,624,44
+bend_speed,zone-matching,db_closing,+ drive,0.024436135633959046,0.7508305647840532,622,43
+bend_speed,man-matching,sep_gain_break,alone,-0.018616889480123026,0.5681063122923588,814,43
+bend_speed,man-matching,sep_gain_break,+ drive,-0.01826667739830316,0.5980066445182725,814,43
+bend_speed,man-matching,sep_at_throw,alone,0.01542346522709477,0.6245847176079734,691,43
+bend_speed,man-matching,sep_at_throw,+ drive,0.02383276563207308,0.521594684385382,691,43
+bend_speed,man-matching,db_closing,alone,0.05120768374971181,0.09966777408637874,814,43
+bend_speed,man-matching,db_closing,+ drive,0.052300371189862374,0.11627906976744186,814,43
+bend_lat,zone-matching,sep_gain_break,alone,0.015099091891313149,0.7408637873754153,624,44
+bend_lat,zone-matching,sep_gain_break,+ drive,-0.0021502902577673465,0.9667774086378738,622,43
+bend_lat,zone-matching,sep_at_throw,alone,-0.026596226519991245,0.7840531561461794,533,43
+bend_lat,zone-matching,sep_at_throw,+ drive,-0.058360227602084744,0.5714285714285714,532,42
+bend_lat,zone-matching,db_closing,alone,-0.027695383597548494,0.6710963455149501,624,44
+bend_lat,zone-matching,db_closing,+ drive,0.007413972172657206,0.920265780730897,622,43
+bend_lat,man-matching,sep_gain_break,alone,-0.03634377912732353,0.19601328903654486,814,43
+bend_lat,man-matching,sep_gain_break,+ drive,-0.03683954202931731,0.21262458471760798,814,43
+bend_lat,man-matching,sep_at_throw,alone,-0.017526632360560502,0.5780730897009967,691,43
+bend_lat,man-matching,sep_at_throw,+ drive,-0.018521176612635876,0.5548172757475083,691,43
+bend_lat,man-matching,db_closing,alone,0.044798525407446915,0.11960132890365449,814,43
+bend_lat,man-matching,db_closing,+ drive,0.045786601475692294,0.09966777408637874,814,43
+bend_radius,zone-matching,sep_gain_break,alone,0.010784982278841497,0.8039867109634552,624,44
+bend_radius,zone-matching,sep_gain_break,+ drive,0.058152536810836326,0.23588039867109634,622,43
+bend_radius,zone-matching,sep_at_throw,alone,-0.06937143830117118,0.48172757475083056,533,43
+bend_radius,zone-matching,sep_at_throw,+ drive,-0.013140449558490516,0.8637873754152824,532,42
+bend_radius,zone-matching,db_closing,alone,0.033198677405593374,0.6312292358803987,624,44
+bend_radius,zone-matching,db_closing,+ drive,-0.0462994363450843,0.49169435215946844,622,43
+bend_radius,man-matching,sep_gain_break,alone,0.007990125459562007,0.7674418604651163,814,43
+bend_radius,man-matching,sep_gain_break,+ drive,0.012105091126942535,0.6976744186046512,814,43
+bend_radius,man-matching,sep_at_throw,alone,0.013432844401711809,0.5946843853820598,691,43
+bend_radius,man-matching,sep_at_throw,+ drive,0.020318328612408062,0.5049833887043189,691,43
+bend_radius,man-matching,db_closing,alone,0.015418377735859155,0.5714285714285714,814,43
+bend_radius,man-matching,db_closing,+ drive,0.011369542145836272,0.7275747508305648,814,43
+flip_speed,zone-matching,sep_gain_break,alone,0.09712687716160792,0.12624584717607973,624,44
+flip_speed,zone-matching,sep_gain_break,+ drive,0.0843174799302395,0.1893687707641196,622,43
+flip_speed,zone-matching,sep_at_throw,alone,0.19601101461278433,0.14950166112956811,533,43
+flip_speed,zone-matching,sep_at_throw,+ drive,0.17353806893349472,0.18604651162790697,532,42
+flip_speed,zone-matching,db_closing,alone,-0.13165287491468686,0.16279069767441862,624,44
+flip_speed,zone-matching,db_closing,+ drive,-0.10627823442299418,0.24584717607973422,622,43
+flip_speed,man-matching,sep_gain_break,alone,-0.04833638955153847,0.11627906976744186,814,43
+flip_speed,man-matching,sep_gain_break,+ drive,-0.04911192436320158,0.132890365448505,814,43
+flip_speed,man-matching,sep_at_throw,alone,0.018913432462443897,0.5780730897009967,691,43
+flip_speed,man-matching,sep_at_throw,+ drive,0.017868386728807792,0.5681063122923588,691,43
+flip_speed,man-matching,db_closing,alone,0.05286706654083829,0.11627906976744186,814,43
+flip_speed,man-matching,db_closing,+ drive,0.05433565611520163,0.10963455149501661,814,43
+flip_time,zone-matching,sep_gain_break,alone,-0.12787555313184917,0.07308970099667775,624,44
+flip_time,zone-matching,sep_gain_break,+ drive,-0.1090966588665297,0.10631229235880399,622,43
+flip_time,zone-matching,sep_at_throw,alone,-0.2614802138436049,0.04983388704318937,533,43
+flip_time,zone-matching,sep_at_throw,+ drive,-0.23689855706555002,0.07973421926910298,532,42
+flip_time,zone-matching,db_closing,alone,0.22464813934194852,0.03322259136212625,624,44
+flip_time,zone-matching,db_closing,+ drive,0.18669070248060776,0.059800664451827246,622,43
+flip_time,man-matching,sep_gain_break,alone,-0.028889772207422507,0.46179401993355484,814,43
+flip_time,man-matching,sep_gain_break,+ drive,-0.028125801742527202,0.48172757475083056,814,43
+flip_time,man-matching,sep_at_throw,alone,-0.029772271632652347,0.45182724252491696,691,43
+flip_time,man-matching,sep_at_throw,+ drive,-0.028291185502956034,0.5182724252491694,691,43
+flip_time,man-matching,db_closing,alone,0.029577897268951547,0.4485049833887043,814,43
+flip_time,man-matching,db_closing,+ drive,0.027487709719944294,0.4684385382059801,814,43
+flip_rate,zone-matching,sep_gain_break,alone,0.03748441324829259,0.5049833887043189,624,44
+flip_rate,zone-matching,sep_gain_break,+ drive,0.03817920607301581,0.4418604651162791,622,43
+flip_rate,zone-matching,sep_at_throw,alone,-0.1907000219400505,0.06976744186046512,533,43
+flip_rate,zone-matching,sep_at_throw,+ drive,-0.19215940389985212,0.04318936877076412,532,42
+flip_rate,zone-matching,db_closing,alone,-0.003890155545026655,0.9700996677740864,624,44
+flip_rate,zone-matching,db_closing,+ drive,-0.006758224354242677,0.9235880398671097,622,43
+flip_rate,man-matching,sep_gain_break,alone,0.00601855658381624,0.8106312292358804,814,43
+flip_rate,man-matching,sep_gain_break,+ drive,0.005312485135497265,0.8704318936877077,814,43
+flip_rate,man-matching,sep_at_throw,alone,-0.026397180287661214,0.33554817275747506,691,43
+flip_rate,man-matching,sep_at_throw,+ drive,-0.02818441695560023,0.3122923588039867,691,43
+flip_rate,man-matching,db_closing,alone,-0.012314116960133275,0.5714285714285714,814,43
+flip_rate,man-matching,db_closing,+ drive,-0.010765486687987491,0.6478405315614618,814,43
+drive,zone-matching,sep_gain_break,alone,-0.08467704550105054,0.0664451827242525,622,43
+drive,zone-matching,sep_at_throw,alone,-0.13749172420883232,0.132890365448505,532,42
+drive,zone-matching,db_closing,alone,0.1677981619938974,0.023255813953488372,622,43
+drive,man-matching,sep_gain_break,alone,-0.007291956890446533,0.760797342192691,814,43
+drive,man-matching,sep_at_throw,alone,-0.011818961074175321,0.6611295681063123,691,43
+drive,man-matching,db_closing,alone,0.015887983706448353,0.6079734219269103,814,43

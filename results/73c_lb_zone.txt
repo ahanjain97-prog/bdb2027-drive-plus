@@ -1,0 +1,45 @@
+SHORT_ZONE_BREAKS: attempts 109, players 40, clip ends < 1.0 s after turn: 0.00
+   odd vs even attempt r: {'v_out': (np.float64(-0.33), 36), 'v_02': (np.float64(-0.2), 36), 'v_04': (np.float64(-0.05), 36), 'v_06': (np.float64(0.08), 36), 'v_08': (np.float64(0.22), 36), 'v_10': (np.float64(0.31), 36), 'top': (np.float64(0.32), 36)}
+BACK_PEDAL_AND_REACT: attempts 61, players 58, clip ends < 1.0 s after turn: 0.00
+   odd vs even attempt r: {}
+
+LB coverage reps 184, LBs 20, receivers 50, targeted 55 | man/zone: {'ZONE_COVERAGE': 148, 'MAN_COVERAGE': 36}
+  LBs with reps AND SHORT_ZONE_BREAKS: 10
+  LBs with reps AND BACK_PEDAL_AND_REACT: 18
+
+per SD (player-permutation p in second table):
+task                                         all:lb_closing  all:sep_gain_break  zone:lb_closing  zone:sep_gain_break  all:sep_at_throw
+drill                                 phase                                                                                            
+SHORT_ZONE_BREAKS                     v_out           0.156               0.041            0.329               -0.171            -0.152
+                                      v_02            0.142               0.079            0.318               -0.138            -0.164
+                                      v_04            0.141               0.093            0.329               -0.128            -0.150
+                                      v_06            0.103               0.132            0.298               -0.093            -0.132
+                                      v_08            0.027               0.196            0.227               -0.027            -0.110
+                                      v_10           -0.048               0.253            0.153                0.037            -0.090
+                                      top            -0.126               0.249            0.073                0.041            -0.103
+BACK_PEDAL_AND_REACT                  v_out           0.008              -0.076           -0.048               -0.062             0.132
+                                      v_02            0.070              -0.166            0.051               -0.163             0.028
+                                      v_04            0.128              -0.240            0.107               -0.217            -0.054
+                                      v_06            0.175              -0.206            0.143               -0.174             0.023
+                                      v_08            0.122              -0.029            0.070                0.007             0.172
+                                      v_10            0.069               0.064           -0.032                0.128             0.202
+                                      top             0.106              -0.137            0.141               -0.189            -0.080
+official 40 (reference, sign flipped) top            -0.073               0.102           -0.131                0.102            -0.318
+task                                         all:lb_closing  all:sep_gain_break  zone:lb_closing  zone:sep_gain_break  all:sep_at_throw
+drill                                 phase                                                                                            
+SHORT_ZONE_BREAKS                     v_out           0.545               0.897            0.256                0.512             0.688
+                                      v_02            0.545               0.774            0.243                0.625             0.728
+                                      v_04            0.571               0.711            0.236                0.625             0.694
+                                      v_06            0.691               0.588            0.276                0.731             0.744
+                                      v_08            0.854               0.339            0.435                0.924             0.801
+                                      v_10            0.884               0.196            0.565                0.884             0.811
+                                      top             0.561               0.209            0.807                0.854             0.754
+BACK_PEDAL_AND_REACT                  v_out           0.973               0.718            0.834                0.774             0.704
+                                      v_02            0.761               0.462            0.814                0.495             0.937
+                                      v_04            0.638               0.322            0.681                0.362             0.890
+                                      v_06            0.565               0.495            0.635                0.532             0.960
+                                      v_08            0.664               0.914            0.827                0.973             0.688
+                                      v_10            0.811               0.831            0.894                0.581             0.615
+                                      top             0.734               0.601            0.618                0.445             0.864
+official 40 (reference, sign flipped) top             0.741               0.721            0.598                0.721             0.581
+LBs per test: {'BACK_PEDAL_AND_REACT': 18, 'SHORT_ZONE_BREAKS': 10, 'official 40 (reference, sign flipped)': 13}

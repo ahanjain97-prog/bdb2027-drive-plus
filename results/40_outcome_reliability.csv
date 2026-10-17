@@ -1,0 +1,33 @@
+outcome,players,split_half_n,reliability
+CB pass tackles_oe,38.0,37.0,0.2045397705902509
+CB run tackles_oe,37.0,35.0,0.7081946413603625
+EDGE depth2s_oe,42.0,36.0,0.7129906549650377
+EDGE get_off_oe (lower=better),43.0,38.0,0.7819004520422315
+EDGE penetration_oe,43.0,38.0,0.49335476196213907
+EDGE pressure_oe,43.0,38.0,0.24759419121533388
+EDGE run TFL_oe,46.0,40.0,0.18272063863695512
+EDGE run penetration_oe,46.0,40.0,0.831987458295353
+EDGE run tackles_oe,46.0,40.0,0.6432152183038247
+IDL depth2s_oe,40.0,38.0,0.7712025894141649
+IDL get_off_oe (lower=better),42.0,38.0,0.85033535340029
+IDL penetration_oe,42.0,38.0,0.7673126362410828
+IDL pressure_oe,42.0,38.0,0.41250417630370484
+IDL run TFL_oe,49.0,40.0,0.38147952531300383
+IDL run penetration_oe,49.0,39.0,0.7907794144785227
+IDL run tackles_oe,49.0,40.0,0.536574969000455
+IOL pressure prob allowed_oe (lower=better),40.0,35.0,0.7081759715774448
+IOL pressures allowed_oe (lower=better),40.0,35.0,0.37638207961866316
+REC YAC over NGS expected,66.0,58.0,0.6079445319952127
+REC sep_oe all,89.0,84.0,0.5597527942773125
+REC sep_oe in-breaking,92.0,86.0,0.48674650702368527
+REC sep_oe out-breaking,88.0,86.0,0.593188675796374
+REC sep_oe stop,83.0,74.0,0.26681716871499056
+REC sep_oe vertical,86.0,84.0,0.16039771058904775
+REC sep_oe vs man,82.0,72.0,0.34087323141037384
+REC sep_oe vs press,30.0,24.0,-0.18757476400173262
+REC sep_oe vs zone,88.0,85.0,0.4916238761356866
+REC targets per route oe,88.0,83.0,0.7987862366130476
+S pass tackles_oe,32.0,25.0,-0.2773335476726345
+S run tackles_oe,28.0,23.0,0.5829878760260402
+T pressure prob allowed_oe (lower=better),27.0,26.0,0.7402714142718948
+T pressures allowed_oe (lower=better),27.0,26.0,0.5992375923746891

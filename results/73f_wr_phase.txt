@@ -1,0 +1,33 @@
+route attempts 733, break detected 706, WRs 106
+per drill: n, median turn angle, share clip ends < 1.0 s after break:
+                            n   angle  trunc
+drill                                      
+COMEBACK_ROUTE_RIGHT      98  115.94   0.10
+DAGGER_ROUTE_LEFT        114   72.20   0.00
+POST_CORNER_ROUTE_RIGHT  100   35.54   0.00
+SLANT_ROUTE_LEFT         109   50.94   0.30
+SLOT_SAIL_ROUTE_RIGHT     99   80.58   0.00
+SLOT_STRIKE_ROUTE_LEFT   100  104.29   0.01
+SPEED_OUT_ROUTE_LEFT      86   82.06   0.27
+split-half over route drills (r, Spearman-Brown, n): {'v_out': (np.float64(0.28), np.float64(0.44), 106), 'v_02': (np.float64(0.24), np.float64(0.39), 106), 'v_04': (np.float64(0.23), np.float64(0.37), 105), 'v_06': (np.float64(0.12), np.float64(0.22), 105), 'v_08': (np.float64(0.06), np.float64(0.12), 105), 'v_10': (np.float64(0.04), np.float64(0.08), 105), 'top': (np.float64(0.09), np.float64(0.16), 106)}
+WR late speed vs size/forty: {'forty': {'wr_v_04': -0.06, 'wr_v_10': -0.01, 'wr_top': -0.18}, 'combine_weight': {'wr_v_04': -0.1, 'wr_v_10': -0.04, 'wr_top': -0.11}, 'combine_height': {'wr_v_04': -0.1, 'wr_v_10': -0.01, 'wr_top': -0.12}}
+
+=== (a) WR route-drill phase -> separation CREATED (CB reps, WR receivers: 75 WRs) ===
+  zone-matching sep_gain_break v_out +0.069 (p 0.199) | v_out |size+40 +0.072 (p 0.289) | v_04 +0.105 (p 0.065) | v_04 |size+40 +0.109 (p 0.065) | v_10 +0.046 (p 0.403) | v_10 |size+40 +0.041 (p 0.537) | top +0.013 (p 0.791) | top |size+40 +0.010 (p 0.821)
+  zone-matching sep_at_throw   v_out +0.095 (p 0.318) | v_out |size+40 +0.096 (p 0.418) | v_04 +0.187 (p 0.085) | v_04 |size+40 +0.189 (p 0.060) | v_10 +0.162 (p 0.104) | v_10 |size+40 +0.133 (p 0.239) | top +0.017 (p 0.905) | top |size+40 +0.004 (p 0.975)
+  man-matching  sep_gain_break v_out +0.015 (p 0.736) | v_out |size+40 +0.022 (p 0.617) | v_04 +0.003 (p 0.930) | v_04 |size+40 +0.004 (p 0.930) | v_10 +0.041 (p 0.204) | v_10 |size+40 +0.044 (p 0.229) | top +0.001 (p 0.975) | top |size+40 +0.004 (p 0.886)
+  man-matching  sep_at_throw   v_out -0.023 (p 0.557) | v_out |size+40 -0.021 (p 0.597) | v_04 +0.002 (p 0.960) | v_04 |size+40 +0.002 (p 0.950) | v_10 +0.082 (p 0.020) | v_10 |size+40 +0.091 (p 0.020) | top +0.039 (p 0.219) | top |size+40 +0.031 (p 0.303)
+
+=== (b) phase-matched matchup: WR late speed x CB late speed ===
+  zone-matching sep_gain_break wr_v_10 x cb_v_10: WR +0.040 | CB -0.085 | interaction -0.012 (perm p CB-side 0.837, WR-side 0.877) | reps 570, WRs 67, CBs 40
+  zone-matching sep_gain_break wr_v_10 x cb_top: WR +0.058 | CB -0.078 | interaction -0.038 (perm p CB-side 0.445, WR-side 0.525) | reps 596, WRs 68, CBs 43
+  zone-matching sep_gain_break wr_top x cb_top: WR +0.034 | CB -0.071 | interaction -0.076 (perm p CB-side 0.123, WR-side 0.176) | reps 596, WRs 68, CBs 43
+  zone-matching db_closing     wr_v_10 x cb_v_10: WR -0.016 | CB +0.167 | interaction +0.015 (perm p CB-side 0.827, WR-side 0.864) | reps 570, WRs 67, CBs 40
+  zone-matching db_closing     wr_v_10 x cb_top: WR -0.054 | CB +0.157 | interaction +0.053 (perm p CB-side 0.478, WR-side 0.495) | reps 596, WRs 68, CBs 43
+  zone-matching db_closing     wr_top x cb_top: WR -0.015 | CB +0.146 | interaction +0.108 (perm p CB-side 0.176, WR-side 0.113) | reps 596, WRs 68, CBs 43
+  man-matching  sep_gain_break wr_v_10 x cb_v_10: WR +0.045 | CB +0.016 | interaction -0.027 (perm p CB-side 0.442, WR-side 0.355) | reps 743, WRs 70, CBs 39
+  man-matching  sep_gain_break wr_v_10 x cb_top: WR +0.044 | CB +0.007 | interaction -0.039 (perm p CB-side 0.189, WR-side 0.150) | reps 778, WRs 70, CBs 42
+  man-matching  sep_gain_break wr_top x cb_top: WR +0.003 | CB -0.006 | interaction -0.013 (perm p CB-side 0.591, WR-side 0.654) | reps 778, WRs 70, CBs 42
+  man-matching  db_closing     wr_v_10 x cb_v_10: WR -0.039 | CB +0.004 | interaction +0.022 (perm p CB-side 0.605, WR-side 0.625) | reps 743, WRs 70, CBs 39
+  man-matching  db_closing     wr_v_10 x cb_top: WR -0.038 | CB +0.008 | interaction +0.029 (perm p CB-side 0.442, WR-side 0.389) | reps 778, WRs 70, CBs 42
+  man-matching  db_closing     wr_top x cb_top: WR +0.016 | CB +0.021 | interaction -0.001 (perm p CB-side 0.983, WR-side 0.987) | reps 778, WRs 70, CBs 42

@@ -1,0 +1,34 @@
+                                             players  split_half_n  reliability
+outcome                                                                        
+CB pass tackles_oe                              38.0          37.0         0.20
+CB run tackles_oe                               37.0          35.0         0.71
+EDGE depth2s_oe                                 42.0          36.0         0.71
+EDGE get_off_oe (lower=better)                  43.0          38.0         0.78
+EDGE penetration_oe                             43.0          38.0         0.49
+EDGE pressure_oe                                43.0          38.0         0.25
+EDGE run TFL_oe                                 46.0          40.0         0.18
+EDGE run penetration_oe                         46.0          40.0         0.83
+EDGE run tackles_oe                             46.0          40.0         0.64
+IDL depth2s_oe                                  40.0          38.0         0.77
+IDL get_off_oe (lower=better)                   42.0          38.0         0.85
+IDL penetration_oe                              42.0          38.0         0.77
+IDL pressure_oe                                 42.0          38.0         0.41
+IDL run TFL_oe                                  49.0          40.0         0.38
+IDL run penetration_oe                          49.0          39.0         0.79
+IDL run tackles_oe                              49.0          40.0         0.54
+IOL pressure prob allowed_oe (lower=better)     40.0          35.0         0.71
+IOL pressures allowed_oe (lower=better)         40.0          35.0         0.38
+REC YAC over NGS expected                       66.0          58.0         0.61
+REC sep_oe all                                  89.0          84.0         0.56
+REC sep_oe in-breaking                          92.0          86.0         0.49
+REC sep_oe out-breaking                         88.0          86.0         0.59
+REC sep_oe stop                                 83.0          74.0         0.27
+REC sep_oe vertical                             86.0          84.0         0.16
+REC sep_oe vs man                               82.0          72.0         0.34
+REC sep_oe vs press                             30.0          24.0        -0.19
+REC sep_oe vs zone                              88.0          85.0         0.49
+REC targets per route oe                        88.0          83.0         0.80
+S pass tackles_oe                               32.0          25.0        -0.28
+S run tackles_oe                                28.0          23.0         0.58
+T pressure prob allowed_oe (lower=better)       27.0          26.0         0.74
+T pressures allowed_oe (lower=better)           27.0          26.0         0.60

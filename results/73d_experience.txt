@@ -1,0 +1,23 @@
+reps by experience x class:
+ cls  2023  2024  2025
+exp                  
+0     108   434   275
+1     193   470     0
+2     239     0     0
+CBs with reps in >= 2 experience years: 25
+
+zone-matching closing:
+  yr0: +0.155 (p 0.044, reps 313, CBs 34) | yr1: +0.158 (p 0.074, reps 226, CBs 29) | yr2: +0.407 (p 0.071, reps 83, CBs 10)
+  within-CB (CB fixed effects): drive x experience +0.112 per year (perm p 0.432)
+
+all reps sep gained at break:
+  yr0: -0.029 (p 0.275, reps 810, CBs 38) | yr1: -0.103 (p 0.054, reps 662, CBs 30) | yr2: -0.139 (p 0.103, reps 235, CBs 10)
+  within-CB (CB fixed effects): drive x experience -0.087 per year (perm p 0.126)
+
+zone-matching sep gained at break:
+  yr0: -0.057 (p 0.294, reps 313, CBs 34) | yr1: -0.101 (p 0.134, reps 226, CBs 29) | yr2: -0.245 (p 0.086, reps 83, CBs 10)
+  within-CB (CB fixed effects): drive x experience -0.117 per year (perm p 0.236)
+
+CPOE (targeted):
+  yr0: -0.071 (p 0.000, reps 125, CBs 29) | yr1: -0.052 (p 0.093, reps 112, CBs 24) | yr2: -0.051 (p 0.590, reps 47, CBs 10)
+  within-CB (CB fixed effects): drive x experience -0.053 per year (perm p 0.319)

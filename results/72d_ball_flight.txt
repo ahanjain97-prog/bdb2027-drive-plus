@@ -1,0 +1,19 @@
+targeted reps 284, tracking rows 41220
+reps with release + arrival 284, CBs 38 | medians: {'flight': 1.2, 'd_release': 1.42, 'd_arrive': 1.49, 'close_flight': -0.05, 'gap_arrive': 2.1}
+
+=== combine drive (per SD) -> ball-flight mechanics (targeted reps) ===
+  d_release     -0.157 (perm p 0.195, n 284)
+  d_arrive      -0.164 (perm p 0.536, n 284)
+  close_flight  +0.121 (perm p 0.364, n 284)
+  cb_v_flight   -0.119 (perm p 0.192, n 284)
+  cb_v_arrive   -0.183 (perm p 0.092, n 284)
+
+=== completion (logit) on the ball-flight mechanics, standardized ===
+   c_top                                                  c_top -0.410 (p 0.000)
+   c_top + z_d_release                                    c_top -0.366 (p 0.000) | z_d_release +0.717 (p 0.103)
+   c_top + z_d_release + z_close_flight + flight          c_top -0.298 (p 0.009) | z_d_release +0.570 (p 0.193) | z_close_flight +0.050 (p 0.771) | flight -1.055 (p 0.000)
+   c_top + z_d_arrive + flight                            c_top -0.318 (p 0.003) | z_d_arrive +0.266 (p 0.168) | flight -1.126 (p 0.000)
+
+=== the drive effect by time from the receiver's break to the ball's ARRIVAL ===
+  arrival 1.0-1.6 s after break: completion logit c_top +0.149 (p 0.559) | drive -> closing in flight +0.314 (perm p 0.169) | n 75
+  arrival >1.6 s    after break: completion logit c_top -0.390 (p 0.012) | drive -> closing in flight -0.047 (perm p 0.657) | n 179

@@ -1,0 +1,19 @@
+  zone-matching [route + WR       ] g_flip      (odd reps) -> sep_gain_break(even reps): r +0.08 (p≈0.734, CBs 20)
+  zone-matching [route + WR       ] g_bend_speed(odd reps) -> sep_gain_break(even reps): r -0.01 (p≈0.975, CBs 19)
+  zone-matching [route + WR       ] g_flip      (odd reps) -> sep_at_throw  (even reps): r +0.51 (p≈0.053, CBs 15)
+  zone-matching [route + WR       ] g_bend_speed(odd reps) -> sep_at_throw  (even reps): r -0.43 (p≈0.128, CBs 14)
+  zone-matching [route + WR       ] g_flip      (odd reps) -> db_closing    (even reps): r -0.14 (p≈0.554, CBs 20)
+  zone-matching [route + WR       ] g_bend_speed(odd reps) -> db_closing    (even reps): r +0.16 (p≈0.516, CBs 19)
+  zone-matching [+ cushion + press] g_flip      (odd reps) -> sep_gain_break(even reps): r +0.06 (p≈0.808, CBs 20)
+  zone-matching [+ cushion + press] g_bend_speed(odd reps) -> sep_gain_break(even reps): r +0.01 (p≈0.967, CBs 19)
+  zone-matching [+ cushion + press] g_flip      (odd reps) -> sep_at_throw  (even reps): r +0.49 (p≈0.061, CBs 15)
+  zone-matching [+ cushion + press] g_bend_speed(odd reps) -> sep_at_throw  (even reps): r -0.37 (p≈0.187, CBs 14)
+  zone-matching [+ cushion + press] g_flip      (odd reps) -> db_closing    (even reps): r -0.10 (p≈0.660, CBs 20)
+  zone-matching [+ cushion + press] g_bend_speed(odd reps) -> db_closing    (even reps): r +0.09 (p≈0.714, CBs 19)
+combine trait vs NFL zone-matching transition (CBs >= 8 zone-matching reps, n 27 ):
+            g_flip  g_bend_speed
+drive        -0.48          0.42
+flip_speed    0.19         -0.07
+flip_time    -0.24          0.09
+sink_rate     0.01          0.15
+bend_speed   -0.21          0.19

@@ -1,0 +1,15 @@
+candidate DL-OL pairs on the same dropback: 37846
+primary engaged reps: 9322; DL 113, OL 116; REG+POST 7509
+ol_align  dl_align     
+C         EDGE               24
+          INTERIOR_LINE    1061
+G         EDGE              514
+          INTERIOR_LINE    3609
+T         EDGE             3096
+          INTERIOR_LINE    1018
+corner turned 0.147; ppa mean 0.279; OL pressure allowed 0.087; DL pressure 0.082
+corner turned -> outcomes:
+                  ppa  ol_pressure_allowed  dl_pressure
+corner_turned                                         
+False          0.257                0.067        0.059
+True           0.415                0.208        0.213

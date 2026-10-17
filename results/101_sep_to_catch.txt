@@ -1,0 +1,37 @@
+=== (1) targets of his man, by Drive+ third (raw means) ===
+        targets  DBs  dist_to_him  ngs_nearest  open_2yd  comp
+third                                                         
+bottom      181   20         5.41         2.73      0.61  0.67
+middle      134   20         4.39         2.49      0.49  0.49
+top         187   20         3.30         2.14      0.42  0.48
+  per 10 Drive+: sep_at_throw  -0.74 yd (SE 0.22)
+  per 10 Drive+: ngs_sep       -0.19 yd (SE 0.08)
+
+=== (2) league conversion: all pool-receiver targets (n 9842) ===
+     targets  completion  air_yds
+bin                              
+<1       780       0.267   14.377
+1-2     2229       0.446   15.730
+2-3     1501       0.604   11.899
+3-4     1386       0.700    9.582
+4-6     2287       0.777    6.660
+6+      1659       0.844    4.292
+  holding air yards: 1 yd less separation at the throw = -7.3 pts completion (average over all targets)
+  on the 502 wide targets: 0.82 yd less separation = -7.6 pts
+  on the 502 wide targets: 1.64 yd less separation = -13.3 pts
+
+=== (3) per 10 Drive+ ===
+  actual completion -8.5 pts
+
+=== (4) completion per 10 Drive+, holding separation at the throw fixed (same 499 targets) ===
+  no separation controls                                              -8.77 [-11.44,  -6.11] p1 0.002  n 499   (0% of the effect explained)
+  + air yards                                                         -8.19 [-10.88,  -5.50] p1 0.008  n 499   (7% of the effect explained)
+  + NGS nearest-defender separation (what the 'before' model used)    -6.12 [ -8.89,  -3.36] p1 0.014  n 499   (30% of the effect explained)
+  + distance to HIM at the throw                                      -6.09 [ -8.78,  -3.40] p1 0.006  n 499   (31% of the effect explained)
+  + both                                                              -6.03 [ -8.79,  -3.27] p1 0.008  n 499   (31% of the effect explained)
+
+  by season, + distance to HIM + NGS separation + air yards:
+    2024: raw  -1.84 [ -5.91,  +2.22] p1 0.345  n 153
+          holding separation  +3.40 [ +0.10,  +6.70] p1 0.735  n 153
+    2025: raw -12.09 [-15.15,  -9.04] p1 0.002  n 299
+          holding separation  -9.18 [-12.59,  -5.76] p1 0.002  n 299

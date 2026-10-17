@@ -1,0 +1,52 @@
+team-seasons 96, plays per team-season median 564; match share range 0.36-1.00 (sd 0.12)
+CB reps with team mix: 1719 | CB-team-seasons: 81
+tracking check -- share of a CB's reps that are zone-matching vs team match share (CB-team-season, >= 10 reps): r 0.48
+
+=== drive x team match share (per SD of the team share), ALL CB reps, no man/zone control ===
+  db_closing     drive +0.126 (p 0.005) | team share -0.038 | drive x share -0.035 (clustered p 0.528, perm p 0.611) | reps 1707, CBs 46
+  sep_gain_break drive -0.067 (p 0.037) | team share +0.038 | drive x share +0.017 (clustered p 0.629, perm p 0.673) | reps 1707, CBs 46
+  sep_at_throw   drive -0.095 (p 0.028) | team share +0.032 | drive x share +0.021 (clustered p 0.693, perm p 0.736) | reps 1479, CBs 46
+  cpoe           drive -0.060 (p 0.020) | team share +0.029 | drive x share -0.014 (clustered p 0.645, perm p 0.661) | reps 284, CBs 38
+
+=== drive x team man share (per SD of the team share), ALL CB reps, no man/zone control ===
+  db_closing     drive +0.102 (p 0.020) | team share +0.041 | drive x share +0.019 (clustered p 0.793, perm p 0.853) | reps 1707, CBs 46
+  sep_gain_break drive -0.051 (p 0.068) | team share -0.035 | drive x share -0.021 (clustered p 0.679, perm p 0.758) | reps 1707, CBs 46
+  sep_at_throw   drive -0.067 (p 0.078) | team share -0.034 | drive x share -0.086 (clustered p 0.191, perm p 0.294) | reps 1479, CBs 46
+  cpoe           drive -0.062 (p 0.000) | team share -0.036 | drive x share +0.015 (clustered p 0.614, perm p 0.594) | reps 284, CBs 38
+
+=== value of +1 SD combine drive speed by team (pooled 2023-25 mix; model-implied) ===
+           match_share  man_share  closing_per_SD  cpoe_pp_per_SD
+team_abbr                                                        
+CLE              0.418      0.412           0.172          -4.114
+NE               0.442      0.379           0.165          -4.392
+DET              0.452      0.422           0.162          -4.507
+MIN              0.480      0.269           0.155          -4.817
+KC               0.481      0.332           0.154          -4.834
+PIT              0.482      0.367           0.154          -4.837
+DEN              0.503      0.393           0.148          -5.087
+WAS              0.506      0.332           0.147          -5.115
+NYG              0.515      0.394           0.145          -5.214
+MIA              0.517      0.238           0.144          -5.245
+JAX              0.538      0.277           0.138          -5.479
+BUF              0.544      0.287           0.137          -5.552
+NYJ              0.545      0.336           0.136          -5.560
+BAL              0.547      0.329           0.136          -5.584
+CHI              0.551      0.241           0.135          -5.629
+CIN              0.555      0.291           0.133          -5.676
+DAL              0.559      0.264           0.133          -5.715
+GB               0.595      0.221           0.122          -6.130
+ATL              0.616      0.300           0.116          -6.364
+TB               0.616      0.237           0.116          -6.370
+LAR              0.625      0.195           0.114          -6.463
+ARI              0.639      0.227           0.110          -6.624
+SEA              0.640      0.230           0.110          -6.634
+IND              0.642      0.204           0.109          -6.657
+TEN              0.650      0.246           0.107          -6.757
+HOU              0.663      0.251           0.103          -6.895
+LV               0.663      0.208           0.103          -6.901
+LAC              0.664      0.214           0.103          -6.916
+PHI              0.665      0.299           0.102          -6.928
+NO               0.682      0.211           0.098          -7.116
+LA               0.700      0.208           0.093          -7.316
+SF               0.707      0.235           0.091          -7.400
+CAR              0.728      0.180           0.085          -7.639

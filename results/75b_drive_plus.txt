@@ -1,0 +1,74 @@
+convergent weights (r with the 45-degree drill, floored at 0): {'d45': 1.0, 'd90': np.float64(0.25), 'dbox': np.float64(0.19), 'dw': np.float64(0.06), 'dta1': np.float64(0.13), 'dta2': np.float64(0.14)}
+CBs with each drill: {'d45': 59, 'd90': 60, 'dbox': 60, 'dw': 59, 'dta1': 58, 'dta2': 52}
+r(A, B) 0.59 | r(A, C) 0.94 | CBs gradable: A 59, B 60, C 60
+   {'outcome': 'zone-matching closing', 'sample': 'CBs with the 45-degree drill', 'version': 'A', 'CBs': 43, 'class-out %': np.float64(0.89), 'season-fwd %': np.float64(1.174), 'class-out perm p': np.float64(0.049)}
+   {'outcome': 'zone-matching closing', 'sample': 'CBs with the 45-degree drill', 'version': 'B', 'CBs': 43, 'class-out %': np.float64(0.384), 'season-fwd %': np.float64(0.312), 'class-out perm p': np.float64(0.098)}
+   {'outcome': 'zone-matching closing', 'sample': 'CBs with the 45-degree drill', 'version': 'C', 'CBs': 43, 'class-out %': np.float64(0.744), 'season-fwd %': np.float64(0.825), 'class-out perm p': np.float64(0.024)}
+   {'outcome': 'zone-matching closing', 'sample': 'CBs with the 45-degree drill', 'version': 'D', 'CBs': 43, 'class-out %': np.float64(-4.212), 'season-fwd %': np.float64(-0.683), 'class-out perm p': np.float64(0.512)}
+   {'outcome': 'zone-matching closing', 'sample': 'CBs with the 45-degree drill', 'version': 'E', 'CBs': 43, 'class-out %': np.float64(0.629), 'season-fwd %': np.float64(1.262), 'class-out perm p': np.float64(0.024)}
+   {'outcome': 'zone-matching closing', 'sample': 'all CBs with any drill', 'version': 'B', 'CBs': 44, 'class-out %': np.float64(0.375), 'season-fwd %': np.float64(0.319), 'class-out perm p': np.float64(0.049)}
+   {'outcome': 'zone-matching closing', 'sample': 'all CBs with any drill', 'version': 'C', 'CBs': 44, 'class-out %': np.float64(0.744), 'season-fwd %': np.float64(0.837), 'class-out perm p': np.float64(0.073)}
+   {'outcome': 'zone-matching closing', 'sample': 'all CBs with any drill', 'version': 'D', 'CBs': 44, 'class-out %': np.float64(-4.205), 'season-fwd %': np.float64(-0.641), 'class-out perm p': np.float64(0.634)}
+   {'outcome': 'zone-matching closing', 'sample': 'all CBs with any drill', 'version': 'E', 'CBs': 44, 'class-out %': np.float64(0.583), 'season-fwd %': np.float64(1.259), 'class-out perm p': np.float64(0.024)}
+   {'outcome': 'sep gained (all)', 'sample': 'CBs with the 45-degree drill', 'version': 'A', 'CBs': 46, 'class-out %': np.float64(0.322), 'season-fwd %': np.float64(0.314), 'class-out perm p': np.float64(0.098)}
+   {'outcome': 'sep gained (all)', 'sample': 'CBs with the 45-degree drill', 'version': 'B', 'CBs': 46, 'class-out %': np.float64(0.135), 'season-fwd %': np.float64(0.146), 'class-out perm p': np.float64(0.098)}
+   {'outcome': 'sep gained (all)', 'sample': 'CBs with the 45-degree drill', 'version': 'C', 'CBs': 46, 'class-out %': np.float64(0.312), 'season-fwd %': np.float64(0.35), 'class-out perm p': np.float64(0.098)}
+   {'outcome': 'sep gained (all)', 'sample': 'CBs with the 45-degree drill', 'version': 'D', 'CBs': 46, 'class-out %': np.float64(-0.383), 'season-fwd %': np.float64(-1.915), 'class-out perm p': np.float64(0.22)}
+   {'outcome': 'sep gained (all)', 'sample': 'CBs with the 45-degree drill', 'version': 'E', 'CBs': 46, 'class-out %': np.float64(-0.169), 'season-fwd %': np.float64(0.248), 'class-out perm p': np.float64(0.122)}
+   {'outcome': 'sep gained (all)', 'sample': 'all CBs with any drill', 'version': 'B', 'CBs': 47, 'class-out %': np.float64(0.136), 'season-fwd %': np.float64(0.148), 'class-out perm p': np.float64(0.146)}
+   {'outcome': 'sep gained (all)', 'sample': 'all CBs with any drill', 'version': 'C', 'CBs': 47, 'class-out %': np.float64(0.313), 'season-fwd %': np.float64(0.351), 'class-out perm p': np.float64(0.049)}
+   {'outcome': 'sep gained (all)', 'sample': 'all CBs with any drill', 'version': 'D', 'CBs': 47, 'class-out %': np.float64(-0.381), 'season-fwd %': np.float64(-1.913), 'class-out perm p': np.float64(0.22)}
+   {'outcome': 'sep gained (all)', 'sample': 'all CBs with any drill', 'version': 'E', 'CBs': 47, 'class-out %': np.float64(-0.176), 'season-fwd %': np.float64(0.249), 'class-out perm p': np.float64(0.268)}
+   {'outcome': 'sep at throw (all)', 'sample': 'CBs with the 45-degree drill', 'version': 'A', 'CBs': 46, 'class-out %': np.float64(0.295), 'season-fwd %': np.float64(0.868), 'class-out perm p': np.float64(0.073)}
+   {'outcome': 'sep at throw (all)', 'sample': 'CBs with the 45-degree drill', 'version': 'B', 'CBs': 46, 'class-out %': np.float64(0.038), 'season-fwd %': np.float64(-0.29), 'class-out perm p': np.float64(0.146)}
+   {'outcome': 'sep at throw (all)', 'sample': 'CBs with the 45-degree drill', 'version': 'C', 'CBs': 46, 'class-out %': np.float64(0.237), 'season-fwd %': np.float64(0.541), 'class-out perm p': np.float64(0.122)}
+   {'outcome': 'sep at throw (all)', 'sample': 'CBs with the 45-degree drill', 'version': 'D', 'CBs': 46, 'class-out %': np.float64(-1.969), 'season-fwd %': np.float64(1.538), 'class-out perm p': np.float64(0.585)}
+   {'outcome': 'sep at throw (all)', 'sample': 'CBs with the 45-degree drill', 'version': 'E', 'CBs': 46, 'class-out %': np.float64(-1.062), 'season-fwd %': np.float64(1.181), 'class-out perm p': np.float64(0.512)}
+   {'outcome': 'sep at throw (all)', 'sample': 'all CBs with any drill', 'version': 'B', 'CBs': 47, 'class-out %': np.float64(0.038), 'season-fwd %': np.float64(-0.29), 'class-out perm p': np.float64(0.22)}
+   {'outcome': 'sep at throw (all)', 'sample': 'all CBs with any drill', 'version': 'C', 'CBs': 47, 'class-out %': np.float64(0.235), 'season-fwd %': np.float64(0.541), 'class-out perm p': np.float64(0.049)}
+   {'outcome': 'sep at throw (all)', 'sample': 'all CBs with any drill', 'version': 'D', 'CBs': 47, 'class-out %': np.float64(-1.957), 'season-fwd %': np.float64(1.531), 'class-out perm p': np.float64(0.659)}
+   {'outcome': 'sep at throw (all)', 'sample': 'all CBs with any drill', 'version': 'E', 'CBs': 47, 'class-out %': np.float64(-1.056), 'season-fwd %': np.float64(1.181), 'class-out perm p': np.float64(0.537)}
+   {'outcome': 'CPOE', 'sample': 'CBs with the 45-degree drill', 'version': 'A', 'CBs': 38, 'class-out %': np.float64(2.029), 'season-fwd %': np.float64(1.494), 'class-out perm p': np.float64(0.049)}
+   {'outcome': 'CPOE', 'sample': 'CBs with the 45-degree drill', 'version': 'B', 'CBs': 38, 'class-out %': np.float64(-1.738), 'season-fwd %': np.float64(-0.205), 'class-out perm p': np.float64(0.756)}
+   {'outcome': 'CPOE', 'sample': 'CBs with the 45-degree drill', 'version': 'C', 'CBs': 38, 'class-out %': np.float64(1.059), 'season-fwd %': np.float64(1.802), 'class-out perm p': np.float64(0.171)}
+   {'outcome': 'CPOE', 'sample': 'CBs with the 45-degree drill', 'version': 'D', 'CBs': 38, 'class-out %': np.float64(0.636), 'season-fwd %': np.float64(1.327), 'class-out perm p': np.float64(0.098)}
+   {'outcome': 'CPOE', 'sample': 'CBs with the 45-degree drill', 'version': 'E', 'CBs': 38, 'class-out %': np.float64(-1.791), 'season-fwd %': np.float64(0.158), 'class-out perm p': np.float64(0.512)}
+   {'outcome': 'CPOE', 'sample': 'all CBs with any drill', 'version': 'B', 'CBs': 38, 'class-out %': np.float64(-1.738), 'season-fwd %': np.float64(-0.205), 'class-out perm p': np.float64(0.878)}
+   {'outcome': 'CPOE', 'sample': 'all CBs with any drill', 'version': 'C', 'CBs': 38, 'class-out %': np.float64(1.059), 'season-fwd %': np.float64(1.802), 'class-out perm p': np.float64(0.122)}
+   {'outcome': 'CPOE', 'sample': 'all CBs with any drill', 'version': 'D', 'CBs': 38, 'class-out %': np.float64(0.636), 'season-fwd %': np.float64(1.327), 'class-out perm p': np.float64(0.146)}
+   {'outcome': 'CPOE', 'sample': 'all CBs with any drill', 'version': 'E', 'CBs': 38, 'class-out %': np.float64(-1.791), 'season-fwd %': np.float64(0.158), 'class-out perm p': np.float64(0.415)}
+
+=== out-of-sample MSE reduction (%) by Drive+ version ===
+outcome                               CPOE  sep at throw (all)  sep gained (all)  zone-matching closing
+sample                       version                                                                   
+CBs with the 45-degree drill A        2.03                0.30              0.32                   0.89
+                             B       -1.74                0.04              0.13                   0.38
+                             C        1.06                0.24              0.31                   0.74
+                             D        0.64               -1.97             -0.38                  -4.21
+                             E       -1.79               -1.06             -0.17                   0.63
+all CBs with any drill       B       -1.74                0.04              0.14                   0.37
+                             C        1.06                0.23              0.31                   0.74
+                             D        0.64               -1.96             -0.38                  -4.20
+                             E       -1.79               -1.06             -0.18                   0.58
+outcome                               CPOE  sep at throw (all)  sep gained (all)  zone-matching closing
+sample                       version                                                                   
+CBs with the 45-degree drill A        1.49                0.87              0.31                   1.17
+                             B       -0.21               -0.29              0.15                   0.31
+                             C        1.80                0.54              0.35                   0.83
+                             D        1.33                1.54             -1.92                  -0.68
+                             E        0.16                1.18              0.25                   1.26
+all CBs with any drill       B       -0.21               -0.29              0.15                   0.32
+                             C        1.80                0.54              0.35                   0.84
+                             D        1.33                1.53             -1.91                  -0.64
+                             E        0.16                1.18              0.25                   1.26
+outcome                                CPOE  sep at throw (all)  sep gained (all)  zone-matching closing
+sample                       version                                                                    
+CBs with the 45-degree drill A        0.049               0.073             0.098                  0.049
+                             B        0.756               0.146             0.098                  0.098
+                             C        0.171               0.122             0.098                  0.024
+                             D        0.098               0.585             0.220                  0.512
+                             E        0.512               0.512             0.122                  0.024
+all CBs with any drill       B        0.878               0.220             0.146                  0.049
+                             C        0.122               0.049             0.049                  0.073
+                             D        0.146               0.659             0.220                  0.634
+                             E        0.415               0.537             0.268                  0.024

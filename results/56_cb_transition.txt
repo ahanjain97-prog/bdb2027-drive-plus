@@ -1,0 +1,59 @@
+attempts 224 players 121 | test-retest: {'bp_speed': np.float64(0.42), 'trans_min': np.float64(0.42), 'trans_retention': np.float64(nan), 'trans_time': np.float64(0.01), 'turn_deg': np.float64(0.07), 'drive_accel_1s': np.float64(0.21), 'drive_top': np.float64(0.54), 'drill_top': np.float64(0.54)}
+correlations among phase metrics (CBs):
+                  bp_speed  trans_min  trans_retention  trans_time  turn_deg  drive_accel_1s  drive_top  drill_top
+bp_speed             1.00       1.00             0.24        0.23     -0.12           -0.45       0.29       0.29
+trans_min            1.00       1.00             0.29        0.23     -0.14           -0.46       0.30       0.30
+trans_retention      0.24       0.29             1.00       -0.06     -0.33           -0.24       0.18       0.18
+trans_time           0.23       0.23            -0.06        1.00      0.19           -0.46      -0.18      -0.18
+turn_deg            -0.12      -0.14            -0.33        0.19      1.00            0.09      -0.06      -0.06
+drive_accel_1s      -0.45      -0.46            -0.24       -0.46      0.09            1.00       0.30       0.30
+drive_top            0.29       0.30             0.18       -0.18     -0.06            0.30       1.00       1.00
+drill_top            0.29       0.30             0.18       -0.18     -0.06            0.30       1.00       1.00
+
+=== which drill phase carries it? (outcome: separation the receiver gains at his break) ===
+  bp_speed        b -0.0477 yd/SD  clustered p 0.251  perm p 0.232  (reps 1707, CBs 46)
+  trans_min       b -0.0471 yd/SD  clustered p 0.253  perm p 0.217  (reps 1707, CBs 46)
+  trans_retention b +0.0044 yd/SD  clustered p 0.877  perm p 0.910  (reps 1707, CBs 46)
+  trans_time      b +0.0088 yd/SD  clustered p 0.769  perm p 0.800  (reps 1707, CBs 46)
+  turn_deg        b -0.0290 yd/SD  clustered p 0.382  perm p 0.486  (reps 1707, CBs 46)
+  drive_accel_1s  b -0.0256 yd/SD  clustered p 0.527  perm p 0.516  (reps 1707, CBs 46)
+  drive_top       b -0.0788 yd/SD  clustered p 0.007  perm p 0.002  (reps 1707, CBs 46)
+  drill_top       b -0.0799 yd/SD  clustered p 0.005  perm p 0.020  (reps 1707, CBs 46)
+
+=== drive top speed: robustness and reach ===
+  outcome sep_gain_break  b -0.0788  p 0.007  perm p nan  reps 1707
+  outcome sep_at_break    b -0.0515  p 0.002  perm p 0.050  reps 1707
+  outcome sep_at_throw    b -0.1063  p 0.007  perm p 0.047  reps 1479
+  outcome sep_mean        b -0.0491  p 0.036  perm p 0.115  reps 1709
+Traceback (most recent call last):
+  File "/Users/ahanjain/bdb_ssl/code/56_cb_transition.py", line 108, in <module>
+    b, p, _, n, k = fit(cov, "sep_gain_break", rhs, "z_drive_top", perm=False)
+                    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahanjain/bdb_ssl/code/56_cb_transition.py", line 88, in fit
+    m = smf.ols(f, data=d).fit(cov_type="cluster", cov_kwds={"groups": G2(d)})
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/statsmodels/regression/linear_model.py", line 371, in fit
+    lfit = OLSResults(
+        self, beta,
+        normalized_cov_params=self.normalized_cov_params,
+        cov_type=cov_type, cov_kwds=cov_kwds, use_t=use_t)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/statsmodels/regression/linear_model.py", line 1653, in __init__
+    self.get_robustcov_results(cov_type=cov_type, use_self=True,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               use_t=use_t, **cov_kwds)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/statsmodels/regression/linear_model.py", line 2617, in get_robustcov_results
+    res.cov_params_default = sw.cov_cluster_2groups(
+                             ~~~~~~~~~~~~~~~~~~~~~~^
+        self, groups, use_correction=use_correction)[0]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/statsmodels/stats/sandwich_covariance.py", line 584, in cov_cluster_2groups
+    cov0 = cov_cluster(results, group0, use_correction=use_correction)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/statsmodels/stats/sandwich_covariance.py", line 530, in cov_cluster
+    scale = S_crosssection(xu, group)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/statsmodels/stats/sandwich_covariance.py", line 484, in S_crosssection
+    x_group_sums = group_sums(x, group).T  #TODO: why transposed
+                   ~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/statsmodels/tools/grouputils.py", line 107, in group_sums
+    np.bincount(group, weights=x[:, col])
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: The weights and list don't have the same length.

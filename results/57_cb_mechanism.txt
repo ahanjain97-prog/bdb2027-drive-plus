@@ -1,0 +1,57 @@
+=== 1) does the combine drill show up in the CB's NFL movement? (player level, CBs with >= 10 reps) ===
+  combine drive speed vs NFL db_pre_backpedal  r -0.02  (n 36)
+  combine drive speed vs NFL db_react_lag      r -0.19  (n 36)
+  combine drive speed vs NFL db_drive_speed    r +0.45  (n 36)
+  combine drive speed vs NFL db_drive_gain     r +0.07  (n 36)
+  combine drive speed vs NFL db_closing        r +0.35  (n 36)
+  ZONE_COVERAGE: combine drive vs NFL closing r +0.38, vs NFL drive speed r +0.41 (n 34)
+  MAN_COVERAGE: combine drive vs NFL closing r +0.15, vs NFL drive speed r +0.34 (n 33)
+
+=== 2) do those NFL mechanics produce separation outcomes? (rep level, mechanical check) ===
+  NFL db_pre_backpedal  -> separation gained: -0.069 yd/SD (p 0.152)
+  NFL db_react_lag      -> separation gained: +0.070 yd/SD (p 0.003)
+  NFL db_drive_speed    -> separation gained: -0.018 yd/SD (p 0.684)
+  NFL db_drive_gain     -> separation gained: -0.452 yd/SD (p 0.000)
+  NFL db_closing        -> separation gained: -1.205 yd/SD (p 0.000)
+
+=== 3) mediation: combine drive -> NFL closing -> separation gained ===
+  total effect -0.0788 (p 0.007) -> with NFL closing in the model +0.0172 (p 0.269); share mediated 122%  (reps 1707)
+
+=== 4) where does it matter? slope of separation gained (yd per SD of combine drive speed) by moderator ===
+  man vs zone                  interaction perm p 0.120 | MAN_COVERAGE: -0.033 (p 0.162, reps 973, CBs 43) | ZONE_COVERAGE: -0.127 (p 0.055, reps 734, CBs 43)
+  CB assignment                interaction perm p 0.505 | deep zone (thirds/halves): +0.048 (p 0.678, reps 66, CBs 24) | man: -0.006 (p 0.740, reps 1269, CBs 45) | other: n/a (reps 8) | quarters: n/a (reps 55) | underneath zone (flat/curl/hook): -0.068 (p 0.554, reps 309, CBs 38)
+  cushion at the snap          interaction perm p 0.229 | deep off (>6): -0.316 (p 0.192, reps 151, CBs 36) | off 2-6: -0.048 (p 0.015, reps 1296, CBs 44) | press (<=2): -0.023 (p 0.684, reps 240, CBs 30)
+  route family                 interaction perm p 0.229 | in: -0.078 (p 0.062, reps 685, CBs 40) | out: -0.174 (p 0.030, reps 300, CBs 38) | stop: +0.058 (p 0.344, reps 237, CBs 37) | vertical: -0.068 (p 0.085, reps 480, CBs 43)
+  slot CB (1) vs outside (0)   interaction perm p 0.880 | 0: -0.058 (p 0.028, reps 1307, CBs 43) | 1: -0.058 (p 0.448, reps 400, CBs 35)
+  receiver 40 top speed > median interaction perm p 0.312 | False: -0.088 (p 0.013, reps 1018, CBs 43) | True: -0.028 (p 0.573, reps 689, CBs 40)
+
+=== 5) quantified outcomes when targeted (per SD and per yd/s of combine drive speed) ===
+  completion rate              all           : -0.103 per SD = -0.304 per yd/s (p 0.000, targets 284, mean 0.479)
+  completion rate              ZONE_COVERAGE : -0.110 per SD = -0.324 per yd/s (p 0.018, targets 97, mean 0.443)
+  completion rate              MAN_COVERAGE  : -0.097 per SD = -0.285 per yd/s (p 0.000, targets 187, mean 0.497)
+  receiving yards per target   all           : +0.574 per SD = +1.688 per yd/s (p 0.466, targets 136, mean 15.051)
+  receiving yards per target   ZONE_COVERAGE : +0.059 per SD = +0.173 per yd/s (p 0.936, targets 43, mean 14.442)
+  receiving yards per target   MAN_COVERAGE  : +0.992 per SD = +2.914 per yd/s (p 0.421, targets 93, mean 15.333)
+  EPA per target (offense)     all           : -0.197 per SD = -0.578 per yd/s (p 0.077, targets 284, mean 0.100)
+  EPA per target (offense)     ZONE_COVERAGE : -0.258 per SD = -0.758 per yd/s (p 0.006, targets 97, mean 0.003)
+  EPA per target (offense)     MAN_COVERAGE  : -0.140 per SD = -0.412 per yd/s (p 0.419, targets 187, mean 0.151)
+  completion vs separation at the throw (logit): +1 yd -> odds x1.67
+  completion ~ drive + separation at throw: drive -0.087 (p 0.001), separation +0.071/yd
+
+=== 6) dose-response: combine drive speed bins (yd/s) ===
+                                  sep_gain  sep_throw  reps  cbs
+drive_bin team_coverage_man_zone                                
+< 8.6     MAN_COVERAGE                 NaN        NaN     0    0
+          ZONE_COVERAGE                NaN        NaN     0    0
+8.6-9.0   MAN_COVERAGE              -0.067      1.456   151    8
+          ZONE_COVERAGE              0.662      2.301   122    9
+9.0-9.4   MAN_COVERAGE              -0.094      1.537   375   21
+          ZONE_COVERAGE              0.407      2.536   239   19
+>= 9.4    MAN_COVERAGE              -0.141      1.437   452   14
+          ZONE_COVERAGE              0.178      1.911   378   15
+           completion  yds_per_target    epa  targets
+drive_bin                                            
+< 8.6             NaN             NaN    NaN        0
+8.6-9.0         0.744          14.031  0.665       43
+9.0-9.4         0.443          14.085 -0.142      106
+>= 9.4          0.422          16.421  0.111      135

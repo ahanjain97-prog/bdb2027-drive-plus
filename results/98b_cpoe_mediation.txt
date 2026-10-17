@@ -1,0 +1,38 @@
+pool-receiver targets: 9835
+  xComp xc_sit  : out-of-fold log-loss 0.6095 vs base rate 0.6559 (n 9835)
+  xComp xc_ctx  : out-of-fold log-loss 0.5606 vs base rate 0.6559 (n 9835)
+
+wide targets 502 | mean completion 0.552, xc_sit 0.565, xc_ctx 0.554
+
+=== 1. outcome measures, per 10 Drive+ (pts) ===
+  CP (registered)                                                                            -8.48 [ -11.13,   -5.83]  one-sided p 0.002  n 502, DBs 60
+  CPOE vs SITUATION only (pre-snap: down, dist, field, quarter, QB, route, coverage)         -8.59 [ -11.34,   -5.85]  one-sided p 0.002  n 502, DBs 60
+  CPOE vs throw context (situation + throw choice)                                           -6.04 [  -8.83,   -3.24]  one-sided p 0.002  n 502, DBs 60
+  throw made harder than the situation predicts                                              -2.56 [  -3.56,   -1.55]  one-sided p 0.004  n 502, DBs 60
+
+=== 2. which parts of the throw move with Drive+ (per 10, raw units; two-sided) ===
+  air yards (pass_length)                          +0.53 [  +0.05,   +1.01]  two-sided p 0.242  n 502, DBs 60
+  receiver depth at the throw (yd)                 +0.23 [  -0.09,   +0.55]  two-sided p 0.365  n 499, DBs 60
+  time to throw (s)                                -0.01 [  -0.07,   +0.04]  two-sided p 0.772  n 499, DBs 60
+  receiver distance to sideline at throw (yd)      -0.43 [  -0.78,   -0.09]  two-sided p 0.116  n 499, DBs 60
+  receiver speed at throw (yd/s)                   +0.09 [  +0.02,   +0.17]  two-sided p 0.228  n 499, DBs 60
+  pressure on the play (pts)                       +0.24 [  -1.17,   +1.64]  two-sided p 0.850  n 502, DBs 60
+
+=== 3. mediation: does holding his coverage fixed remove the harder-throw shift? (throw_shift, pts per 10) ===
+  no coverage controls                       -2.56 [  -3.56,   -1.55]  one-sided p 0.004  n 502, DBs 60
+  + separation gained at the key move        -2.51 [  -3.52,   -1.49]  one-sided p 0.002  n 502, DBs 60
+  + separation at the throw                  -2.12 [  -2.93,   -1.31]  one-sided p 0.004  n 499, DBs 60
+  + both                                     -2.10 [  -2.90,   -1.31]  one-sided p 0.004  n 499, DBs 60
+
+=== 4. where does the harder-throw shift live? (throw_shift, pts per 10) — Drive+ only changes coverage in zone-match ===
+  zone-matching      -2.75 [  -4.25,   -1.26]  one-sided p 0.020  n 143, DBs 40
+  man-matching       -2.45 [  -3.68,   -1.21]  one-sided p 0.006  n 231, DBs 50
+  other              +1.62 [  -0.00,   +3.24]  one-sided p 0.844  n 128, DBs 45
+
+=== 5. CPOE vs situation by season (pts per 10) ===
+  2023  CP   +5.21 [  -4.61,  +15.03]  one-sided p 0.780  n 47, DBs 12
+        CPOE_sit   +6.95 [  -3.79,  +17.70]  one-sided p 0.766  n 47, DBs 12
+  2024  CP   -2.91 [  -7.00,   +1.18]  one-sided p 0.261  n 155, DBs 32
+        CPOE_sit   -3.29 [  -7.08,   +0.50]  one-sided p 0.216  n 155, DBs 32
+  2025  CP  -11.86 [ -15.06,   -8.66]  one-sided p 0.002  n 300, DBs 54
+        CPOE_sit  -11.89 [ -15.19,   -8.58]  one-sided p 0.002  n 300, DBs 54

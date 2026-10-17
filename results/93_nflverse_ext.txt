@@ -1,0 +1,20 @@
+throw-side rows 22312 | matched to nflverse 19103 | with cp 17423 | with receiver NGS season separation 13237 | with QB CPOE 18117
+sanity: BDB completion vs nflverse complete_pass agree on 1.000 of 17423; mean cp 0.670 vs completion 0.666
+
+=== zone: per 10 Drive+ points, toward his side vs away (team-season FE; player-permutation p) ===
+  T5 completion, raw (matched rows)          toward -2.941 | away -0.766 | contrast -2.174 (p 0.044; toward alone p 0.002) | rows 9100, CBs 47
+  T1 nflverse CPOE (completion − cp)         toward -2.199 | away -0.991 | contrast -1.208 (p 0.184; toward alone p 0.008) | rows 9100, CBs 47
+  T2 completion | cp, receiver sep, QB CPOE  toward -2.139 | away -0.972 | contrast -1.167 (p 0.220; toward alone p 0.012) | rows 9100, CBs 47
+  T2b completion | + exact air yards         toward -2.138 | away -0.972 | contrast -1.166 (p 0.210; toward alone p 0.012) | rows 9100, CBs 47
+  T3 EPA | cp, receiver sep, QB CPOE         toward -0.042 | away -0.053 | contrast +0.011 (p 0.764; toward alone p 0.150) | rows 9100, CBs 47
+  T4 exact air yards (depth shift)           toward +0.474 | away -0.064 | contrast +0.538 (p 0.008; toward alone p 0.066) | rows 12944, CBs 47
+  T4b receiver season NGS separation         toward -0.012 | away -0.008 | contrast -0.004 (p 0.780; toward alone p 0.399) | rows 9104, CBs 47
+
+=== all coverages: per 10 Drive+ points, toward his side vs away (team-season FE; player-permutation p) ===
+  T5 completion, raw (matched rows)          toward -1.840 | away -0.241 | contrast -1.598 (p 0.098; toward alone p 0.012) | rows 13233, CBs 48
+  T1 nflverse CPOE (completion − cp)         toward -1.359 | away -0.565 | contrast -0.794 (p 0.345; toward alone p 0.096) | rows 13233, CBs 48
+  T2 completion | cp, receiver sep, QB CPOE  toward -1.349 | away -0.591 | contrast -0.757 (p 0.313; toward alone p 0.136) | rows 13233, CBs 48
+  T2b completion | + exact air yards         toward -1.345 | away -0.585 | contrast -0.760 (p 0.343; toward alone p 0.112) | rows 13233, CBs 48
+  T3 EPA | cp, receiver sep, QB CPOE         toward -0.013 | away -0.013 | contrast -0.000 (p 0.994; toward alone p 0.667) | rows 13233, CBs 48
+  T4 exact air yards (depth shift)           toward +0.265 | away -0.156 | contrast +0.421 (p 0.018; toward alone p 0.170) | rows 18131, CBs 48
+  T4b receiver season NGS separation         toward -0.002 | away +0.005 | contrast -0.007 (p 0.603; toward alone p 0.880) | rows 13237, CBs 48

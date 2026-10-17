@@ -1,0 +1,35 @@
+=== (1) criterion reliability: split-half of player means (players with >= 8 reps per half) ===
+  sep_gain_break_z   split-half r +0.40 -> reliability of the full mean 0.57 (n 42)
+  db_closing_z       split-half r +0.52 -> reliability of the full mean 0.68 (n 42)
+  sep_at_throw_z     split-half r +0.49 -> reliability of the full mean 0.66 (n 39)
+  open_z             split-half r +0.40 -> reliability of the full mean 0.57 (n 39)
+  composite          split-half r +0.54 -> reliability of the full mean 0.70 (n 42)
+
+=== (2) Drive+ vs player means: observed r and disattenuated r (Drive+ reliability .66) ===
+  sep_gain_break_z   observed r +0.25 | disattenuated +0.41  (players 53)
+  db_closing_z       observed r +0.24 | disattenuated +0.36  (players 53)
+  sep_at_throw_z     observed r +0.27 | disattenuated +0.42  (players 53)
+  open_z             observed r +0.31 | disattenuated +0.50  (players 53)
+  composite          observed r +0.29 | disattenuated +0.42  (players 53)
+
+=== (3) Drive+ slope per 10 on the composite (SD units) vs single outcomes, wide reps, one-sided perm p ===
+  all reps       composite          +0.084 SD per 10 (SE 0.029, t +2.9, p1 0.010, DBs 76)
+  all reps       sep_gain_break_z   +0.078 SD per 10 (SE 0.032, t +2.4, p1 0.010, DBs 76)
+  all reps       db_closing_z       +0.089 SD per 10 (SE 0.036, t +2.5, p1 0.007, DBs 76)
+  all reps       sep_at_throw_z     +0.086 SD per 10 (SE 0.029, t +2.9, p1 0.003, DBs 75)
+  all reps       open_z             +0.099 SD per 10 (SE 0.028, t +3.6, p1 0.007, DBs 75)
+  zone-matching  composite          +0.094 SD per 10 (SE 0.031, t +3.1, p1 0.007, DBs 66)
+  zone-matching  sep_gain_break_z   +0.076 SD per 10 (SE 0.030, t +2.5, p1 0.003, DBs 66)
+  zone-matching  db_closing_z       +0.095 SD per 10 (SE 0.037, t +2.5, p1 0.003, DBs 66)
+  zone-matching  sep_at_throw_z     +0.098 SD per 10 (SE 0.028, t +3.5, p1 0.003, DBs 64)
+  zone-matching  open_z             +0.117 SD per 10 (SE 0.040, t +2.9, p1 0.003, DBs 64)
+  man-matching   composite          +0.017 SD per 10 (SE 0.012, t +1.4, p1 0.126, DBs 63)
+  man-matching   sep_gain_break_z   +0.009 SD per 10 (SE 0.013, t +0.7, p1 0.312, DBs 63)
+  man-matching   db_closing_z       +0.015 SD per 10 (SE 0.013, t +1.2, p1 0.140, DBs 63)
+  man-matching   sep_at_throw_z     +0.025 SD per 10 (SE 0.014, t +1.8, p1 0.056, DBs 63)
+  man-matching   open_z             +0.037 SD per 10 (SE 0.021, t +1.7, p1 0.090, DBs 63)
+
+=== (4) augmentation: tracked 40 top speed next to Drive+, leave-one-class-out MSE reduction on the composite ===
+  Drive+ alone             composite +1.92% | completion +3.86%  (DBs 39)
+  40 top speed alone       composite -0.23% | completion -1.11%  (DBs 39)
+  Drive+ + 40 top speed    composite +0.24% | completion +4.17%  (DBs 39)

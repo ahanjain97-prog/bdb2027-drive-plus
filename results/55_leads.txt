@@ -1,0 +1,19 @@
+L1 CB: separation the receiver gains at his break (CB coverage reps)
+   backpedal-45 transition top speed (tracking): b -0.0909 (clustered p 0.001, player-perm p 0.006) reps 1709 players 47 | by class {2023: '-0.117', 2024: '-0.074', 2025: '-0.115'}
+   official 40 (faster = +): b -0.0074 (clustered p 0.817, player-perm p 0.872) reps 1419 players 41 | by class {2023: '+0.033', 2024: '-0.069', 2025: '-0.018'}
+   official short shuttle (faster = +): b -0.0417 (clustered p 0.494, player-perm p 0.593) reps 651 players 16 | by class {2023: '+0.085', 2024: '-0.232', 2025: '-0.589'}
+   both in one model: tracking b -0.0789 (p 0.000) | official 40 b +0.0275 (p 0.378)
+
+L2 IDL: pass-rush pressure per snap (linear probability, + weight)
+   40 sustained acceleration (tracking): b +0.0188 (clustered p 0.000, player-perm p 0.006) reps 6778 players 34 | by class {2023: '+0.005', 2024: '+0.030', 2025: '+0.002'}
+   official 10-yd split (faster = +): b +0.0094 (clustered p 0.229, player-perm p 0.212) reps 6778 players 34 | by class {2023: '-0.003', 2024: '+0.046', 2025: '+0.007'}
+   official 40 (faster = +): b +0.0223 (clustered p 0.000, player-perm p 0.008) reps 6778 players 34 | by class {2023: '+0.022', 2024: '+0.046', 2025: '+0.011'}
+
+L3 EDGE: blocker's peak pressure probability on head-to-head reps (+ blocker wave speed, rusher weight)
+   40 top speed (tracking): b +0.0293 (clustered p 0.000, player-perm p 0.002) reps 1885 players 43 | by class {2023: '+0.023', 2024: '+0.044', 2025: '+0.085'}
+   official 40 (faster = +): b +0.0462 (clustered p 0.000, player-perm p 0.002) reps 1989 players 61 | by class {2023: '+0.038', 2024: '+0.056', 2025: '+0.086'}
+
+L4 WR: separation at the throw on hitch routes (+ weight, alignment, coverage, press)
+   curl-drill turn lean (tracking): b +0.0163 (clustered p 0.613, player-perm p 0.595) reps 4677 players 77 | by class {2023: '+0.031', 2024: '-0.149', 2025: '+0.166'}
+   official short shuttle (faster = +): b -0.0774 (clustered p 0.042, player-perm p 0.070) reps 1985 players 30 | by class {2023: '-0.096', 2024: '-0.037', 2025: '+0.060'}
+   official 3-cone (faster = +): b -0.0695 (clustered p 0.188, player-perm p 0.281) reps 1429 players 24 | by class {2023: '-0.149', 2024: '+0.061', 2025: '+0.099'}

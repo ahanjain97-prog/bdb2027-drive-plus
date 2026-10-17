@@ -1,0 +1,21 @@
+=== drive top speed: robustness and reach ===
+  outcome sep_gain_break  b -0.0788  p 0.007  perm p nan  reps 1707
+  outcome sep_at_break    b -0.0515  p 0.002  perm p 0.050  reps 1707
+  outcome sep_at_throw    b -0.1063  p 0.007  perm p 0.047  reps 1479
+  outcome sep_mean        b -0.0491  p 0.036  perm p 0.115  reps 1709
+  sep_gain_break + tracked 40 top speed              b -0.0662 p 0.005 reps 1335 CBs 39
+  sep_gain_break + weight + height                   b -0.0777 p 0.002 reps 1707 CBs 46
+  sep_gain_break + 40 top speed + weight + height    b -0.0740 p 0.000 reps 1335 CBs 39
+  MAN_COVERAGE   b -0.0331 p 0.162 reps 973 CBs 43
+  ZONE_COVERAGE  b -0.1273 p 0.055 reps 734 CBs 43
+  by draft class: {2023: '-0.125', 2024: '-0.069', 2025: '-0.062'}
+  leave-one-CB-out b range [-0.0996, -0.0655] over 46 CBs
+  completion when targeted: b -0.103 per SD (p 0.000), targets 284
+
+separation gained at the break (yd) by CB drive-top-speed tercile:
+                               mean                       size              
+team_coverage_man_zone MAN_COVERAGE ZONE_COVERAGE MAN_COVERAGE ZONE_COVERAGE
+drive_top_tercile                                                           
+slow drive                   -0.104         0.633          369           273
+mid                          -0.071         0.153          303           229
+fast drive                   -0.162         0.156          306           237
